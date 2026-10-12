@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimens -->
+    <dimen name="Transaction.RView.Item.Layout.Main.Height">50dp</dimen>
+    <dimen name="Transaction.RView.Item.ImageView.Width">38dp</dimen>
+    <dimen name="Transaction.RView.Item.ImageView.Height">38dp</dimen>
+    <dimen name="Transaction.RView.Item.MaterialCardView.Icon.Width">42dp</dimen>
+    <!-- Dimens -->
+
+</resources>

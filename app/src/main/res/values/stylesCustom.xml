@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Custom" />
+
+    <!--Button-->
+    <style name="Button" parent="Custom">
+        <item name="android:textSize">@dimen/Popup.TextSize10</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:layout_height">@dimen/Popup.Button.Height</item>
+    </style>
+
+    <style name="Button.Save" parent="Button">
+        <item name="android:text">@string/Save</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Button.OK" parent="Button">
+        <item name="android:text">@string/OK</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Popup.Button.Next" parent="Button">
+        <item name="android:text">@string/Next</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+        <item name="android:layout_width">40dp</item>
+    </style>
+
+    <style name="Popup.Button.Prev" parent="Button">
+        <item name="android:text">@string/Prev</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:layout_width">40dp</item>
+    </style>
+
+</resources>

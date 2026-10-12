@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_assistants1"
+        android:icon="@drawable/ic_music_note"
+        android:title="@string/assistants1"/>
+
+    <item
+        android:id="@+id/navigation_assistants2"
+        android:icon="@drawable/ic_music_note"
+        android:title="@string/assistants2"/>
+
+    <item
+        android:id="@+id/navigation_assistants3"
+        android:icon="@drawable/ic_music_note"
+        android:title="@string/assistants3"/>
+
+    <item
+        android:id="@+id/navigation_assistants4"
+        android:icon="@drawable/ic_music_note"
+        android:title="@string/assistants4"/>
+
+    <item
+        android:id="@+id/navigation_assistants5"
+        android:icon="@drawable/ic_music_note"
+        android:title="@string/assistants5"/>
+
+</menu>

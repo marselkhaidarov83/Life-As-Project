@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Popup.LinearLayout.Main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCaption"
+        style="@style/Popup.ConstraintLayout.Caption">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            style="@style/Popup.ImageView.Delete"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/Popup.TextView.Caption"
+            android:text="@string/JobWithPNL"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/Popup.ImageView.Close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/Popup.NestedScrollView.Main">
+
+        <LinearLayout
+            style="@style/Popup.LinearLayout.TopHead">
+
+            <TextView
+                android:id="@+id/textViewLegend"
+                style="@style/Popup.TextView.Legend"
+                android:text="
+Добавление новой операции или ее редактирование осуществляется в несколько этапов:\n
+\n
+1) Для ввода/изменения суммы операции поместите фокус в поле ввода суммы и укажите сумму операции;\n
+2) Для указания статуса операции (плановая или фактическая) нажмите на иконку справа от поля суммы. Иконка [operation_isFact] означает, что операция фактическая. Иконка [operation_isPlan] означает, что операция плановая.\n
+3) Для операции дохода укажите/скорректируйте категорию дохода (левая верхняя иконка в центральной части окна), подкатегорию дохода (список иконок в нижней части окна) и кошелек, куда деньги придут (правая верхняя иконка в центральной части окна);\n
+4) Для операции перемещения денежных средств укажите/скорректируйте кошелек, откуда деньги уйдут (левая верхняя иконка в центральной части окна) и кошелек, куда деньги придут (правая верхняя иконка в центральной части окна);\n
+5) Для операции расхода укажите/скорректируйте кошелек, откуда деньги уйдут (левая верхняя иконка в центральной части окна), категорию расхода (правая верхняя иконка в центральной части окна) и подкатегорию расхода (список иконок в нижней части окна);\n
+6) Для ввода/изменения даты операции нажмите на дату и укажите её во всплывающем окне либо воспользуйтесь кнопками кнопки [double_left_arrow], [double_right_arrow] для смещения даты в прошлое или в будущее.\n
+\n
+Для операций дохода возможно указать распределение доходов в оперативный бюджет. Для этого необходимо перейти по кнопке [next_form] в форму распределения оперативного бюджета:\n
+1) Чтобы добавить распределение дохода в оперативный бюджет нажмите кнопку [add_imageSub]\n
+2) Чтобы скорректировать/удалить распределение дохода в оперативный бюджет нажмите на соответствующую карточку распределения оперативного бюджета.\n
+\n
+Для операций расхода возможно указать информационные теги. Для этого необходимо перейти по кнопке [next_form] в форму указания тегов:\n
+1) Чтобы добавить информационный тег нажмите кнопку [add_imageSub]\n
+2) Чтобы скорректировать/удалить информационный тег нажмите на соответствующую карточку информационнго тега.\n
+\n
+Для сохранения изменений нажмите кнопку 'Сохранить' в нижней части окна.\n
+\n
+Чтобы удалить операцию с деньгами нажмите кнопку [delete_purple] в левом верхнем углу окна.\n
+\n
+Удалить операцию вы сможете только, если операция была сохранена хотя бы 1 раз.\n
+\n
+Если вы захотите повторно посмотреть легенду о том, как редактировать или удалить операцию с деньгами, нажмите кнопку [mascot] в правом верхнем углу окна.\n
+\n
+PS: вы всегда можете включить/отключить помощника в настройках программы - для этого выберите меню 'Настройки' через 3 точки в правом верхнем углу экрана.\n
+\n
+PPS: в бесплатной версии программы вы можете добавлять сколько угодно операций с деньгами в рамках текущего месяца.
+                "/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

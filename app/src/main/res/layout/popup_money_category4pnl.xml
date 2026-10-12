@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.MH83.LifeAsProject.view.Money.MoneyIncrease.FragmentMoneyIncreaseTable"
+    android:id="@+id/moneyIncreaseTableLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listViewR"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:scrollbars="horizontal"
+        app:spanCount="5"
+        android:layout_width="310dp"
+        android:layout_height="175dp"
+        tools:listitem="@layout/item_graph_money_category"
+        android:focusable="true"
+        android:clickable="true">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Popup.TextSize00">8sp</dimen>
+    <dimen name="Popup.TextSize01">12sp</dimen>
+    <dimen name="Popup.TextSize012">14sp</dimen>
+    <dimen name="Popup.TextSize02">18sp</dimen>
+    <dimen name="Popup.TextSize03">20sp</dimen>
+    <dimen name="Popup.TextSize08">22sp</dimen>
+    <dimen name="Popup.TextSize09">24sp</dimen>
+    <dimen name="Popup.TextSize10">26sp</dimen>
+    <dimen name="Popup.TextSize20">30sp</dimen>
+</resources>

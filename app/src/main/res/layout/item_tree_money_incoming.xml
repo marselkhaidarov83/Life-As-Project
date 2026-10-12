@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="33dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/Padding2dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/BasePadding"
+        app:strokeColor="@color/white">
+
+        <TextView
+            android:id="@+id/textViewName"
+            style="@style/MoneyIncoming.RView.Item.TextView"
+            android:layout_marginStart="4dp"
+            android:gravity="center_vertical"
+            android:layout_width="160dp"
+            android:maxLines="2"
+            android:layout_height="match_parent"
+            android:text="@string/CustomString"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewIncoming1"
+        android:layout_width="match_parent"
+        style="@style/MoneyIncoming.RView.Item.MaterialCardView"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/BasePadding"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textViewIncoming1"
+            android:layout_width="match_parent"
+            style="@style/MoneyIncoming.RView.Item.TextView"
+            android:gravity="center_vertical|end"
+            android:paddingStart="0dp"
+            android:paddingEnd="7dp"
+            android:text="@string/CustomString"
+            android:textAlignment="textEnd" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewIncoming2"
+        style="@style/MoneyIncoming.RView.Item.MaterialCardView"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/BasePadding">
+
+        <TextView
+            android:id="@+id/textViewIncoming2"
+            style="@style/MoneyIncoming.RView.Item.TextView"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical|end"
+            android:textAlignment="textEnd"
+            android:paddingStart="0dp"
+            android:paddingEnd="7dp"
+            android:paddingTop="1dp"
+            android:text="@string/CustomString"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewIncoming3"
+        style="@style/MoneyIncoming.RView.Item.MaterialCardView"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/BasePadding">
+
+        <TextView
+            android:id="@+id/textViewIncoming3"
+            android:gravity="center_vertical|end"
+            android:textAlignment="textEnd"
+            android:paddingStart="0dp"
+            android:paddingEnd="7dp"
+            android:paddingTop="1dp"
+            style="@style/MoneyIncoming.RView.Item.TextView"
+            android:layout_width="match_parent"
+            android:text="@string/CustomString"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewIncoming4"
+        style="@style/MoneyIncoming.RView.Item.MaterialCardView"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/BasePadding">
+
+        <TextView
+            android:id="@+id/textViewIncoming4"
+            android:textAlignment="textEnd"
+            android:gravity="center_vertical|end"
+            android:paddingStart="0dp"
+            android:paddingEnd="7dp"
+            android:paddingTop="1dp"
+            style="@style/MoneyIncoming.RView.Item.TextView"
+            android:layout_width="match_parent"
+            android:text="@string/CustomString" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewIncoming5"
+        style="@style/MoneyIncoming.RView.Item.MaterialCardView"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/BasePadding">
+
+        <TextView
+            android:id="@+id/textViewIncoming5"
+            android:gravity="center_vertical|end"
+            android:textAlignment="textEnd"
+            android:paddingStart="0dp"
+            android:paddingEnd="7dp"
+            android:paddingTop="1dp"
+            style="@style/MoneyIncoming.RView.Item.TextView"
+            android:layout_width="match_parent"
+            android:text="@string/CustomString"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimens -->
+    <dimen name="Board.ImageView.Width">24dp</dimen>
+    <dimen name="Board.ImageView.Height">24dp</dimen>
+    <!-- Dimens -->
+
+    <style name="Board.RView.Grid" parent="RView.WithMargins.Grid">
+        <item name="spanCount">2</item>
+    </style>
+
+    <style name="Board.MainLayout" parent="MainLayout">
+        <item name="android:layout_marginStart">@dimen/HalfPadding</item>
+        <item name="android:layout_marginEnd">@dimen/HalfPadding</item>
+        <item name="android:layout_marginTop">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Board.LinearLayout.Horizontal" parent="Fragment.LinearLayout.Horizontal">
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Board.LinearLayout.Vertical" parent="Fragment.LinearLayout.Vertical">
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Board.ConstraintLayout" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Board.ConstraintLayout.Next" parent="Board.ConstraintLayout">
+        <item name="android:paddingTop">@dimen/BasePadding2</item>
+    </style>
+
+    <style name="Board.TextView" parent="Custom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding2</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding2</item>
+        <item name="android:textSize">@dimen/Popup.TextSize08</item>
+    </style>
+
+    <style name="Board.TextView.End" parent="Board.TextView">
+        <item name="android:gravity">end</item>
+        <item name="android:text">@string/CustomString</item>
+    </style>
+
+    <style name="Board.ImageView" parent="Custom">
+        <item name="android:layout_width">@dimen/Board.ImageView.Width</item>
+        <item name="android:layout_height">@dimen/Board.ImageView.Height</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Board.ImageView.Subscription" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/icons_subscription_100</item>
+    </style>
+
+</resources>

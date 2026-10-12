@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Transaction.RView.Item.MaterialCardView.Main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutItem"
+        style="@style/Transaction.RView.Item.ConstraintLayout.Main">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardViewIcon"
+            style="@style/Transaction.RView.Item.MaterialCardView.Icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageViewIcon"
+                style="@style/Transaction.RView.Item.ImageView.Icon" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/textViewDate"
+            style="@style/Transaction.RView.Item.TextView.Date"
+            app:layout_constraintStart_toEndOf="@id/materialCardViewIcon"
+            app:layout_constraintTop_toTopOf="@id/constraintLayoutItem" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout_3"
+            style="@style/Transaction.RView.Item.LinearLayout.3"
+            app:layout_constraintStart_toEndOf="@id/textViewDate"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewCostName"
+                style="@style/RView.Item.TextView.Custom.Bold" />
+
+            <TextView
+                android:id="@+id/textViewIncreaseName"
+                style="@style/RView.Item.TextView.Custom" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewSum"
+            style="@style/Transaction.RView.Item.TextView.Sum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

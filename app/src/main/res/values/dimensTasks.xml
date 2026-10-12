@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="Tasks.Popup.TextSize01">10sp</dimen>
+    <dimen name="Tasks.Popup.TextSize02">14sp</dimen>
+    <dimen name="Tasks.Popup.TextSize03">16sp</dimen>
+    <dimen name="Tasks.Popup.TextSize04">20sp</dimen>
+    <dimen name="Tasks.Popup.TextSize05">22sp</dimen>
+
+    <dimen name="Tasks.Popup.ImageView.Custom.Height">31dp</dimen>
+
+    <dimen name="Tasks.Popup.TextView.Height">31dp</dimen>
+    <dimen name="Tasks.Popup.LinearLayout.Date.Height">40dp</dimen>
+
+    <dimen name="Tasks.Popup.TextView.Date.Width">145dp</dimen>
+    <dimen name="Tasks.Popup.TextView.Date.Height">31dp</dimen>
+
+    <dimen name="Tasks.Popup.TextView.Time.Width">55dp</dimen>
+    <dimen name="Tasks.Popup.TextView.Time.Height">31dp</dimen>
+
+    <dimen name="Tasks.Popup.TextView.Column.Height">40dp</dimen>
+
+    <dimen name="Tasks.Popup.ImageView.PF.Width">22dp</dimen>
+    <dimen name="Tasks.Popup.ImageView.Priority">22dp</dimen>
+    <dimen name="Tasks.Popup.ImageView.ClearDate.Width">22dp</dimen>
+
+    <dimen name="Tasks.Popup.ImageView.Delete.Height">30dp</dimen>
+    <dimen name="Tasks.Popup.ImageView.Delete.Width">30dp</dimen>
+
+    <dimen name="Tasks.Popup.ImageView.Close.Height">30dp</dimen>
+    <dimen name="Tasks.Popup.ImageView.Close.Width">30dp</dimen>
+
+    <dimen name="Tasks.Popup.ImageView.Add.Height">30dp</dimen>
+    <dimen name="Tasks.Popup.ImageView.Add.Width">30dp</dimen>
+
+    <dimen name="Tasks.Popup.Button.Save.Height">45dp</dimen>
+
+    <dimen name="Tasks.Popup.Layout.Caption.Height">50dp</dimen>
+
+    <dimen name="Tasks.Task.Popup.EditText.Name.Height2">60dp</dimen>
+    <dimen name="Tasks.Task.Popup.EditText.Comment.MarginTop">2dp</dimen>
+
+    <dimen name="Tasks.Task.Popup.Width">450dp</dimen>
+    <dimen name="Tasks.Task.Popup.RView.Height">500dp</dimen>
+
+    <dimen name="Tasks.Task.BasedBorderLineDp">16dp</dimen>
+
+    <dimen name="Tasks.Task.Settings.Width">600dp</dimen>
+
+    <dimen name="Tasks.Task.Popup.Time.Width">450dp</dimen>
+
+    <dimen name="Tasks.Project.Popup.EditText.Height2">60dp</dimen>
+
+    <dimen name="TasksTaskSpinnerItemHeight">35dp</dimen>
+    <dimen name="TasksProjectSpinnerItemHeight">35dp</dimen>
+    <dimen name="TasksProjectLineBasedBorderLineDp">16dp</dimen>
+
+    <dimen name="TasksPrioritySpinnerItemHeight">35dp</dimen>
+    <dimen name="Tasks.Sorting.Spinner.Item.Height">35dp</dimen>
+
+    <dimen name="Tasks.Project.RView.Item.ImageView.Width">30dp</dimen>
+    <dimen name="Tasks.Project.RView.Item.ImageView.Width2">45dp</dimen>
+
+    <dimen name="Money.LotAsset.RView.Item.Width">220dp</dimen>
+    <dimen name="Money.LotAsset.RView.Item.Shift">20dp</dimen>
+</resources>

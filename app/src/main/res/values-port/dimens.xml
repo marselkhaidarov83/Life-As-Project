@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="NonePadding">0dp</dimen>
+    <dimen name="HalfPadding">3dp</dimen>
+    <dimen name="BasePadding">5dp</dimen>
+    <dimen name="UnknownToolbarHeight">24dp</dimen>
+    <dimen name="UnknownPortraitHeight">80dp</dimen>
+    <dimen name="UnknownLandscapeHeight">65dp</dimen>
+    <dimen name="PopupTitleHeight">50dp</dimen>
+    <dimen name="PopupBottomHeight">75dp</dimen>
+    <dimen name="CustomIndent">5dp</dimen>
+
+    <dimen name="MoneyInc4CostConstraintLayoutNSV2.Height">400dp</dimen>
+    <dimen name="MoneyPopup.Credit.Width">400dp</dimen>
+    <dimen name="MoneyPopup.Credit.Pivot.Width">400dp</dimen>
+
+    <dimen name="MoneyDreamLineBasedBorderLineDp">25dp</dimen>
+
+    <dimen name="MoneyDreamPopupEditTextLayoutHeight">45dp</dimen>
+
+    <dimen name="MoneyTargetPopupRowHeight">30dp</dimen>
+    <dimen name="MoneyTargetLineBasedBorderLineDp">25dp</dimen>
+
+    <dimen name="MoneyAccounitingRViewIncomingHeight">85dp</dimen>
+    <dimen name="MoneyIncreaseLineBasedBorderLineDp">16dp</dimen>
+
+    <dimen name="MoneyCategoryLineBasedBorderLineDp">16dp</dimen>
+    <dimen name="CustomRViewItemWidth">66dp</dimen>
+
+    <dimen name="MoneyPopup.Increase.Width">350dp</dimen>
+</resources>

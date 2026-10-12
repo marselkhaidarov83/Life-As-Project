@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Popup.LinearLayout.Main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCaption"
+        style="@style/Popup.ConstraintLayout.Caption">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            style="@style/Popup.ImageView.Delete"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/Popup.TextView.Caption"
+            android:text="@string/JobWithSettings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/Popup.ImageView.Close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/Popup.NestedScrollView.Main">
+
+        <LinearLayout
+            style="@style/Popup.LinearLayout.TopHead">
+
+            <TextView
+                android:id="@+id/textViewLegend"
+                style="@style/Popup.TextView.Legend"
+                android:text="
+Форма настройки экрана план/факта представляет возможность настраивать формат вывода данных на экран.\n
+\n
+Форма план/факта может показывать для каждой категории процентную составляющую плановой/фактической суммы категории в общей сумме плана/факта.\n
+Для того, чтобы показывать процентную составляющую категории установите флажок 'Показывать процент суммы по категории в общей сумме'.\n
+Для того, чтобы скрыть процентную составляющую категории снимите флажок 'Показывать процент суммы по категории в общей сумме'.\n
+\n
+Дерево категорий на форме план/факта может отражать как все имеющиеся категории доходов/расходов, а может отражать только те, для которых имеются плановые или фактические значения доходов/расходов.\n
+Для того, чтобы показывать все категории доходов/расходов установите флажок 'Показывать незаполненные категории'.\n
+Для того, чтобы показывать только категории доходов/расходов, для которых имеются плановые или фактические значения, снимите флажок 'Показывать незаполненные категории'.\n
+\n
+На форме план/факта имеется возможность фильтровать перечень выводимых категорий по типу категории. Для этого выберите соответствующий тип из списка 'Тип категорий'.\n
+\n
+Фактические значения на форме план/факта вычисляются как сумма значений операций по учету денежных средств. Операции могут быть как планируемые (то есть еще не выполненные), так и фактические (то есть выполненные).\n
+В параметре настройки 'Операция плана фактическая?' мы можем выбрать, какие операции необходимо учитывать приложению при формировании фактической суммы для формы: только плановые, только фактические, все.\n
+\n
+Фактические значения на форме план/факта вычисляются как сумма значений операций по учету денежных средств. Расходные операции по учету денежных средств могут иметь тег.\n
+В параметре настройки 'Тег для операции факта' мы можем выбрать, операции с какими тегами необходимо учитывать приложению при формировании фактической суммы для формы. Если тего не выбран, то учитываться будут все операции.\n
+\n
+Если вы захотите повторно посмотреть легенду о форме настройки, нажмите [settings] в панели инструментов экрана.\n
+\n
+PS: вы всегда можете включить/отключить помощника в настройках программы - для этого выберите меню 'Настройки' через 3 точки в правом верхнем углу экрана.
+                "/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

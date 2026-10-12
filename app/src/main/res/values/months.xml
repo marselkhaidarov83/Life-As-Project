@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Date">Date</string>
+    <string name="Time">Time</string>
+    <string name="Day">Day</string>
+    <string name="Week">Week</string>
+    <string name="Month">Month</string>
+    <string name="Quarter">Quarter</string>
+    <string name="Year">Year</string>
+    <string name="AllTime">All time</string>
+
+    <string name="Monday">Monday</string>
+    <string name="Tuesday">Tuesday</string>
+    <string name="Wednesday">Wednesday</string>
+    <string name="Thursday">Thursday</string>
+    <string name="Friday">Friday</string>
+    <string name="Saturday">Saturday</string>
+    <string name="Sunday">Sunday</string>
+
+    <string name="DayBeforeYesterday">Day before yesterday</string>
+    <string name="Yesterday">Yesterday</string>
+    <string name="Today">Today</string>
+    <string name="Tomorrow">Tomorrow</string>
+    <string name="DayAfterTomorrow">Day after tomorrow</string>
+    <string name="PrevWeek">Last week</string>
+    <string name="ThisWeek">This week</string>
+    <string name="NextWeek">Next week</string>
+    <string name="PrevMonth">Last month</string>
+    <string name="ThisMonth">This month</string>
+    <string name="NextMonth">Next month</string>
+    <string name="PrevYear">Last year</string>
+    <string name="NextYear">This year</string>
+    <string name="ThisYear">Next year</string>
+    <string name="LongTimeAgo">A long time ago</string>
+    <string name="NearFuture">In the near future</string>
+
+    <string name="January">January</string>
+    <string name="February">February</string>
+    <string name="March">March</string>
+    <string name="April">April</string>
+    <string name="May">May</string>
+    <string name="June">June</string>
+    <string name="July">July</string>
+    <string name="August">August</string>
+    <string name="September">September</string>
+    <string name="October">October</string>
+    <string name="November">November</string>
+    <string name="December">December</string>
+
+    <string name="JanuaryR">January</string>
+    <string name="FebruaryR">February</string>
+    <string name="MarchR">March</string>
+    <string name="AprilR">April</string>
+    <string name="MayR">May</string>
+    <string name="JuneR">June</string>
+    <string name="JulyR">July</string>
+    <string name="AugustR">August</string>
+    <string name="SeptemberR">September</string>
+    <string name="OctoberR">October</string>
+    <string name="NovemberR">November</string>
+    <string name="DecemberR">December</string>
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_sheet_background"
+        android:padding="@dimen/BasePadding2">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icons8_delete_100_purple"
+            android:visibility="invisible"
+            android:contentDescription="@string/ButtonDeleteDream"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/JobStart"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icons8_close_window_100_purple"
+            android:contentDescription="@string/ButtonCloseWindow"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewLegend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:layout_marginBottom="@dimen/BasePadding"
+                android:textSize="@dimen/Popup.TextSize03"
+                android:text="
+Уважаемый пользователь, приветствую Вас в моем приложении по финансовой грамотности. Я рад, что всё больше людей задаются вопросом грамотного управления личными финансами.\n\n
+Замечу, что формат пользования программой - условно бесплатный\n\n
+Первые 2 недели вы можете пользоваться всеми возможностями программы без ограничений.
+По истечении 2 недель вы можете либо приобрести подписку на полную версию программы, либо пользоваться урезанной её формой.\n\n
+Для пользования урезанной формой программы необходимо вводить в программу ключи. Ключи для пользования программой вы можете найти в боте\n"
+                android:textAlignment="gravity" />
+
+            <TextView
+                android:id="@+id/textViewLegendLinkBot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:layout_marginBottom="@dimen/BasePadding"
+                android:textSize="@dimen/Popup.TextSize03"
+                android:text="@string/PrivacyLinkBot"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textViewLegend2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:layout_marginBottom="@dimen/BasePadding"
+                android:textSize="@dimen/Popup.TextSize03"
+                android:text="
+\nПеред началом использования программы предлагаем Вам ознакомиться с политикой конфиденцильности, доступной по ссылке\n"
+                android:textAlignment="gravity" />
+
+            <TextView
+                android:id="@+id/textViewLegendLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:layout_marginBottom="@dimen/BasePadding"
+                android:textSize="@dimen/Popup.TextSize03"
+                android:text="@string/PrivacyLink"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textViewLegend3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:layout_marginBottom="@dimen/BasePadding"
+                android:textSize="@dimen/Popup.TextSize03"
+                android:text="
+                \n
+Вы всегда можете ознакомиться с политикой конфиденциальности в кабинете программы. Перейти в кабинет вы можете через кнопку с 3 точками в правом верхнем углу приложения\n
+\n
+Приложение также присылает уведомления в ходе фоновой работы. Включить/отключить отправку уведомлений вы можете в настройках приложения. Перейти к настройкам приложения вы можете через кнопку с 3 точками в правом верхнем углу приложения
+"
+                android:textAlignment="gravity" />
+
+            <TextView
+                android:id="@+id/textViewLegend4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:layout_marginBottom="@dimen/BasePadding"
+                android:textSize="@dimen/Popup.TextSize03"
+                android:text="
+\n
+Приятного использования
+"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

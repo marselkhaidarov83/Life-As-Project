@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="Tasks.Popup.TextSize01">12sp</dimen>
+    <dimen name="Tasks.Popup.TextSize02">18sp</dimen>
+    <dimen name="Tasks.Popup.TextSize03">20sp</dimen>
+    <dimen name="Tasks.Popup.TextSize04">24sp</dimen>
+    <dimen name="Tasks.Popup.TextSize05">26sp</dimen>
+
+    <dimen name="Tasks.Popup.ImageView.Custom.Height">40dp</dimen>
+
+    <dimen name="Tasks.Popup.TextView.Height">40dp</dimen>
+    <dimen name="Tasks.Popup.LinearLayout.Date.Height">50dp</dimen>
+
+    <dimen name="Tasks.Popup.TextView.Date.Width">220dp</dimen>
+    <dimen name="Tasks.Popup.TextView.Date.Height">40dp</dimen>
+
+    <dimen name="Tasks.Popup.TextView.Time.Width">70dp</dimen>
+    <dimen name="Tasks.Popup.TextView.Time.Height">40dp</dimen>
+
+    <dimen name="Tasks.Popup.TextView.Column.Height">50dp</dimen>
+
+    <dimen name="Tasks.Popup.ImageView.PF.Width">24dp</dimen>
+    <dimen name="Tasks.Popup.ImageView.Priority">24dp</dimen>
+    <dimen name="Tasks.Popup.ImageView.ClearDate.Width">24dp</dimen>
+
+    <dimen name="Tasks.Task.Popup.EditText.Name.Height2">70dp</dimen>
+    <dimen name="Tasks.Task.Popup.EditText.Comment.MarginTop">5dp</dimen>
+
+    <dimen name="Tasks.Task.Popup.Width">550dp</dimen>
+    <dimen name="Tasks.Task.Popup.RView.Height">500dp</dimen>
+
+    <dimen name="Tasks.Task.BasedBorderLineDp">25dp</dimen>
+
+    <dimen name="Tasks.Task.Popup.Time.Width">550dp</dimen>
+
+    <dimen name="Tasks.Project.Popup.EditText.Height2">70dp</dimen>
+
+    <dimen name="TasksProjectLineBasedBorderLineDp">25dp</dimen>
+
+    <dimen name="Tasks.Project.RView.Item.ImageView.Width">35dp</dimen>
+    <dimen name="Tasks.Project.RView.Item.ImageView.Width2">50dp</dimen>
+
+</resources>

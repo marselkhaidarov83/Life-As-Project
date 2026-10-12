@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_sheet_background"
+        android:padding="@dimen/BasePadding2">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icons8_delete_100_purple"
+            android:visibility="invisible"
+            android:contentDescription="@string/ButtonDeleteIncoming"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/JobWithIncoming"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icons8_close_window_100_purple"
+            android:contentDescription="@string/ButtonCloseWindow"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewLegend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:layout_marginBottom="@dimen/BasePadding"
+                android:text="
+С одной стороны доходы начинают расти тогда, когда мы понимаем, из каких источников мы получаем и еще можем получать доход.\n
+С другой стороны доходы начинают расти тогда, когда мы понимаем, на что мы будем тратить заработанные деньги.\n
+\n
+Именно поэтому важно для каждого этапа роста дохода представлять, как мы будем зарабатывать деньги и на что мы будем их тратить.\n
+\n
+Введите для каждого этапа роста доходов плановую детализацию по категориям доходов и расходов.\n
+\n
+В первой строке текущего экрана в столбцах выводится перечень этапов роста дохода и значение роста.\n
+Во второй строке текущего экрана в столбцах выводится сумма введенной детализации этапов роста дохода.\n
+В строках текущего экрана выводится древовидная иерархия категорий доходов/расходов.\n
+\n
+Для разворачивания всех узлов дерева категорий используйте кнопку [expand_all].\n
+Для сворачивания всех узлов дерева категорий используйте кнопку [collapse_all].\n
+\n
+Чтобы увидеть рост/падение по категории, нажмите кнопку [show_percent_increase].\n
+Чтобы увидеть, какой процент в общей сумме составляет сумма по категории, нажмите кнопку [show_percent].\n
+\n
+Для изменения кол-ва выводимых этапов роста используйте слайдер, рсположенный в левом нижнем углу экрана.\n
+Для изменения перечня выводимых этапов роста используйте слайдер, рсположенный в правом нижнем углу экрана.\n
+\n
+Чтобы указать сумму дохода или расхода, нажмите на ячейку, соответствующую в столбце этапу роста доходов, а в строке категории доходов/расходов.\n
+Во всплывающем окне для изменения суммы поместите фокус в поле ввода сумму и укажите сумму.\n
+\n
+Чтобы удалить сумму дохода или расхода, есть всего 1 способ:\n
+Войдите в изменение суммы и нажмите кнопку [delete_purple].\n
+\n
+\n
+Фактическая детализация доходов и расходов по категориям формируется приложением автоматически на основании введенных операций и не подлежит ручному изменению.\n
+Чтобы перейти к фактической детализации доходов и расходов нажмите кнопку [goto_fact].\n
+Чтобы вернуться к плановой детализации доходов и расходов нажмите кнопку [goto_plan].\n
+\n
+Если вы захотите повторно посмотреть легенду, нажмите кнопку [legend] в правом верхнем углу экрана.\n
+\n
+Приятного пользования программой.\n
+PS: вы всегда можете дать обратную связь по программе или предложить ваш вариант доработки. Для этого перейдите в нашу группу Telegram по ссылке в личном кабинете. В личный кабинет вы можете попасть по кнопке [cabinet] в левом верхнум углу экрана.
+"
+                android:textAlignment="gravity" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

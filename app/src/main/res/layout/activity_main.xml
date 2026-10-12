@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MainLayout">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_topright2"
+        style="@style/Fragment.MainActivity.Toolbar.TopRight.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_topright"
+        style="@style/Fragment.MainActivity.Toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/Fragment.MainActivity.Toolbar.TextView" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_topleft"
+        style="@style/Fragment.MainActivity.Toolbar.TopLeft"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.MH83.LifeAsProject.custom.CustomRingTextView
+        android:id="@+id/textViewResource"
+        style="@style/Fragment.MainActivity.CustomRingTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/containerMain"
+        style="@style/Fragment.MainActivity.ContainerMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/navigationBottomViewMoney"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_topright" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationBottomViewMoney"
+        style="@style/Fragment.MainActivity.BottomMenu"
+        app:menu="@menu/navigation_money"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationBottomViewTasks"
+        style="@style/Fragment.MainActivity.BottomMenu.Invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/navigation_tasks" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationBottomViewAssistants"
+        style="@style/Fragment.MainActivity.BottomMenu.Invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/navigation_tasks" />
+
+    <ImageView
+        android:id="@+id/imageViewGotoSocial"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icons_telegram_app_100_"
+        app:layout_constraintBottom_toTopOf="@id/imageViewGotoCabinet"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageViewGotoCabinet"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icons_subscription_100"
+        app:layout_constraintBottom_toTopOf="@id/imageViewAddItem"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageViewAddItem"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icons_plus_data_100_"
+        app:layout_constraintBottom_toTopOf="@id/navigationBottomViewMoney"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageViewMascot"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/mascot"
+        app:layout_constraintBottom_toTopOf="@id/navigationBottomViewMoney"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="60dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

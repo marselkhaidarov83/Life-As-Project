@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Tag.RView.Item.MaterialCardView.Main">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutItem"
+        style="@style/RView.Item.MaterialCardView.LinearLayout.Main">
+
+        <LinearLayout
+            style="@style/RView.Item.MaterialCardView.LinearLayout.Main"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/textViewName"
+                style="@style/Tag.RView.Item.TextView.Name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/RView.Item.MaterialCardView.LinearLayout.Main"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textViewComment"
+                style="@style/Tag.RView.Item.TextView.Comment" />
+
+            <ImageView
+                android:id="@+id/imageViewArchive"
+                style="@style/Tag.RView.Item.ImageView.Archive" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

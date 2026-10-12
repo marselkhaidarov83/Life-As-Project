@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Popup.LinearLayout.Main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCaption"
+        style="@style/Popup.ConstraintLayout.Caption">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            style="@style/Popup.ImageView.Delete"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewCaption"
+            style="@style/Popup.TextView.Caption"
+            android:text="@string/PopupCategoryAdd"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/Popup.ImageView.Close"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewMascotToChange"
+            style="@style/Popup.ImageView.Mascot"
+            app:layout_constraintEnd_toStartOf="@id/imageViewClose"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/Popup.NestedScrollView.Main">
+
+        <LinearLayout
+            style="@style/Popup.NestedScrollView.LinearLayout.Main">
+
+            <TableLayout
+                style="@style/Popup.TableLayout">
+
+                <TableRow
+                    style="@style/Popup.TableRow">
+
+                    <TextView
+                        style="@style/Popup.TextView"
+                        android:text="@string/Name" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/editTextName"
+                            style="@style/Category.Popup.EditText.Text.Name" />
+
+                        <ImageView
+                            android:id="@+id/imageViewArchive"
+                            style="@style/Popup.ImageView.Archive" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/Popup.TableRow">
+
+                    <TextView
+                        style="@style/Popup.TextView"
+                        android:id="@+id/textViewParent"
+                        android:text="@string/Parent" />
+
+                    <Spinner
+                        android:id="@+id/spinnerParent"
+                        style="@style/Popup.Spinner.OneValue"
+                        tools:listitem="@layout/simple_spinner_1v_item" />
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/Popup.TableRow">
+
+                    <TextView
+                        style="@style/Popup.TextView"
+                        android:text="@string/Icon" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleViewIcon"
+                        style="@style/Popup.RecyclerView.Linear.Horizontal"
+                        android:layout_width="330dp"
+                        tools:listitem="@layout/item_money_category_icon" />
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/Popup.TableRow">
+
+                    <TextView
+                        style="@style/Popup.TextView"
+                        android:text="@string/Type" />
+
+                    <Spinner
+                        android:id="@+id/spinnerType"
+                        style="@style/Popup.Spinner.OneValue"
+                        tools:listitem="@layout/simple_spinner_1v_item" />
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/Popup.TableRow"
+                    android:paddingTop="@dimen/BasePadding"
+                    android:layout_marginBottom="0dp">
+
+                    <TextView
+                        style="@style/Popup.TextView.ForNum"
+                        android:text="@string/Sum" />
+
+                    <EditText
+                        android:id="@+id/editTextSum"
+                        style="@style/Categpry.Popup.EditText.Number.Amount" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/buttonSave"
+                style="@style/Popup.Button.Save" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainLayout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCaption"
+        style="@style/Popup.ConstraintLayout.Caption">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            style="@style/Popup.ImageView.Delete"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewCaption"
+            style="@style/Popup.TextView.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/PopupIncreaseSelect"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/Popup.ImageView.Close"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/Popup.NestedScrollView.Main">
+
+        <LinearLayout
+            style="@style/Popup.LinearLayout.Main">
+
+            <TableLayout
+                style="@style/Popup.TableLayout">
+
+                <TableRow
+                    style="@style/Popup.TableRow">
+
+                    <TextView
+                        android:id="@+id/textViewIncrease"
+                        style="@style/Popup.TextView"
+                        android:text="@string/Increase_" />
+
+                    <Spinner
+                        android:id="@+id/spinnerIncrease"
+                        style="@style/Popup.Spinner.OneValue"
+                        tools:listitem="@layout/simple_spinner_1v_item" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/buttonSelect"
+                style="@style/Popup.Button.OK" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

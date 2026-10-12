@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimens -->
+
+    <!-- Dimens -->
+
+   <style name="Board.RView.Grid" parent="RView.WithMargins.Grid">
+       <item name="spanCount">1</item>
+   </style>
+</resources>

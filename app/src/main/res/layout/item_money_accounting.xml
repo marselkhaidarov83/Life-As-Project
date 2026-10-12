@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Accounting.RView.Item.Layout.Main">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardViewItem"
+        style="@style/Accounting.RView.Item.MaterialCardView.Main">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_item"
+            style="@style/Accounting.RView.Item.MaterialCardView.Layout">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/Accounting.RView.Item.MaterialCardView.Layout.ConstraintLayout">
+
+                <TextView
+                    android:id="@+id/textViewName"
+                    style="@style/Accounting.RView.Item.TextView.Name"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageViewIcon"
+                style="@style/Accounting.RView.Item.ImageView.Icon" />
+
+            <TextView
+                android:id="@+id/textViewSum"
+                style="@style/Accounting.RView.Item.TextView.Sum" />
+
+            <TextView
+                android:id="@+id/textViewBudget"
+                style="@style/Accounting.RView.Item.TextView.Budget" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

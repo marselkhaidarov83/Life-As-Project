@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimens -->
+    <dimen name="Board.ImageView.Width">36dp</dimen>
+    <dimen name="Board.ImageView.Height">36dp</dimen>
+    <!-- Dimens -->
+
+    <style name="Board.TextView" parent="Custom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding2</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding2</item>
+        <item name="android:textSize">@dimen/Popup.TextSize09</item>
+    </style>
+
+</resources>

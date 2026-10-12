@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="Popup.MoneyDream.EditText.Text.DreamName.Height">40dp</dimen>
+
+    <style name="Popup.MoneyDream.ImageView.Archive" parent="Popup.ImageView.Archive">
+        <item name="android:layout_marginTop">@dimen/BasePadding</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Popup.MoneyDream.ImageView.SelectPhoto" parent="Popup.ImageView.SelectPhoto">
+        <item name="android:layout_marginTop">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Popup.MoneyDream.EditText.Text" parent="Popup.EditText.Text">
+    </style>
+
+    <style name="Popup.MoneyDream.EditText.Text.DreamName" parent="Popup.MoneyDream.EditText.Text">
+        <item name="android:hint">@string/HintDreamName</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/Popup.MoneyDream.EditText.Text.DreamName.Height</item>
+    </style>
+
+</resources>

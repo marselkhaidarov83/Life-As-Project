@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimens -->
+    <dimen name="Accounting.RView.Item.Layout.Main.Width">60dp</dimen>
+    <dimen name="Accounting.RView.Item.ImageView.Icon.Height">25dp</dimen>
+    <dimen name="Accounting.RView.Item.MaterialCardView.Layout.ConstraintLayout.Height">22dp</dimen>
+    <dimen name="Accounting.RView.Item.Layout.Main.Padding">@dimen/Padding2dp</dimen>
+    <dimen name="Accounting.RView.Item.TextView.MarginTop">@dimen/Padding2dp</dimen>
+    <dimen name="Accounting.RView.Item.TextView.MarginBottom">@dimen/Padding2dp</dimen>
+    <!-- Dimens -->
+
+    <style name="Accounting.TextView.Sum.Layout" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scrollbars">horizontal</item>
+    </style>
+
+    <style name="Accounting.TextView.Sum.Layout2" parent="Accounting.TextView.Sum.Layout">
+        <item name="android:layout_marginTop">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Accounting.TextView.Sum.Caption" parent="Custom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding2</item>
+        <item name="android:textSize">@dimen/Popup.TextSize03</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Accounting.TextView.Sum.Value" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding2</item>
+        <item name="android:textSize">@dimen/Popup.TextSize03</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">textEnd</item>
+    </style>
+
+    <style name="Accounting.RecyclerView" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layoutManager">androidx.recyclerview.widget.GridLayoutManager</item>
+        <item name="spanCount">1</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Accounting.RecyclerView.10" parent="Accounting.RecyclerView">
+        <item name="spanCount">10</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Accounting.RView.Item.Layout.Main" parent="RView.Item">
+        <item name="android:layout_width">@dimen/Accounting.RView.Item.Layout.Main.Width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/Accounting.RView.Item.Layout.Main.Padding</item>
+    </style>
+
+    <style name="Accounting.RView.Item.MaterialCardView.Main" parent="RView.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Accounting.RView.Item.MaterialCardView.Layout" parent="RView.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Accounting.RView.Item.MaterialCardView.Layout.ConstraintLayout" parent="RView.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Accounting.RView.Item.MaterialCardView.Layout.ConstraintLayout.Height</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="Accounting.RView.Item.ImageView.Icon" parent="RView.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Accounting.RView.Item.ImageView.Icon.Height</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+        <item name="android:src">@drawable/icons_cirlce_50</item>
+    </style>
+
+    <style name="Accounting.RView.Item.TextView" parent="RView.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/Accounting.RView.Item.TextView.MarginBottom</item>
+        <item name="maxLines">1</item>
+        <item name="android:text">@string/CustomString</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/Popup.TextSize00</item>
+    </style>
+
+    <style name="Accounting.RView.Item.TextView.Name" parent="Accounting.RView.Item.TextView">
+        <item name="android:layout_marginTop">@dimen/Accounting.RView.Item.TextView.MarginTop</item>
+        <item name="maxLines">2</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_gravity">center_vertical|center</item>
+    </style>
+
+    <style name="Accounting.RView.Item.TextView.Sum" parent="Accounting.RView.Item.TextView">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Accounting.RView.Item.TextView.Budget" parent="Accounting.RView.Item.TextView">
+    </style>
+
+</resources>

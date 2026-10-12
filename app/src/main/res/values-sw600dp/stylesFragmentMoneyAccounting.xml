@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimens -->
+    <dimen name="Accounting.RView.Item.Layout.Main.Width">66dp</dimen>
+    <dimen name="Accounting.RView.Item.ImageView.Icon.Height">40dp</dimen>
+    <dimen name="Accounting.RView.Item.Layout.Main.Padding">@dimen/HalfPadding</dimen>
+    <dimen name="Accounting.RView.Item.MaterialCardView.Layout.ConstraintLayout.Height">26dp</dimen>
+    <dimen name="Accounting.RView.Item.TextView.MarginTop">@dimen/HalfPadding</dimen>
+    <dimen name="Accounting.RView.Item.TextView.MarginBottom">@dimen/HalfPadding</dimen>
+    <!-- Dimens -->
+
+</resources>

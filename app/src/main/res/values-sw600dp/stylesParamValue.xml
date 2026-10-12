@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ParamValue" parent="Custom"></style>
+
+    <style name="ParamValuePopup" parent="ParamValue">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ParamValuePopup.TextView" parent="ParamValuePopup"></style>
+    <style name="ParamValuePopup.EditText" parent="ParamValuePopup"></style>
+</resources>

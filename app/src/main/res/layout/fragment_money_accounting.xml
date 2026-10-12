@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainLayout">
+
+    <RelativeLayout
+        style="@style/Date.Layout">
+
+        <ImageView
+            android:id="@+id/imageViewDateBack"
+            style="@style/Date.ImageView.Back"
+            android:layout_toStartOf="@id/spinnerDate" />
+
+        <Spinner
+            android:id="@+id/spinnerDate"
+            style="@style/Date.Spinner"
+            tools:listitem="@layout/simple_spinner_period_item"/>
+
+        <ImageView
+            android:id="@+id/imageViewDateForward"
+            style="@style/Date.ImageView.Forward"
+            android:layout_toEndOf="@id/spinnerDate" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/Accounting.TextView.Sum.Layout">
+
+        <TextView
+            android:id="@+id/textViewIncomingSumCaption"
+            style="@style/Accounting.TextView.Sum.Caption"
+            android:text="@string/money_incoming" />
+
+        <TextView
+            android:id="@+id/textViewIncomingSum"
+            style="@style/Accounting.TextView.Sum.Value" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewIncoming"
+        style="@style/Accounting.RecyclerView"
+        tools:listitem="@layout/item_money_accounting" />
+
+    <LinearLayout
+        style="@style/Accounting.TextView.Sum.Layout2">
+
+        <TextView
+            style="@style/Accounting.TextView.Sum.Caption"
+            android:text="@string/money_category_wallet" />
+
+        <TextView
+            android:id="@+id/textViewWalletSum"
+            style="@style/Accounting.TextView.Sum.Value" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewWallet"
+        style="@style/Accounting.RecyclerView"
+        tools:listitem="@layout/item_money_accounting" />
+
+    <LinearLayout
+        style="@style/Accounting.TextView.Sum.Layout2">
+
+        <TextView
+            style="@style/Accounting.TextView.Sum.Caption"
+            android:text="@string/money_costs" />
+
+        <TextView
+            android:id="@+id/textViewCostSum"
+            style="@style/Accounting.TextView.Sum.Value" />
+
+    </LinearLayout>
+
+    <com.MH83.LifeAsProject.custom.CustomRecycleView
+        android:id="@+id/recycleViewCost"
+        style="@style/Accounting.RecyclerView.10"
+        tools:listitem="@layout/item_money_accounting" />
+
+</LinearLayout>

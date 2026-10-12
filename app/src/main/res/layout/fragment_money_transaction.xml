@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MainLayout">
+
+    <LinearLayout
+        style="@style/Date.Layout">
+
+        <TextView
+            android:id="@+id/textViewName"
+            style="@style/Fragment.TextView.Date.Name" />
+
+        <ImageView
+            android:id="@+id/imageViewDateBack"
+            style="@style/Date.ImageView.Back" />
+
+        <Spinner
+            android:id="@+id/spinnerDate"
+            style="@style/Date.Spinner"
+            tools:listitem="@layout/simple_spinner_period_item" />
+
+        <ImageView
+            android:id="@+id/imageViewDateForward"
+            style="@style/Date.ImageView.Forward" />
+
+        <TextView
+            android:id="@+id/textViewSum"
+            style="@style/Fragment.TextView.Date.Sum" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewPNL"
+        style="@style/RView.Linear"
+        tools:listitem="@layout/item_money_transaction" />
+
+</LinearLayout>

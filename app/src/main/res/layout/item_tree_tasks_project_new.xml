@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textViewName"
+        style="@style/Tasks.Project.RViewItem.TextView.Name"
+        android:layout_marginStart="@dimen/BasePadding"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardViewTaskCountNone"
+        android:layout_width="@dimen/Tasks.Project.RView.Item.ImageView.Width2"
+        android:layout_height="@dimen/Tasks.Project.RView.Item.ImageView.Width"
+        android:layout_marginEnd="@dimen/HalfPadding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewTaskCountNone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/white">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textViewTaskCountNone"
+                style="@style/Tasks.Project.RViewItem.TextView.Count"
+                android:text="88" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardViewTaskCountLow"
+        android:layout_width="@dimen/Tasks.Project.RView.Item.ImageView.Width"
+        android:layout_height="@dimen/Tasks.Project.RView.Item.ImageView.Width"
+        android:layout_marginEnd="@dimen/HalfPadding"
+        app:layout_constraintEnd_toStartOf="@id/materialCardViewTaskCountNone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewTaskCountLow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/lightBlue">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textViewTaskCountLow"
+                style="@style/Tasks.Project.RViewItem.TextView.Count"
+                android:text="88" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardViewTaskCountMiddle"
+        android:layout_width="@dimen/Tasks.Project.RView.Item.ImageView.Width"
+        android:layout_height="@dimen/Tasks.Project.RView.Item.ImageView.Width"
+        android:layout_marginEnd="@dimen/HalfPadding"
+        app:layout_constraintEnd_toStartOf="@id/materialCardViewTaskCountLow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewTaskCountMiddle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/lightOrange">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textViewTaskCountMiddle"
+                style="@style/Tasks.Project.RViewItem.TextView.Count"
+                android:text="88" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardViewTaskCountHigh"
+        android:layout_width="@dimen/Tasks.Project.RView.Item.ImageView.Width"
+        android:layout_height="@dimen/Tasks.Project.RView.Item.ImageView.Width"
+        android:layout_marginEnd="@dimen/HalfPadding"
+        app:layout_constraintEnd_toStartOf="@id/materialCardViewTaskCountMiddle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewTaskCountHigh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/lightlightRed">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textViewTaskCountHigh"
+                style="@style/Tasks.Project.RViewItem.TextView.Count"
+                android:text="88" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardViewTaskCountAll"
+        android:layout_width="@dimen/Tasks.Project.RView.Item.ImageView.Width2"
+        android:layout_height="@dimen/Tasks.Project.RView.Item.ImageView.Width"
+        android:layout_marginEnd="@dimen/HalfPadding"
+        app:layout_constraintEnd_toStartOf="@id/materialCardViewTaskCountHigh"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewTaskCountAll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/lightLightGrey">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textViewTaskCountAll"
+                style="@style/Tasks.Project.RViewItem.TextView.Count"
+                android:text="88" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardViewProjectCount"
+        android:layout_width="@dimen/Tasks.Project.RView.Item.ImageView.Width"
+        android:layout_height="@dimen/Tasks.Project.RView.Item.ImageView.Width"
+        android:layout_marginEnd="@dimen/BasePadding2"
+        app:layout_constraintEnd_toStartOf="@id/materialCardViewTaskCountAll"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewProjectCount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/lightGreen">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textViewProjectCount"
+                style="@style/Tasks.Project.RViewItem.TextView.Count"
+                android:text="88" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

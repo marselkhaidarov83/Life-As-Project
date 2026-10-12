@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCaption"
+        style="@style/Popup.ConstraintLayout.Caption">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            style="@style/Popup.ImageView.Delete"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewCaption"
+            style="@style/Popup.TextView.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/PopupDreamAdd"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/Popup.ImageView.Close"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/BasePadding">
+
+<!--            <com.google.android.material.tabs.TabLayout-->
+<!--                android:id="@+id/tabLayout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:tabMode="fixed"-->
+<!--                app:tabGravity="fill"/>-->
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_weight="1"/>
+
+            <me.relex.circleindicator.CircleIndicator3
+                android:id="@+id/circleIndicator"
+                android:layout_width="match_parent"
+                app:ci_drawable="@drawable/grey_radius"
+                app:ci_drawable_unselected="@drawable/grey_radius"
+                android:layout_height="48dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleViewSubscription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_subscription" />
+
+            <Button
+                android:id="@+id/buttonSave"
+                style="@style/Popup.Button.Save"
+                android:layout_width="match_parent"
+                android:text="@string/Subscript"
+                android:layout_toEndOf="@id/recycleViewSubscription" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimensions-->
+    <dimen name="Category.Popup.RVItem.Layout.Main.Width">64dp</dimen>
+    <dimen name="Category.Popup.RVItem.MaterialCard.ConstraintLayout.Height">26dp</dimen>
+    <dimen name="Category.Popup.RVItem.TextView.TextSize">8sp</dimen>
+    <dimen name="Category.Popup.RVItem.ImageView.Icon.Height">40dp</dimen>
+    <dimen name="Category.Popup.RecyclerView.Height">300dp</dimen>
+    <!-- Dimensions-->
+
+</resources>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCaption"
+        style="@style/Popup.ConstraintLayout.Caption">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            style="@style/Popup.ImageView.Delete"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewCaption"
+            style="@style/Popup.TextView.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/PopupDreamAdd"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/Popup.ImageView.Close"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/BasePadding">
+
+                <TableRow
+                    android:id="@+id/tableIncomingRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingTop="@dimen/BasePadding"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        style="@style/MoneyIncomingPopup.TextView"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|end"
+                        android:labelFor="@id/textViewCategory"
+                        android:text="@string/Category" />
+
+                    <TextView
+                        android:id="@+id/textViewCategory"
+                        style="@style/MoneyIncomingPopup.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:singleLine="true"
+                        android:text="@string/Category" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableIncomingRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingTop="@dimen/BasePadding"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewType"
+                        style="@style/MoneyIncomingPopup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|end"
+                        android:labelFor="@id/editTextPercent"
+                        android:paddingTop="@dimen/HalfPadding"
+                        android:text="@string/Type" />
+
+                    <Spinner
+                        android:id="@+id/spinnerType"
+                        style="@style/MoneyTargetPopup.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingTop="@dimen/HalfPadding"
+                        android:layout_marginStart="@dimen/BasePadding"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableIncomingRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingTop="@dimen/BasePadding"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewPercent"
+                        style="@style/MoneyIncomingPopup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|end"
+                        android:labelFor="@id/editTextPercent"
+                        android:paddingTop="@dimen/HalfPadding"
+                        android:text="@string/Percent" />
+
+                    <EditText
+                        android:id="@+id/editTextPercent"
+                        style="@style/MoneyIncomingPopup.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/Padding2dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/lightLightGrey"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/CustomNum" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableIncomingRow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingTop="@dimen/BasePadding"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewAccumulation"
+                        style="@style/MoneyIncomingPopup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|end"
+                        android:labelFor="@id/editTextPercent"
+                        android:paddingTop="@dimen/HalfPadding"
+                        android:text="@string/Accumulation" />
+
+                    <Spinner
+                        android:id="@+id/spinnerAccumulation"
+                        style="@style/MoneyTargetPopup.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingTop="@dimen/HalfPadding"
+                        android:layout_marginStart="@dimen/BasePadding"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableIncomingRow5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingTop="@dimen/BasePadding"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewCredit"
+                        style="@style/MoneyIncomingPopup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|end"
+                        android:labelFor="@id/editTextPercent"
+                        android:paddingTop="@dimen/HalfPadding"
+                        android:text="@string/FromCredit" />
+
+                    <Spinner
+                        android:id="@+id/spinnerCredit"
+                        style="@style/MoneyTargetPopup.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingTop="@dimen/HalfPadding"
+                        android:layout_marginStart="@dimen/BasePadding"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableIncomingRow6"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingTop="@dimen/BasePadding"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        style="@style/MoneyIncomingPopup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|end"
+                        android:labelFor="@id/editTextSum"
+                        android:paddingTop="@dimen/HalfPadding"
+                        android:text="@string/Sum" />
+
+                    <EditText
+                        android:id="@+id/editTextSum"
+                        style="@style/MoneyIncomingPopup.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/Padding2dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/lightLightGrey"
+                        android:inputType="number"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/CustomNum" />
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/buttonSave"
+                style="@style/Popup.Button.Save"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding">
+
+            </Button>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

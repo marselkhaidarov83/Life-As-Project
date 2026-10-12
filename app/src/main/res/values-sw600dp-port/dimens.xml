@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="MoneyDreamLineBasedBorderLineDp">32dp</dimen>
+    <dimen name="MoneyPopup.Credit.Width">550dp</dimen>
+    <dimen name="MoneyPopup.Credit.Pivot.Width">550dp</dimen>
+
+    <dimen name="MoneyTargetLineBasedBorderLineDp">32dp</dimen>
+
+    <dimen name="MoneyIncreaseLineBasedBorderLineDp">25dp</dimen>
+
+    <dimen name="MoneyCategoryLineBasedBorderLineDp">25dp</dimen>
+
+    <dimen name="MoneyPopup.Increase.Width">410dp</dimen>
+</resources>

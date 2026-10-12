@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimensions-->
+    <dimen name="Accounting.Popup.ImageView.IsPlan.Width">40dp</dimen>
+    <dimen name="Accounting.Popup.ImageView.IsPlan.Height">40dp</dimen>
+    <dimen name="Accounting.Popup.EditText.UnderSum.MarginEnd">30dp</dimen>
+    <dimen name="Accounting.Popup.EditText.Percent.Height">45dp</dimen>
+    <dimen name="Accounting.Popup.EditText.TotalSum.Height">45dp</dimen>
+    <dimen name="Accounting.Popup.ImageView.Category.Height">30dp</dimen>
+    <dimen name="Accounting.Popup.ImageView.Arrow.Height">35dp</dimen>
+    <dimen name="Accounting.Popup.ImageView.Arrow.MarginTop">33dp</dimen>
+    <dimen name="Accounting.Popup.TextView.Date.Width">200dp</dimen>
+    <dimen name="Accounting.Popup.ImageView.Date.Width">40dp</dimen>
+    <dimen name="Accounting.Popup.ImageView.Date.Height">40dp</dimen>
+    <dimen name="Accounting.Popup.RecyclerView.Height">65dp</dimen>
+    <dimen name="Accounting.Popup.RelativeLayout.Date.Height">35dp</dimen>
+    <dimen name="Accounting.Popup.EditText.Sum.Height">45dp</dimen>
+    <!-- Dimensions-->
+
+    <style name="Accounting.Popup.TableLayout" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Accounting.Popup.TableLayout.TableRow" parent="Popup">
+<!--        <item name="android:layout_marginTop">@dimen/BasePadding</item>-->
+    </style>
+
+    <style name="Accounting.Popup.TableLayout.TableRow.LinearLayout" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Accounting.Popup.TableLayout.TableRow.LinearLayoutV" parent="Accounting.Popup.TableLayout.TableRow.LinearLayout">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Accounting.Popup.TableLayout.TableRow.LinearLayout50V" parent="Popup">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">50</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Accounting.Popup.EditText" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:text">@string/CustomNum</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/Popup.TextSize20</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Accounting.Popup.EditText.Sum" parent="Accounting.Popup.EditText">
+        <item name="android:layout_height">@dimen/Accounting.Popup.EditText.Sum.Height</item>
+        <item name="android:hint">@string/HintAccountingSum</item>
+    </style>
+
+    <style name="Accounting.Popup.EditText.Percent" parent="Accounting.Popup.EditText">
+        <item name="android:layout_height">@dimen/Accounting.Popup.EditText.Percent.Height</item>
+        <item name="android:enabled">false</item>
+        <item name="android:hint">@string/Percent</item>
+    </style>
+
+    <style name="Accounting.Popup.EditText.TotalSum" parent="Accounting.Popup.EditText">
+        <item name="android:layout_height">@dimen/Accounting.Popup.EditText.TotalSum.Height</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+    <style name="Accounting.Popup.ImageView.IsPlan" parent="Popup">
+        <item name="android:layout_width">@dimen/Accounting.Popup.ImageView.IsPlan.Width</item>
+        <item name="android:layout_height">@dimen/Accounting.Popup.ImageView.IsPlan.Height</item>
+        <item name="android:paddingStart">@dimen/BasePadding</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:src">@drawable/icons_is_fact_100</item>
+    </style>
+
+    <style name="Accounting.Popup.EditText.UnderValue" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:text">@string/Sum</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/Popup.TextSize012</item>
+    </style>
+
+    <style name="Accounting.Popup.EditText.UnderSum" parent="Accounting.Popup.EditText.UnderValue">
+        <item name="android:layout_marginEnd">@dimen/Accounting.Popup.EditText.UnderSum.MarginEnd</item>
+    </style>
+
+    <style name="Accounting.Popup.EditText.UnderPercent" parent="Accounting.Popup.EditText.UnderValue">
+        <item name="android:text">@string/Percent</item>
+    </style>
+
+    <style name="Accounting.Popup.EditText.UnderTotalSum" parent="Accounting.Popup.EditText.UnderValue">
+        <item name="android:text">@string/TotalSum</item>
+    </style>
+
+    <style name="Accounting.Popup.EditText.UnderDate" parent="Accounting.Popup.EditText.UnderValue">
+        <item name="android:text">@string/Date</item>
+    </style>
+
+    <style name="Accounting.Popup.TextView.Category" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/CustomString</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/Popup.TextSize01</item>
+    </style>
+
+    <style name="Accounting.Popup.TextView.Category2" parent="Accounting.Popup.TextView.Category">
+        <item name="android:layout_marginBottom">@dimen/HalfPadding</item>
+        <item name="android:textSize">@dimen/Popup.TextSize012</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Accounting.Popup.TextView.Category3" parent="Accounting.Popup.TextView.Category">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Accounting.Popup.ImageView.Arrow" parent="Popup">
+        <item name="android:layout_height">@dimen/Accounting.Popup.ImageView.Arrow.Height</item>
+        <item name="android:layout_marginTop">@dimen/Accounting.Popup.ImageView.Arrow.MarginTop</item>
+        <item name="android:src">@drawable/icons_double_right_black_48</item>
+    </style>
+
+    <style name="Accounting.Popup.ImageView.Category" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Accounting.Popup.ImageView.Category.Height</item>
+        <item name="android:src">@drawable/icons_cirlce_50</item>
+    </style>
+
+    <style name="Accounting.Popup.TextView.Date" parent="Popup">
+        <item name="android:layout_width">@dimen/Accounting.Popup.TextView.Date.Width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/CustomDate</item>
+        <item name="android:textSize">@dimen/Popup.TextSize10</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Accounting.Popup.ImageView.Date" parent="Popup">
+        <item name="android:layout_width">@dimen/Accounting.Popup.ImageView.Date.Width</item>
+        <item name="android:layout_height">@dimen/Accounting.Popup.ImageView.Date.Height</item>
+    </style>
+
+    <style name="Accounting.Popup.ImageView.Date.Minus" parent="Accounting.Popup.ImageView.Date">
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+        <item name="android:src">@drawable/icons_double_left_48</item>
+    </style>
+
+    <style name="Accounting.Popup.ImageView.Date.Plus" parent="Accounting.Popup.ImageView.Date">
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+        <item name="android:src">@drawable/icons_double_right_48</item>
+    </style>
+
+    <style name="Accounting.Popup.RecyclerView" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Accounting.Popup.RecyclerView.Height</item>
+        <item name="android:paddingTop">@dimen/HalfPadding</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="layoutManager">androidx.recyclerview.widget.LinearLayoutManager</item>
+    </style>
+
+    <style name="Accounting.Popup.RelativeLayout.Date" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Accounting.Popup.RelativeLayout.Date.Height</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+</resources>

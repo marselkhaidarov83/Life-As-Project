@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="BasePadding">5dp</dimen>
+    <dimen name="UnknownToolbarHeight">60dp</dimen>
+    <dimen name="UnknownPortraitHeight">115dp</dimen>
+    <dimen name="UnknownLandscapeHeight">104dp</dimen>
+    <dimen name="PopupTitleHeight">50dp</dimen>
+    <dimen name="PopupBottomHeight">75dp</dimen>
+    <dimen name="CustomIndent">20dp</dimen>
+
+    <dimen name="PlanValuePopupWidth">700dp</dimen>
+    <dimen name="MoneyPopup.Credit.Width">700dp</dimen>
+    <dimen name="MoneyPopup.Credit.Pivot.Width">700dp</dimen>
+
+    <dimen name="MoneyDreamLineBasedBorderLineDp">25dp</dimen>
+
+    <dimen name="MoneyTarget.Item.ImageViewStatus.Width">35dp</dimen>
+
+    <dimen name="MoneyDreamPopupEditTextLayoutHeight">45dp</dimen>
+
+    <dimen name="MoneyTargetPopupRowHeight">40dp</dimen>
+    <dimen name="MoneyTargetLineBasedBorderLineDp">25dp</dimen>
+    <dimen name="MoneyTargetSpinnerItemHeight">35dp</dimen>
+    <dimen name="MoneyTargetSpinnerParentItemHeight">35dp</dimen>
+
+    <dimen name="MoneyIncreaseLineBasedBorderLineDp">25dp</dimen>
+
+    <dimen name="MoneyPopup.Increase.Width">640dp</dimen>
+
+
+    <dimen name="MoneyCategorySpinnerItemHeight">40dp</dimen>
+    <dimen name="MoneyCategoryLineBasedBorderLineDp">25dp</dimen>
+
+    <dimen name="MoneyIncomingTopTextView1RowHeight">30dp</dimen>
+    <dimen name="MoneyIncomingTopTextView2RowHeight">52dp</dimen>
+
+    <dimen name="MoneyAccounitingRViewIncomingHeight">85dp</dimen>
+    <dimen name="MoneyAccountingSpinnerItemHeight">45dp</dimen>
+
+    <dimen name="MoneyPNLLineBasedBorderLineDp">25dp</dimen>
+
+    <dimen name="MoneyTypeDataSpinnerItemHeight">35dp</dimen>
+    <dimen name="MoneyPeriodDataSpinnerItemHeight">35dp</dimen>
+
+    <dimen name="treeview_default_indentation_width">40dp</dimen>
+    <dimen name="treeview_money_incoming_row_height">40dp</dimen>
+    <dimen name="CustomRViewItemWidth">66dp</dimen>
+
+    <dimen name="EnumConfirmedSpinnerItemHeight">35dp</dimen>
+
+    <dimen name="MoneyBoardPicWidth">36dp</dimen>
+
+</resources>

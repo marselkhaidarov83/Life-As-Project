@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Popup.Settings.LinearLayout.TopHead">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/Popup.Settings.ConstraintLayout.Head">
+
+        <TextView
+            android:id="@+id/textViewCaption"
+            style="@style/Popup.Settings.TextView.Caption"
+            android:text="@string/SettingsTasksTask"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/Popup.Settings.ImageView.Close"
+            android:contentDescription="@string/ButtonCloseWindow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/Popup.Settings.NestedScrollView.Main">
+
+        <LinearLayout
+            style="@style/Popup.Settings.LinearLayout.Main">
+
+            <LinearLayout
+                style="@style/Popup.Settings.LinearLayout.ForSpinner">
+
+                <TextView
+                    style="@style/Popup.Settings.TextView.ForSpinner"
+                    android:text="@string/Tasks.Task.Settings.ShowData" />
+
+                <Spinner
+                    android:id="@+id/spinnerConfirmedType"
+                    style="@style/Popup.Settings.Spinner"
+                    tools:listitem="@layout/simple_spinner_sett_1v_item"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Popup.Settings.LinearLayout.ForSpinner">
+
+                <TextView
+                    style="@style/Popup.Settings.TextView.ForSpinner"
+                    android:text="@string/Tasks.Task.Settings.GroupOfProject" />
+
+                <Spinner
+                    android:id="@+id/spinnerGroupOfProjectProject"
+                    style="@style/Popup.Settings.Spinner"
+                    tools:listitem="@layout/simple_spinner_sett_1v_item"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Popup.Settings.LinearLayout.ForSpinner">
+
+                <TextView
+                    style="@style/Popup.Settings.TextView.ForSpinner"
+                    android:text="@string/Tasks.Task.Settings.Project" />
+
+                <Spinner
+                    android:id="@+id/spinnerProject"
+                    style="@style/Popup.Settings.Spinner"
+                    tools:listitem="@layout/simple_spinner_sett_1v_item"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Popup.Settings.LinearLayout.ForSpinner">
+
+                <TextView
+                    style="@style/Popup.Settings.TextView.ForSpinner"
+                    android:text="@string/Tasks.Task.Settings.Priority" />
+
+                <Spinner
+                    android:id="@+id/spinnerPriority"
+                    style="@style/Popup.Settings.Spinner"
+                    tools:listitem="@layout/simple_spinner_sett_1v_item"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Popup.Settings.LinearLayout.ForSpinner">
+
+                <TextView
+                    style="@style/Popup.Settings.TextView.ForSpinner"
+                    android:text="@string/Tasks.Task.Settings.Sorting"/>
+
+                <Spinner
+                    android:id="@+id/spinnerSorting"
+                    style="@style/Popup.Settings.Spinner"
+                    tools:listitem="@layout/simple_spinner_sett_1v_item"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonSave"
+                style="@style/Popup.Settings.Button.OK" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

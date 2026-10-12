@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/BasePadding"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            style="@style/MainSettings.TextView.Header"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="Основные настройки" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="@dimen/BasePadding"
+                        android:layout_weight="1"
+                        android:text="База данных" />
+
+                    <Spinner
+                        android:id="@+id/spinnerDatabase"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        tools:listitem="@layout/simple_spinner_typedata_item">
+
+                    </Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/buttonFreeLearnDatabase"
+                        style="@style/Popup.Button.Save"
+                        android:text="Пересоздать демонстрационную базу данных"
+                        android:layout_marginStart="@dimen/BasePadding"
+                        android:layout_marginEnd="@dimen/BasePadding"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:layout_width="match_parent">
+
+                    </Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            style="@style/MainSettings.TextView.Header"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="Помощник" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding">
+
+                <TableRow
+                    android:id="@+id/tableRowMascot"
+                    android:layout_marginTop="@dimen/BasePadding"
+                    android:layout_marginBottom="@dimen/BasePadding">
+
+                    <CheckBox
+                        android:id="@+id/checkboxMascotEnabled"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        style="@style/MainSettings.TextView.Left"
+                        android:text="Включить помощника"
+                        android:button="@null"
+                        android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            style="@style/MainSettings.TextView.Header"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="Продуктивность" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding">
+
+                <TableRow
+                    android:id="@+id/tableRowNotifications"
+                    android:layout_marginTop="@dimen/BasePadding"
+                    android:layout_marginBottom="@dimen/BasePadding">
+
+                    <ImageView
+                        style="@style/MainSettings.ImageView.Left"
+                        android:src="@drawable/icons_priority_middle" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingStart="@dimen/BasePadding2"
+                        tools:ignore="RtlSymmetry">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            style="@style/MainSettings.TextView.Left"
+                            android:text="Уведомления"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageViewFurther"
+                            style="@style/MainSettings.ImageView.Right"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            style="@style/MainSettings.TextView.Header"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="@string/Credits" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding">
+
+                <TableRow
+                    android:id="@+id/tableRowCreditsSettings"
+                    android:layout_marginTop="@dimen/BasePadding"
+                    android:layout_marginBottom="@dimen/BasePadding">
+
+                    <ImageView
+                        style="@style/MainSettings.ImageView.Left"
+                        android:src="@drawable/icons_priority_middle" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingStart="@dimen/BasePadding2"
+                        tools:ignore="RtlSymmetry">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            style="@style/MainSettings.TextView.Left"
+                            android:text="Настройки"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageViewCreditsSettings"
+                            style="@style/MainSettings.ImageView.Right"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutNotifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutToMainForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageViewToMainForm"
+                style="@style/MainSettings.ImageView.Left"
+                android:src="@drawable/icons_left_small_purple"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                style="@style/MainSettings.TextView.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Главный экран"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toEndOf="@+id/imageViewToMainForm"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/BasePadding">
+
+                <TableRow>
+
+                    <CheckBox
+                        android:id="@+id/checkboxNotifEnabled"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        style="@style/MainSettings.TextView.Left"
+                        android:text="Включить уведомления"
+                        android:button="@null"
+                        android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        style="@style/MainSettings.TextView.Left"
+                        android:text="Время начала уведомления"/>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayoutDateNotifStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:id="@+id/textViewTimeNotifStart"
+                            style="@style/MainSettings.TextView.Time"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center_vertical" />
+
+                        <ImageView
+                            android:id="@+id/imageViewTimeMinusNotifStart"
+                            style="@style/MainSettings.ImageView.Time.Minus"
+                            android:layout_toStartOf="@id/textViewTimeNotifStart" />
+
+                        <ImageView
+                            android:id="@+id/imageViewTimePlusNotifStart"
+                            style="@style/MainSettings.ImageView.Time.Plus"
+                            android:layout_toEndOf="@id/textViewTimeNotifStart" />
+
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        style="@style/MainSettings.TextView.Left"
+                        android:text="Время окончания уведомления"/>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayoutDateNotifEnd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:id="@+id/textViewTimeNotifEnd"
+                            style="@style/MainSettings.TextView.Time"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center_vertical" />
+
+                        <ImageView
+                            android:id="@+id/imageViewTimeMinusNotifEnd"
+                            style="@style/MainSettings.ImageView.Time.Minus"
+                            android:layout_toStartOf="@id/textViewTimeNotifEnd" />
+
+                        <ImageView
+                            android:id="@+id/imageViewTimePlusNotifEnd"
+                            style="@style/MainSettings.ImageView.Time.Plus"
+                            android:layout_toEndOf="@id/textViewTimeNotifEnd" />
+
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/BasePadding2">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:layout_marginBottom="@dimen/BasePadding">
+
+                <TableRow
+                    android:id="@+id/tableRowNotificationsProject"
+                    android:layout_marginTop="@dimen/BasePadding">
+
+                    <ImageView
+                        style="@style/MainSettings.ImageView.Left"
+                        android:src="@drawable/icons_priority_middle" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingStart="@dimen/BasePadding2"
+                        tools:ignore="RtlSymmetry">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            style="@style/MainSettings.TextView.Left"
+                            android:text="Уведомления по проектам"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageViewFurtherToNotifProject"
+                            style="@style/MainSettings.ImageView.Right"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowNotificationsMoney"
+                    android:layout_marginTop="@dimen/BasePadding">
+
+                    <ImageView
+                        style="@style/MainSettings.ImageView.Left"
+                        android:src="@drawable/icons_priority_middle" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingStart="@dimen/BasePadding2"
+                        tools:ignore="RtlSymmetry">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            style="@style/MainSettings.TextView.Left"
+                            android:text="Уведомления по финансам"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageViewFurtherToNotifMoney"
+                            style="@style/MainSettings.ImageView.Right"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowNotificationsTask"
+                    android:layout_marginTop="@dimen/BasePadding">
+
+                    <ImageView
+                        style="@style/MainSettings.ImageView.Left"
+                        android:src="@drawable/icons_priority_middle" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingStart="@dimen/BasePadding2"
+                        tools:ignore="RtlSymmetry">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            style="@style/MainSettings.TextView.Left"
+                            android:text="Уведомления по задачам"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageViewFurtherToNotifTask"
+                            style="@style/MainSettings.ImageView.Right"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutNotificationsProject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutToNotifFromNotifProject"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageViewToNotifFromNotifProject"
+                style="@style/MainSettings.ImageView.Left"
+                android:src="@drawable/icons_left_small_purple"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                style="@style/MainSettings.TextView.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Назад"
+                app:layout_constraintStart_toEndOf="@id/imageViewToNotifFromNotifProject"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/checkboxNotifNeedDream"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/MainSettings.TextView.Left"
+                    android:text="Если нет ни одной мечты"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/checkboxNotifNeedTarget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/MainSettings.TextView.Left"
+                    android:text="Если нет ни 1 активной цели в мечте"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/checkboxNotifNeedTaskInProject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/MainSettings.TextView.Left"
+                    android:text="Если нет хотя бы 3 задач на неделю в проекте"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutNotificationsMoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutToNotifFromNotifMoney"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageViewToNotifFromNotifMoney"
+                style="@style/MainSettings.ImageView.Left"
+                android:src="@drawable/icons_left_small_purple"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                style="@style/MainSettings.TextView.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Назад"
+                app:layout_constraintStart_toEndOf="@id/imageViewToNotifFromNotifMoney"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/checkboxNotifActualMonthPlanIncoming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/MainSettings.TextView.Left"
+                    android:text="Актуализация плана доходов на месяц"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/checkboxNotifActualMonthPlanCost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/MainSettings.TextView.Left"
+                    android:text="Актуализация плана расходов на месяц"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/checkboxNotifNoEnteredCostPerDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/MainSettings.TextView.Left"
+                    android:text="Отсутствие введенных затрат за день"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/checkboxNotifMoneyReportPrevMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/MainSettings.TextView.Left"
+                    android:text="Готовность отчета за предыдущий месяц"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/checkboxNotifNoAccumulationThisMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/MainSettings.TextView.Left"
+                    android:text="Отсутствие накопления за месяц"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/checkboxNotifAccumulationDone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/MainSettings.TextView.Left"
+                    android:text="Завершение накопления"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutNotificationsTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutToNotifFromNotifTask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageViewToNotifFromNotifTask"
+                style="@style/MainSettings.ImageView.Left"
+                android:src="@drawable/icons_left_small_purple"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                style="@style/MainSettings.TextView.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Назад"
+                app:layout_constraintStart_toEndOf="@id/imageViewToNotifFromNotifTask"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/checkboxOverdueTasksInMorning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/MainSettings.TextView.Left"
+                    android:text="Наличие просроченных задач по утрам"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/checkboxCountTasksForDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/MainSettings.TextView.Left"
+                    android:text="Количество задач на день"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/checkboxNoTasksForDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/MainSettings.TextView.Left"
+                    android:text="Отсутствие задач на день"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/checkboxCountUnfinishedTasksInEvening"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/MainSettings.TextView.Left"
+                    android:text="Количество незавершенных задач вечером"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/checkboxCountTasksInbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/MainSettings.TextView.Left"
+                    android:text="Количество задач во входящих"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCreditSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutToMainFormFromCreditSettings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageViewToMainFormFromCreditSettings"
+                style="@style/MainSettings.ImageView.Left"
+                android:src="@drawable/icons_left_small_purple"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                style="@style/MainSettings.TextView.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Главный экран"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toEndOf="@+id/imageViewToMainFormFromCreditSettings"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/BasePadding">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        style="@style/MainSettings.TextView.Left"
+                        android:text="Группа портфелей для капитала"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerGroupPortfolio"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingTop="@dimen/HalfPadding"
+                        tools:listitem="@layout/simple_spinner_typedata_item">
+
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        style="@style/MainSettings.TextView.Left"
+                        android:text="Портфель для капитала"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerPortfolio"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingTop="@dimen/HalfPadding"
+                        tools:listitem="@layout/simple_spinner_typedata_item">
+
+                    </Spinner>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

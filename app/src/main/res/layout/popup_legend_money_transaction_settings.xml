@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Popup.LinearLayout.Main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCaption"
+        style="@style/Popup.ConstraintLayout.Caption">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            style="@style/Popup.ImageView.Delete"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/Popup.TextView.Caption"
+            android:text="@string/JobWithSettings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/Popup.ImageView.Close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/Popup.NestedScrollView.Main">
+
+        <LinearLayout
+            style="@style/Popup.LinearLayout.TopHead">
+
+            <TextView
+                android:id="@+id/textViewLegend"
+                style="@style/Popup.TextView.Legend"
+                android:text="
+Форма настройки экрана операций представляет возможность настраивать формат вывода данных на экран.\n
+\n
+Вывод данных на форму операций возможно фильтровать:\n
+1) по плановости операции: плановая, фактическая или все операции;\n
+2) по типу операции: доход, расход, перемещение между кошельками или все типы операций;\n
+3) по категории операции: конкретная категория или все категории;\n
+4) по подкатегории операции: конкретная подкатегория или все категории;\n
+5) по наличию тега у операции: конкретный тег или все теги;\n
+\n
+Отображение тех или иных операций на экране операций можно настроить, сняв или установив флажок соответствующей настройки.\n
+\n
+Если вы захотите повторно посмотреть легенду о форме настройки, нажмите [settings] в панели инструментов экрана.\n
+\n
+PS: вы всегда можете включить/отключить помощника в настройках программы - для этого выберите меню 'Настройки' через 3 точки в правом верхнем углу экрана.
+                "/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

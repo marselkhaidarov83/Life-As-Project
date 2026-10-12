@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginStart="@dimen/BasePadding"
+    android:layout_marginTop="@dimen/BasePadding"
+    android:layout_marginEnd="@dimen/BasePadding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:paddingStart="@dimen/BasePadding"
+            android:paddingEnd="@dimen/BasePadding"
+            android:layout_gravity="center_vertical">
+
+<!--            <TextView-->
+<!--                android:id="@+id/textViewDate"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_vertical|start"-->
+<!--                android:layout_weight="1"-->
+<!--                android:paddingStart="@dimen/BasePadding"-->
+<!--                android:paddingEnd="0dp"-->
+<!--                android:textSize="@dimen/Popup.TextSize03"-->
+<!--                android:text="@string/CustomString"-->
+<!--                tools:ignore="NestedWeights" />-->
+
+            <TextView
+                android:id="@+id/textViewCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:textSize="@dimen/Popup.TextSize03"
+                android:layout_weight="1"
+                android:text="@string/CustomString" />
+
+            <TextView
+                android:id="@+id/textViewSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/Popup.TextSize03"
+                android:layout_gravity="center_vertical|end"
+                android:layout_weight="1"
+                android:text="@string/CustomString" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

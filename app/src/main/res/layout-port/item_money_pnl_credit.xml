@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="40dp"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/Popup.TextSize02"
+            android:layout_marginStart="@dimen/BasePadding"
+            android:gravity="center_vertical|start"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/linear_layout_item"
+            android:text="@string/CustomShortDate" />
+
+        <TextView
+            android:id="@+id/textViewCostName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/Popup.TextSize02"
+            app:layout_constraintLeft_toRightOf="@id/textViewDate"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical|start"
+            android:textAlignment="textStart"
+            android:text="@string/CustomString" />
+
+        <TextView
+            android:id="@+id/textViewBodySum"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/Popup.TextSize02"
+            android:layout_marginEnd="@dimen/BasePadding"
+            android:gravity="center_vertical|end"
+            app:layout_constraintLeft_toRightOf="@id/textViewCostName"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/CustomString"/>
+
+        <TextView
+            android:id="@+id/textViewPercentSum"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/Popup.TextSize02"
+            android:layout_marginEnd="@dimen/BasePadding"
+            android:gravity="center_vertical|end"
+            app:layout_constraintLeft_toRightOf="@id/textViewSum"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/CustomString"/>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Popup.LinearLayout.Main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCaption"
+        style="@style/Popup.ConstraintLayout.Caption">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            style="@style/Popup.ImageView.Delete"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewCaption"
+            style="@style/Popup.TextView.Caption"
+            android:text="@string/fragmentMoneyFactIncomingPopupAddTitle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/Popup.ImageView.Close"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewMascotToChange"
+            style="@style/Popup.ImageView.Mascot"
+            app:layout_constraintEnd_toStartOf="@id/imageViewClose"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView1"
+        style="@style/Popup.NestedScrollView.Main.Visible">
+
+        <LinearLayout
+            android:id="@id/linearLayoutNSV1"
+            style="@style/Popup.NestedScrollView.LinearLayout.Main">
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                style="@style/Accounting.Popup.TableLayout">
+
+                <TableRow>
+
+                    <LinearLayout
+                        style="@style/Accounting.Popup.TableLayout.TableRow.LinearLayout">
+
+                        <EditText
+                            android:id="@+id/editTextSum"
+                            style="@style/Accounting.Popup.EditText.Sum" />
+
+                        <ImageView
+                            android:id="@+id/imageViewIsPlan"
+                            style="@style/Accounting.Popup.ImageView.IsPlan" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/Accounting.Popup.EditText.UnderSum" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutPercent"
+                        style="@style/Accounting.Popup.TableLayout.TableRow.LinearLayout">
+
+                        <LinearLayout
+                            style="@style/Accounting.Popup.TableLayout.TableRow.LinearLayoutV">
+
+                            <EditText
+                                android:id="@+id/editTextPercentSum"
+                                style="@style/Accounting.Popup.EditText.Percent" />
+
+                            <TextView
+                                style="@style/Accounting.Popup.EditText.UnderPercent" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/Accounting.Popup.TableLayout.TableRow.LinearLayoutV">
+
+                            <EditText
+                                android:id="@+id/editTextTotalSum"
+                                style="@style/Accounting.Popup.EditText.TotalSum" />
+
+                            <TextView
+                                style="@style/Accounting.Popup.EditText.UnderTotalSum" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/Accounting.Popup.TableLayout.TableRow">
+
+                    <LinearLayout
+                        style="@style/Accounting.Popup.TableLayout.TableRow.LinearLayout50V">
+
+                        <TextView
+                            android:id="@+id/textViewTypeCostCategory"
+                            style="@style/Accounting.Popup.TextView.Category" />
+
+                        <TextView
+                            android:id="@+id/textViewNameCostCategory"
+                            style="@style/Accounting.Popup.TextView.Category2" />
+
+                        <ImageView
+                            android:id="@+id/imageViewCostCategory"
+                            style="@style/Accounting.Popup.ImageView.Category" />
+
+                        <TextView
+                            android:id="@+id/textViewSumCostCategory"
+                            style="@style/Accounting.Popup.TextView.Category3" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/Accounting.Popup.ImageView.Arrow" />
+
+                    <LinearLayout
+                        style="@style/Accounting.Popup.TableLayout.TableRow.LinearLayout50V">
+
+                        <TextView
+                            android:id="@+id/textViewTypeIncreaseCategory"
+                            style="@style/Accounting.Popup.TextView.Category" />
+
+                        <TextView
+                            android:id="@+id/textViewNameIncreaseCategory"
+                            style="@style/Accounting.Popup.TextView.Category2" />
+
+                        <ImageView
+                            android:id="@+id/imageViewIncreaseCategory"
+                            style="@style/Accounting.Popup.ImageView.Category" />
+
+                        <TextView
+                            android:id="@+id/textViewSumIncreaseCategory"
+                            style="@style/Accounting.Popup.TextView.Category3" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleViewCategory"
+                        style="@style/Accounting.Popup.RecyclerView"
+                        tools:listitem="@layout/item_graph_money_category" />
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/Accounting.Popup.TableLayout.TableRow">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayoutDate"
+                        style="@style/Accounting.Popup.RelativeLayout.Date">
+
+                        <TextView
+                            android:id="@+id/textViewDate"
+                            style="@style/Accounting.Popup.TextView.Date" />
+
+                        <ImageView
+                            android:id="@+id/imageViewDateMinus"
+                            style="@style/Accounting.Popup.ImageView.Date.Minus"
+                            android:layout_toStartOf="@id/textViewDate" />
+
+                        <ImageView
+                            android:id="@+id/imageViewDatePlus"
+                            style="@style/Accounting.Popup.ImageView.Date.Plus"
+                            android:layout_toEndOf="@id/textViewDate" />
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textViewDateTitle"
+                        style="@style/Accounting.Popup.EditText.UnderDate" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonSave"
+                    style="@style/Popup.Button.Save.4Next" />
+
+                <Button
+                    android:id="@+id/buttonNext"
+                    style="@style/Popup.Button.Next" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView2"
+        style="@style/Popup.NestedScrollView.Main.Invisible">
+
+        <LinearLayout
+            style="@style/Popup.NestedScrollView.LinearLayout.Main">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutNSV2"
+                style="@style/Popup.NestedScrollView.ConstraintLayout.Invisible">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutHead"
+                    style="@style/Popup.NestedScrollView.LinearLayout.Head"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent">
+
+                    <TextView
+                        style="@style/Popup.TextView.OverRV"
+                        android:text="@string/FreeAmount" />
+
+                    <TextView
+                        android:id="@+id/textViewFreeAmount"
+                        style="@style/Popup.TextView.OverRV.2"
+                        android:text="@string/FreeAmount" />
+
+                    <ImageView
+                        android:id="@+id/imageViewAdd"
+                        style="@style/Popup.ImageView.AddToRView" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleViewInc4Cost"
+                    style="@style/Popup.RecyclerView.Linear"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linearLayoutHead"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:listitem="@layout/item_money_inc4cost" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutNSV2"
+                style="@style/Popup.NestedScrollView.LinearLayout.Invisible">
+
+                <Button
+                    android:id="@+id/buttonPrev"
+                    style="@style/Popup.Button.Prev" />
+
+                <Button
+                    android:id="@+id/buttonSave2"
+                    style="@style/Popup.Button.Save.4Prev" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView3"
+        style="@style/Popup.NestedScrollView.Main.Invisible">
+
+        <LinearLayout
+            style="@style/Popup.NestedScrollView.LinearLayout.Main">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutNSV3"
+                style="@style/Popup.NestedScrollView.ConstraintLayout.Invisible">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutHead3"
+                    style="@style/Popup.NestedScrollView.LinearLayout.Head"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Popup.TextView.OverRV.2"
+                        android:text="@string/Tags" />
+
+                    <ImageView
+                        android:id="@+id/imageViewAdd3"
+                        style="@style/Popup.ImageView.AddToRView" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleViewTags"
+                    style="@style/Popup.RecyclerView.Linear"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linearLayoutHead3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:listitem="@layout/item_tagged" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutNSV3"
+                style="@style/Popup.NestedScrollView.LinearLayout.Invisible">
+
+                <Button
+                    android:id="@+id/buttonPrev2"
+                    style="@style/Popup.Button.Prev" />
+
+                <Button
+                    android:id="@+id/buttonSave3"
+                    style="@style/Popup.Button.Save.4Prev" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

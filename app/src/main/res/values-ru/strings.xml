@@ -1,0 +1,734 @@
+<resources>
+    <!--    Наименование приложения-->
+    <string name="app_name">Финансовая грамотность+</string>
+    <string name="PrivacyLinkBot"><a href="https://t.me/finLiteracyPlusBot">Telegram bot @finLiteracyPlusBot</a></string>
+    <string name="PrivacyLink"><a href="https://sbsite.pro/st/51d16944">Политика конфиденциальности</a></string>
+
+    <!--    Кнопки-->
+    <string name="money">Деньги</string>
+    <string name="tasks">Задачи</string>
+    <string name="assistants">Помощники</string>
+
+    <string name="money_target">Мечты/Цели</string>
+    <string name="money_increase">Рост доходов</string>
+    <string name="money_board">Обзор по деньгам</string>
+    <string name="money_board_short">Обзор по деньгам</string>
+    <string name="money_incoming">Доходы</string>
+    <string name="money_costs">Расходы</string>
+    <string name="money_planfact_income">Доходы план/факт</string>
+    <string name="money_planfact_cost">Расходы план/факт</string>
+    <string name="money_accounting">Учёт</string>
+    <string name="money_capital">Капитал</string>
+    <string name="money_planfactmoney">План/факт по деньгам</string>
+    <string name="back">Назад</string>
+
+    <string name="tasks_today">Сегодня</string>
+    <string name="tasks_project">Проекты</string>
+    <string name="tasks_tasks">Задачи</string>
+    <string name="tasks_favourites">Фавориты</string>
+    <string name="tasks_canban">Канбан</string>
+    <string name="tasks_inbox">Входящие</string>
+
+    <string name="assistants1">Помощники1</string>
+    <string name="assistants2">Помощники2</string>
+    <string name="assistants3">Помощники3</string>
+    <string name="assistants4">Помощники4</string>
+    <string name="assistants5">Помощники5</string>
+
+    <!--    Надписи экранов-->
+    <string name="source1">Источник 1</string>
+    <string name="source2">Источник 2</string>
+    <string name="param">Параметр</string>
+    <string name="params">Параметры</string>
+    <string name="tags">Теги</string>
+    <string name="money_increaseP">План доходов</string>
+    <string name="money_increaseF">Фактические доходы</string>
+    <string name="money_incoming_plan">План доходов</string>
+    <string name="money_costs_plan">План расходов</string>
+    <string name="money_incoming_fact">Факт доходов</string>
+    <string name="money_costs_fact">Факт расходов</string>
+    <string name="cabinet">Кабинет</string>
+    <string name="main_settings">Настройки программы</string>
+    <string name="money_your_dream">Мои мечты</string>
+    <string name="money_your_target">Мои цели</string>
+    <string name="money_your_incoming">Мои доходы</string>
+    <string name="money_your_cost">Мои расходы</string>
+    <string name="money_your_accounting">Учет денежных средств</string>
+    <string name="money_your_acc_oper">Операции с деньгами</string>
+    <string name="money_credit">Кредиты/долги</string>
+    <string name="money_category_increase">Категории затрат (доходы)</string>
+    <string name="money_category_cost">Категории затрат (расходы)</string>
+    <string name="money_category_wallet">Кошельки</string>
+    <string name="money_portfolio">Портфели</string>
+    <string name="money_typeasset">Тип финансового актива</string>
+    <string name="money_asset">Финансовые активы</string>
+
+    <string name="tasks_your_project">Мои проекты</string>
+    <string name="tasks_your_tasks">Мои задачи</string>
+    <string name="tasks_your_tasks_today">Мои задачи сегодня</string>
+    <string name="tasks_your_tasks_inbox">Входящие задачи</string>
+    
+    <string name="MonthlyIncome">Доходы за месяц</string>
+    <string name="MonthlyExpenses">Расходы за месяц</string>
+    <string name="QuarterlyIncome">Доходы за квартал</string>
+    <string name="QuarterlyExpenses">Расходы за квартал</string>
+    <string name="YearlyIncome">Доходы за квартал</string>
+    <string name="YearlyExpenses">Расходы за квартал</string>
+    <string name="TotalFunds">Всего в кошельках</string>
+    <string name="TotalSavings">Всего в накоплениях</string>
+    <string name="TotalOperPlan">Всего в опер. плане</string>
+    <string name="Difference">Разница</string>
+    <string name="MonthlySavings">Накоплений за месяц</string>
+    <string name="СostOfGoalsForYear">Стоимость целей на год</string>
+    <string name="СostOfAllGoals">Стоимость всех целей</string>
+    <string name="SavingsOfGoalsForYear">В накоплениях</string>
+    <string name="SavingsOfAllGoals">В накоплениях</string>
+    <string name="NeedToSavingsForYear">Необходимо накопить</string>
+    <string name="NeedToSavingsForallGoals">Необходимо накопить</string>
+
+    <!--    Ошибки-->
+    <string name="errorDeletedPlanValueNotFound">Удаляемое плановое значение роста не найдена в базе данных</string>
+    <string name="errorDeleteMPlanValue">Ошибка удаления планового значения: </string>
+
+    <string name="errorDeletedMoneyInc4CostNotFound">Удаляемое распределение дохода не найдено в базе данных</string>
+    <string name="errorDeleteMoneyInc4Cost">Ошибка удаления распределения дохода: </string>
+
+    <string name="errorDeletedMoneyIncreaseNotFound">Удаляемая запись роста не найдена в базе данных</string>
+    <string name="errorDeleteMoneyIncrease">Ошибка удаления записи роста доходов: </string>
+    <string name="errorUpdateMoneyIncrease">Ошибка обновления записи роста доходов</string>
+
+    <string name="errorDeletedMoneyDreamNotFound">Удаляемая запись мечты не найдена в базе данных</string>
+    <string name="errorDeleteMoneyDream">Ошибка удаления записи мечты: </string>
+    <string name="errorUpdateMoneyDream">Ошибка обновления записи мечты</string>
+    <string name="errorUpdateMoneyDreamPosition">Ошибка обновления позиции записи мечты: </string>
+
+    <string name="errorDeletedMoneyTargetNotFound">Удаляемая запись цели не найдена в базе данных</string>
+    <string name="errorUpdateMoneyTarget">Ошибка обновления записи цели</string>
+    <string name="errorDeleteMoneyTarget">Ошибка удаления записи цели: </string>
+
+    <string name="errorDeletedMoneyCategoryNotFound">Удаляемая запись категории денег не найдена в базе данных</string>
+    <string name="errorDeleteMoneyCategory">Ошибка удаления записи категории денег: </string>
+    <string name="errorUpdateMoneyCategory">Ошибка обновления записи категории денег</string>
+    <string name="errorUpdateMoneyCategoryPosition">Ошибка обновления позиции записи категории денег: </string>
+
+    <string name="errorDeletedMoneyPortfolioNotFound">Удаляемый портфель не найден в базе данных</string>
+    <string name="errorDeleteMoneyPortfolio">Ошибка удаления портфеля: </string>
+    <string name="errorUpdateMoneyPortfolio">Ошибка обновления портфеля</string>
+    <string name="errorUpdateMoneyPortfolioPosition">Ошибка обновления позиции портфеля: </string>
+
+    <string name="errorDeletedMoneyTypeAssetNotFound">Удаляемый тип активов не найден в базе данных</string>
+    <string name="errorDeleteMoneyTypeAsset">Ошибка удаления типа активов: </string>
+    <string name="errorUpdateMoneyTypeAsset">Ошибка обновления типа активов</string>
+    <string name="errorUpdateMoneyTypeAssetPosition">Ошибка обновления позиции типа активов: </string>
+
+    <string name="errorDeletedMoneyAssetNotFound">Удаляемый актив не найден в базе данных</string>
+    <string name="errorDeleteMoneyAsset">Ошибка удаления актива: </string>
+    <string name="errorUpdateMoneyAsset">Ошибка обновления актива</string>
+    <string name="errorUpdateMoneyAssetPosition">Ошибка обновления позиции актива: </string>
+
+    <string name="errorDeletedMoneyLotAssetNotFound">Удаляемый лот актива не найдена в базе данных</string>
+    <string name="errorDeleteMoneyLotAsset">Ошибка удаления лота актива: </string>
+    <string name="errorUpdateMoneyLotAsset">Ошибка обновления лота актива</string>
+    <string name="errorUpdateMoneyLotAssetPosition">Ошибка обновления позиции лота актива: </string>
+
+    <string name="errorDeletedMoneyLotAssetOperationNotFound">Удаляемая операция по лоту актива не найдена в базе данных</string>
+    <string name="errorDeleteMoneyLotAssetOperation">Ошибка удаления операции пол лоту актива: </string>
+    <string name="errorUpdateMoneyLotAssetOperation">Ошибка обновления операции пол лоту актива</string>
+    <string name="errorUpdateMoneyLotAssetOperationPosition">Ошибка обновления позиции операции пол лоту актива: </string>
+
+    <string name="errorDeletedTasksProjectNotFound">Удаляемый проект не найден в базе данных</string>
+    <string name="errorDeleteTasksProject">Ошибка удаления проекта: </string>
+    <string name="errorUpdateTasksProject">Ошибка обновления проекта</string>
+    <string name="errorUpdateTasksProjectPosition">Ошибка обновления позиции проекта: </string>
+
+    <string name="errorDeletedTasksTaskNotFound">Удаляемая задача не найдена в базе данных</string>
+    <string name="errorDeleteTasksTask">Ошибка удаления задачи: </string>
+    <string name="errorUpdateTasksTask">Ошибка обновления задачи</string>
+
+    <string name="errorDeletedMoneyIncomingNotFound">Удаляемая запись планового дохода не найдена в базе данных</string>
+    <string name="errorDeleteMoneyIncoming">Ошибка удаления записи планового дохода: </string>
+    <string name="errorUpdateMoneyIncoming">Ошибка обновления записи планового дохода</string>
+    <string name="errorUpdateMoneyCost">Ошибка обновления записи планового расхода</string>
+    <string name="errorUpdateMoneyPlan">Ошибка обновления записи плана денег</string>
+    <string name="errorUpdateMoneyIncomingPosition">Ошибка обновления позиции записи планового дохода: </string>
+
+    <string name="errorDeletedMoneyPivotCreditNotFound">Удаляемая запись поворотной точки не найдена в базе данных</string>
+    <string name="errorDeleteMoneyPivotCredit">Ошибка удаления поворотной точки: </string>
+
+    <string name="errorDeletedMoneyPNLNotFound">Удаляемая запись затрат не найдена в базе данных</string>
+    <string name="errorDeleteMoneyPNL">Ошибка удаления записи затрат: </string>
+    <string name="errorDeleteMoneyPNLs">Ошибка удаления записей затрат</string>
+    <string name="errorUpdateMoneyPNL">Ошибка обновления записи расхода</string>
+    <string name="errorUpdateMoneyPNLPosition">Ошибка обновления позиции записи затрат: </string>
+
+    <string name="errorDeletedMoneyCreditNotFound">Удаляемый кредит не найден в базе данных</string>
+    <string name="errorDeleteMoneyCredit">Ошибка удаления кредита: </string>
+
+    <string name="errorUpdateMoneyFactIncoming">Ошибка обновления записи дохода</string>
+    <string name="errorUpdateMoneyFactCost">Ошибка обновления записи дохода</string>
+    <string name="errorUpdateMoneyMoving">Ошибка обновления записи перемещения</string>
+    <string name="errorUpdateMoneyInc4Cost">Ошибка обновления распределения дохода</string>
+
+    <string name="errorUpdateMoneyCredit">Ошибка обновления кредита</string>
+    <string name="errorUpdateMoneyCreditPivot">Ошибка обновления поворотной точки</string>
+
+    <string name="errorUpdateParam">Ошибка обновления параметра</string>
+    <string name="errorDeletedParamNotFound">Удаляемый параметр не найден в базе данных</string>
+    <string name="errorDeleteParam">Ошибка удаления параметра: </string>
+
+    <string name="errorUpdateTag">Ошибка обновления тега</string>
+    <string name="errorDeletedTagNotFound">Удаляемый тег не найден в базе данных</string>
+    <string name="errorDeleteTag">Ошибка удаления тега: </string>
+
+    <string name="errorUpdateTagged">Ошибка обновления тега</string>
+    <string name="errorDeletedTaggedNotFound">Удаляемый тег не найден в базе данных</string>
+    <string name="errorDeleteTagged">Ошибка удаления тега: </string>
+
+    <string name="errorUpdatePlanValue">Ошибка обновления планового значения</string>
+
+    <!--    Действия для пользователя-->
+    <string name="specifyDate">Укажите дату</string>
+    <string name="specifySumm">Укажите сумму</string>
+    <string name="specifyCreditPercent">Укажите процент кредита</string>
+    <string name="specifyExpensePercent">Укажите процент затрат</string>
+    <string name="specifyWalletToUp">Укажите кошелек пополнения</string>
+    <string name="specifyLoanTerm">Укажите процент кредита</string>
+    <string name="specifyName">Укажите наименование</string>
+    <string name="specifyPrice">Укажите стоимость</string>
+    <string name="specifyAccumulation">Укажите сумму из накоплений</string>
+    <string name="specifyCredit">Укажите сумму кредита</string>
+    <string name="specifyImagePath">Укажите картинку</string>
+    <string name="specifyParam">Укажите параметр</string>
+    <string name="specifyCoef">Укажите коэффициент</string>
+    <string name="specifyValue">Укажите значение</string>
+    <string name="specifyPlanValueSrc1">Укажите источник планового значения 1</string>
+    <string name="specifyPlanValueSrc2">Укажите источник планового значения 2</string>
+    <string name="specifyRepeatPeriod">Укажите период повтора</string>
+
+    <string name="specifyIncCategory">Укажите категорию доходов</string>
+    <string name="specifyCostCategory">Укажите категорию затрат</string>
+    <string name="specifyIncWallet">Укажите кошелек доходов</string>
+    <string name="specifyCostWallet">Укажите кошелек затрат</string>
+    <string name="specifySubCategory">Укажите подкатегорию</string>
+    <string name="specifyCostSubCategory">Укажите подкатегорию затрат</string>
+    <string name="specifyIncreaseSubCategory">Укажите подкатегорию поступления</string>
+
+    <string name="specifyCorrectDate">Укажите корректную дату</string>
+    <string name="specifyCorrectSumm">Укажите корректную сумму</string>
+    <string name="specifyCorrectCreditPercent">Укажите корректный процент кредита</string>
+    <string name="specifyCorrectExpensePercent">Укажите корректный процент затрат</string>
+    <string name="specifyCorrectLoanTerm">Укажите корректный процент кредита</string>
+    <string name="specifyCorrectSumms">Укажите корректные суммы</string>
+    <string name="specifyCorrectName">Укажите корректное наименование</string>
+    <string name="specifyCorrectAccumulation">Укажите корректную сумму из накоплений</string>
+    <string name="specifyCorrectCredit">Укажите корректную сумму кредита</string>
+    <string name="errorExistValueOnDate">На выбранную дату значение уже введено</string>
+    <string name="specifyCorrectParam">Укажите корректный параметр</string>
+    <string name="specifyCorrectCoef">Укажите корректный коэффициент</string>
+    <string name="specifyCorrectValue">Укажите корректное значение</string>
+    <string name="specifyCorrectPlanValueSrc1">Укажите корректный источник планового значения 1</string>
+    <string name="specifyCorrectPlanValueSrc2">Укажите корректный источник планового значения 2</string>
+    <string name="specifyCorrectRepeatPeriod">Укажите корерктный период повтора</string>
+
+    <string name="errorExistChildsMoneyCategory">У выбраной категории существуют дочерние элементы. Удаление невозможно</string>
+    <string name="errorExistChildsTasksProject">У выбраного проекта существуют дочерние элементы. Удаление невозможно</string>
+    <string name="errorExistChildsMoneyPortfolio">У выбраного портфеля существуют дочерние элементы. Удаление невозможно</string>
+    <string name="errorExistChildsMoneyTypeAsset">У выбраного типа активов существуют дочерние элементы. Удаление невозможно</string>
+
+    <!--    Надписи на формах-->
+    <string name="prevValueOn">Предыдущее значение на </string>
+    <string name="nextValueOn">Следующее значение на </string>
+    <string name="planIncreaseDate">Дата планового роста</string>
+    <string name="planIncreaseValue">Планируемый рост до</string>
+
+    <string name="SelectPicture">Выбрать картинку</string>
+    <string name="Count">Количество</string>
+    <string name="Price">Стоимость</string>
+    <string name="Comission">Комиссия</string>
+    <string name="AccumulatedPrice">Накопленный доход</string>
+    <string name="Status">Статус</string>
+    <string name="Asset">Актив</string>
+    <string name="CreationDate">Дата создания</string>
+    <string name="FinishDate">Дата закрытия</string>
+    <string name="Dates">Даты действия</string>
+    <string name="AssetOperation">Операция</string>
+    <string name="GroupPortfolio">Группа портфелей</string>
+    <string name="Portfolio">Портфель</string>
+    <string name="TypeAsset">Тип актива</string>
+    <string name="ShowData">Показывать данные</string>
+    <string name="KindAsset">Вид актива</string>
+    <string name="CurrencyAsset">Валюта актива</string>
+    <string name="ParentTask">Главная задача</string>
+    <string name="TargetStatus">Статус цели</string>
+    <string name="TargetParent">Родительская цель</string>
+    <string name="Target">Цель</string>
+    <string name="Project">Проект</string>
+    <string name="Priority">Приоритет</string>
+    <string name="Dream">Мечта</string>
+    <string name="Accumulation">Из накоплений</string>
+    <string name="Credit">В кредит</string>
+    <string name="FromCredit">Из кредита</string>
+    <string name="FreeAmount">Свободная сумма</string>
+
+    <string name="buttonAddText">Добавить</string>
+    <string name="buttonUpdateText">Изменить</string>
+    <string name="buttonDeleteText">Удалить</string>
+    <string name="buttonCancelText">Отменить</string>
+    <string name="button1IncomingCol">1</string>
+    <string name="button2IncomingCol">2</string>
+    <string name="button3IncomingCol">3</string>
+
+    <!--    Directories-->
+    <string name="picDirectoryDream">DreamPictures</string>
+    <string name="picDirectoryTarget">TargetPictures</string>
+
+    <!--    Arrays-->
+    <string-array name="counts5">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <!--    Тексты-->
+    <string name="Wallet">Кошелек</string>
+    <string name="WalletToUp">Кошелек пополнения</string>
+    <string name="CostCategory">Категория затрат</string>
+    <string name="Increase">Доход</string>
+    <string name="Cost">Расход</string>
+    <string name="Category">Категория</string>
+    <string name="SubCategory">Подкатегория</string>
+    <string name="Tag">Тег</string>
+    <string name="Tag4PNL">Тег для операции факта</string>
+    <string name="Title">Название</string>
+    <string name="Sum">Сумма</string>
+    <string name="AccumulatedSum">Накопленная сумма</string>
+    <string name="Icon">Иконка</string>
+    <string name="TotalSum">Полная сумма</string>
+    <string name="Percent">Проценты</string>
+    <string name="ResidualSum">Остаточная сумма</string>
+    <string name="LoanTerm">Срок кредита (в месяцах)</string>
+    <string name="CreditPercent">Кредитный процент</string>
+    <string name="RepeatPeriod">Период повтора</string>
+    <string name="Name">Название</string>
+    <string name="Ticker">Тикер</string>
+    <string name="Measure">Ед. изм</string>
+    <string name="TagTypeData">Тип тега</string>
+    <string name="Parent">Родитель</string>
+    <string name="Comment">Комментарий</string>
+    <string name="Type">Тип</string>
+
+    <!--    Custom strings-->
+    <string name="CustomShortDate">Февраль 1999</string>
+    <string name="CustomDate">01 февраля 9999</string>
+    <string name="CustomTime">23:59</string>
+    <string name="CustomString2Lines">ASDFj2345\nsdgdfsdfggggggggg</string>
+    <string name="CustomString">ASDFj2345</string>
+    <string name="CustomShortString">ASD</string>
+    <string name="CustomNum">1234657890</string>
+    <string name="CustomShortNum">123</string>
+
+    <!--    Тексты подписки-->
+    <string name="ErrorSubscription">Подписка неактивна. Действия с данными недоступны. Для продолжения полноценной работы с программой оплатите подписку в кабинете</string>
+    <string name="SubscriptionNotSelected">Выберите вариант подписки</string>
+    <string name="SubscriptionNonActive">Подписка не активна</string>
+    <string name="SubscriptionActive">Активна полная версия</string>
+    <string name="UnpaidSubscriptionActive">Активна ограниченная версия</string>
+    <string name="TestSubscriptionActive">Активна тестовая версия</string>
+    <string name="GoToSubscript">Подключить подписку</string>
+    <string name="PurchaseSuccess">Подписка оформлена успешна</string>
+    <string name="PurchaseCancelled">Покупка отменена</string>
+    <string name="OrderStateFailed">Ошибочный статус покупки</string>
+    <string name="OrderStateDefaultCode">Статус покупки по-умолчанию</string>
+    <string name="OrderProductOwned">Order product owned</string>
+    <string name="PurchaseFailure">Покупка прервана из-за ошибки</string>
+    <string name="PurchaseInvalidPaymentState">Неверные данные для оплаты</string>
+
+    <string name="ErrorTooManyMeasure">Подписка неактивна. Вы уже добавили максимальное количество единиц измерения. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyParam">Подписка неактивна. Вы уже добавили максимальное количество параметров. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyTag">Подписка неактивна. Вы уже добавили максимальное количество тегов. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyPlanValue">Подписка неактивна. Вы уже добавили максимальное количество плановых значений. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyValue">Подписка неактивна. Вы уже добавили максимальное количество фактических значений параметров. Для продолжения полноценной работы оплатите подписку</string>
+
+    <string name="ErrorTooManyDream">Подписка неактивна. Вы уже добавили максимальное количество желаний. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyTarget">Подписка неактивна. Вы уже добавили максимальное количество целей. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyCategory">Подписка неактивна. Вы уже добавили максимальное количество категорий доходов/затрат. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyIncrease">Подписка неактивна. Вы уже добавили максимальное количество этапов роста доходов. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyIncomingAndCost">Подписка неактивна. Вы уже добавили максимальное количество строк шаблона плана доходов/расходов. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyMoneyPlan">Подписка неактивна. Вы уже добавили максимальное количество строк плана доходов/расходов. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyPNL">Подписка неактивна. Вы уже добавили максимальное количество строк движений денежных средств. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyInc4Cost">Подписка неактивна. Вы уже добавили максимальное количество связей доходов с расходами. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyInc4CostSum">Подписка неактивна. Вы уже добавили максимальное количество строк inc4costSum. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyCredit">Подписка неактивна. Вы уже добавили максимальное количество кредитов. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyPortfolio">Подписка неактивна. Вы уже добавили максимальное количество портфелей. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyTypeAsset">Подписка неактивна. Вы уже добавили максимальное количество типов активов. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyAsset">Подписка неактивна. Вы уже добавили максимальное количество активов. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyLotAsset">Подписка неактивна. Вы уже добавили максимальное количество лотов. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyLotAssetOperation">Подписка неактивна. Вы уже добавили максимальное количество операций по лотам активов. Для продолжения полноценной работы оплатите подписку</string>
+
+    <string name="ErrorTooManyTimeProject">Подписка неактивна. Вы уже добавили максимальное количество проектов. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyTimePriority">Подписка неактивна. Вы уже добавили максимальное количество приоритетов задач. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyTimeTask">Подписка неактивна. Вы уже добавили максимальное количество задач. Для продолжения полноценной работы оплатите подписку</string>
+
+    <string name="ErrorTooManyPersonAssistant">Подписка неактивна. Вы уже добавили максимальное количество помощников. Для продолжения полноценной работы оплатите подписку</string>
+    <string name="ErrorTooManyPersonComm">Подписка неактивна. Вы уже добавили максимальное количество коммуникаций. Для продолжения полноценной работы оплатите подписку</string>
+
+    <!--    Cabinet strings-->
+    <string name="WeAreInSocial">Мы в соцсетях</string>
+    <string name="Telegram">Телеграм</string>
+    <string name="Vkontakte">Vkontakte</string>
+
+    <!--    Надписи всплывающих окон-->
+    <string name="JobStart">Начало работы</string>
+    <string name="NeedSubscription">Необходима подписка</string>
+    <string name="JobWithDream">Как работать с мечтами</string>
+    <string name="JobWithDreamChange">Как редактировать мечты</string>
+    <string name="JobWithTarget">Как работать с целями</string>
+    <string name="JobWithIncrease">Как работать с ростом доходов</string>
+    <string name="JobWithCategory">Как работать с категориями</string>
+    <string name="JobWithCategorySelect">Как работать с выбором категорий</string>
+    <string name="JobWithIncoming">Как работать с детализацией доходов/расходов</string>
+    <string name="JobWithPNL">Как работать с учетом ДС</string>
+    <string name="JobWithCredit">Как работать с кредитами</string>
+    <string name="JobWithParam">Как работать с параметрами</string>
+    <string name="JobWithTag">Как работать с тегами</string>
+    <string name="JobWithTagChange">Как редактировать теги</string>
+    <string name="JobWithTagged">Как работать с тегами операций</string>
+    <string name="JobWithInc4Cost">Как работать с распределением доходов</string>
+    <string name="JobWithInc4CostSum">Как работать со свободными деньгами</string>
+    <string name="JobWithPlanFact">Как работать с план/фактом</string>
+    <string name="JobWithSettings">Как работать с настройками</string>
+    <string name="JobWithBoard">Как работать с табло</string>
+
+    <string name="SettingsTag">Настройки формы тегов</string>
+    <string name="SettingsMoneyIncoming">Настройки формы детализации</string>
+    <string name="SettingsTasksTask">Настройки формы задач</string>
+    <string name="SettingsMoneyCapital">Настройки формы капитала</string>
+    <string name="SettingsMoneyPlanFact">Настройки формы план/факта</string>
+    <string name="SettingsMoneyDream">Настройки формы мечт</string>
+    <string name="SettingsMoneyCategory">Настройки формы категорий</string>
+    <string name="SettingsMoneyIncrease">Настройка формы роста</string>
+    <string name="SettingsMoneyTransaction">Настройки формы операций</string>
+    <string name="SettingsMoneyAccounting">Найстройки формы учета ДС</string>
+    <string name="SettingsMoneyBoard">Настройки формы обзора денег</string>
+
+    <string name="JobWithTasksProject">Как работать с проектами</string>
+    <string name="JobWithTasksTask">Как работать с задачами</string>
+
+    <!--    Тексты всплывающих окон-->
+    <string name="ButtonDelete">Удалить</string>
+    <string name="ButtonDeleteDream">Удалить мечту</string>
+    <string name="ButtonDeleteTarget">Удалить цель</string>
+    <string name="ButtonDeleteIncrease">Удалить этап роста доходов</string>
+    <string name="ButtonDeleteCategory">Удалить категорию</string>
+    <string name="ButtonDeleteIncoming">Удалить детализацию доходов/расходов</string>
+    <string name="ButtonDeletePNL">Удалить операцию с ДС</string>
+    <string name="ButtonDeleteParam">Удалить параметр</string>
+    <string name="ButtonDeletePlan">Удалить плановое значение</string>
+    <string name="ButtonCloseWindow">Закрыть окно</string>
+    <string name="ButtonAdd">Добавить</string>
+    <string name="ButtonSelectPicture">Выбрать картинку</string>
+
+    <string name="ButtonDeleteTasksProject">Удалить проект</string>
+    <string name="ButtonDeleteTasksTask">Удалить задачу</string>
+    <string name="ButtonDeleteMoneyTarget">Удалить цель</string>
+
+    <string name="PNLDateTypeToday">Сегодня</string>
+    <string name="PNLDateTypeTomorrow">Завтра</string>
+    <string name="PNLDateTypeAfterTomorrow">Послезавтра</string>
+    <string name="PNLDateTypeYesterday">Вчера</string>
+    <string name="PNLDateTypeTwoDaysAgo">Позавчера</string>
+    <string name="PNLDateTypeData">Дата</string>
+
+    <string name="CategorySettingsShowArchive">Показывать архивные категории</string>
+    <string name="TagSettingsShowArchive">Показывать архивные теги</string>
+    <string name="DreamSettingsShowArchive">Показывать архивные мечты</string>
+    <string name="IncreaseSettingsShowArchive">Показывать архивный рост</string>
+    <string name="AccountingSettingsShowBudget">Показывать бюджет для расходов</string>
+
+    <string name="IncomingSettingsShowIncreasePercent">Показывать проценты роста по категории</string>
+    <string name="IncomingSettingsShowPercent">Показывать процент суммы по категории в общей сумме</string>
+    <string name="IncomingSettingsShowBlankData">Показывать незаполненные категории</string>
+    <string name="IncomingSettingsShowData">Показывать данные</string>
+    <string name="IncomingSettingsTypeCategory">Категория данных</string>
+    <string name="IncomingSettingsOpertaionIsPlan">Операция факта плановая?</string>
+    <string name="IncomingSettingsPeriodData">Период данных</string>
+    <string name="IncomingSettingsCategoryType">Тип категорий</string>
+
+    <string name="Tasks.Task.Settings.ShowData">Показывать задачи</string>
+    <string name="Tasks.Task.Settings.GroupOfProject">Для группы проектов</string>
+    <string name="Tasks.Task.Settings.Project">Для проекта</string>
+    <string name="Tasks.Task.Settings.Priority">Приоритет</string>
+    <string name="Tasks.Task.Settings.Sorting">Сортировка по</string>
+
+    <string name="Tasks.Task.Popup.Today">Сегодня</string>
+    <string name="Tasks.Task.Popup.Tomorrow">Завтра</string>
+    <string name="Tasks.Task.Popup.ThisWeek">На этой неделе</string>
+    <string name="Tasks.Task.Popup.OnTheWeekend">На выходных</string>
+    <string name="Tasks.Task.Popup.NextWeek">На следующей неделе</string>
+    <string name="Tasks.Task.Popup.PostponeUntil">Отложить до</string>
+    <string name="Tasks.Task.Popup.WithoutTime">Без времени</string>
+    <string name="WithoutTime">Без времени</string>
+
+    <!--    Надписи всплывающих окон-->
+    <string name="PopupDreamAdd">Добавление мечты</string>
+    <string name="PopupDreamUpdate">Изменение мечты</string>
+    <string name="PopupTargetAdd">Добавление цели</string>
+    <string name="PopupTargetUpdate">Изменение цели</string>
+    <string name="PopupIncreaseAdd">Добавление шаблона роста</string>
+    <string name="PopupIncreaseUpdate">Изменение шаблона роста</string>
+    <string name="PopupIncreaseSelect">Изменение шаблона роста</string>
+    <string name="PopupCategoryAdd">Добавление категории</string>
+    <string name="PopupCategoryUpdate">Изменение категории</string>
+    <string name="PopupPlanValueAdd">Добавление планового значения</string>
+    <string name="PopupPlanValueUpdate">Изменение планового значения</string>
+    <string name="PopupCreditAdd">Добавление кредита</string>
+    <string name="PopupCreditPivotAdd">Добавление поворотной точки</string>
+    <string name="PopupCreditUpdate">Изменение кредита</string>
+    <string name="PopupPortfolioAdd">Добавление портфеля</string>
+    <string name="PopupPortfolioUpdate">Изменение портфеля</string>
+    <string name="PopupTypeAssetAdd">Добавление типа активов</string>
+    <string name="PopupTypeAssetUpdate">Изменение типа активов</string>
+    <string name="PopupAssetAdd">Добавление актива</string>
+    <string name="PopupAssetUpdate">Изменение актива</string>
+    <string name="PopupLotAssetAdd">Добавление лота актива</string>
+    <string name="PopupLotAssetUpdate">Изменение лота актива</string>
+    <string name="PopupLotAssetOperationAdd">Добавление операции по лоту актива</string>
+    <string name="PopupLotAssetOperationUpdate">Изменение операции по лоту актива</string>
+
+    <string name="PopupParamAdd">Добавление параметра</string>
+    <string name="PopupParamUpdate">Изменение параметра</string>
+
+    <string name="PopupTagAdd">Добавление тега</string>
+    <string name="PopupTagUpdate">Изменение тега</string>
+
+    <string name="PopupTaggedAdd">Добавление тега</string>
+    <string name="PopupTaggedUpdate">Изменение тега</string>
+
+    <string name="PopupTasksProjectAdd">Добавление проекта</string>
+    <string name="PopupTasksProjectUpdate">Изменение проекта</string>
+
+    <string name="PopupTasksTaskAdd">Добавление задачи</string>
+    <string name="PopupTasksTaskUpdate">Изменение задачи</string>
+    <string name="PopupTasksTaskUpdateTime">Изменение времени задачи</string>
+
+    <!--    Хинты-->
+    <string name="HintDreamName">Введите название мечты</string>
+    <string name="HintCategoryName">Введите название категории</string>
+    <string name="HintTargetName">Введите название цели</string>
+    <string name="HintTargetPrice">Введите стоимость цели</string>
+    <string name="HintTargetAccumulation">Введите сумму из накоплений</string>
+    <string name="HintTargetCredit">Введите сумму в кредит</string>
+    <string name="HintTagName">Введите название тега</string>
+    <string name="HintTagComment">Введите комментарий к тегу</string>
+    <string name="HintAccountingSum">Введите сумму</string>
+
+    <!--    Кнопки-->
+    <string name="OK">Применить</string>
+    <string name="Save">Сохранить</string>
+    <string name="Subscript">Подписаться</string>
+
+    <!--    Тексты адаптеров спиннеров-->
+    <string name="TargetCreated">Создана</string>
+    <string name="TargetAtWork">В работе</string>
+    <string name="TargetAchieved">Достигнута</string>
+    <string name="TargetIrrelevant">Неактуальна</string>
+
+    <string name="AccumulationTypeLinear">Линейный</string>
+    <string name="AccumulationTypeAlgorithmicProgression">Алгебраическая прогрессия</string>
+    <string name="AccumulationTypeGeometricProgression">Геометрическая прогрессия</string>
+    <string name="AccumulationTypeIrrelevant">Неактуален</string>
+
+    <string name="Project.Status.Created">Создан</string>
+    <string name="Project.Status.AtWork">В работе</string>
+    <string name="Project.Status.Achieved">Реализован</string>
+    <string name="Project.Status.Irrelevant">Неактуален</string>
+    <string name="Project.Status.Unidentified">Неопознан</string>
+
+    <string name="Money.KindAsset.Blank">Все</string>
+    <string name="Money.KindAsset.Conservative">Консервативный</string>
+    <string name="Money.KindAsset.Moderate">Умеренный</string>
+    <string name="Money.KindAsset.Agressive">Агрессивный</string>
+    <string name="Money.KindAsset.Unidentified">Неопознан</string>
+
+    <string name="Money.TypeCapitalData.Sum">Суммы</string>
+    <string name="Money.TypeCapitalData.Percent">Проценты</string>
+    <string name="Money.TypeCapitalData.Unidentified">Неопознан</string>
+
+    <string name="Money.Currency.USD">Доллар</string>
+    <string name="Money.Currency.RUB">Рубль</string>
+    <string name="Money.Currency.CNY">Юань</string>
+    <string name="Money.Currency.Unidentified">Неопознана</string>
+
+    <string name="PeriodDataDay">День</string>
+    <string name="PeriodDataWeek">Неделя</string>
+    <string name="PeriodDataMonth">Месяц</string>
+    <string name="PeriodDataQuarter">Квартал</string>
+    <string name="PeriodDataYear">Год</string>
+
+    <string name="TagTypeDataPNL">Доходы/расходы</string>
+    <string name="TagTypeDataUnidentified">Неопознанные</string>
+
+    <string name="TypeDataPlanned">Плановые</string>
+    <string name="TypeDataActual">Фактические</string>
+    <string name="TypeDataUnidentified">Неопознанные</string>
+
+    <string name="DatabaseWork">Рабочая база</string>
+    <string name="DatabaseLearn">Демонстрационная база</string>
+    <string name="DatabaseUnidentified">Неопознанная база</string>
+
+    <string name="Tasks.Task.Sorting.Date.Priority.Name">Дате, приоритету, названию</string>
+    <string name="Tasks.Task.Sorting.Priority.Date.Name">Приоритету, дате, названию</string>
+    <string name="Tasks.Task.Sorting.Name">Имени</string>
+
+    <string name="ConfirmedType.True">Подтверждённые</string>
+    <string name="ConfirmedType.False">Неподтвержденные</string>
+    <string name="ConfirmedType.Any">Все</string>
+
+    <string name="Priority.All">Все</string>
+    <string name="Priority.None">Без приоритета</string>
+    <string name="Priority.High">Высокий</string>
+    <string name="Priority.Middle">Средний</string>
+    <string name="Priority.Low">Низкий</string>
+
+    <string name="TypeCredit">Вид платежей</string>
+    <string name="TypeCreditAnnuitent">Аннуитентные платежи</string>
+    <string name="TypeCreditDifferent">Дифференциальные платежи</string>
+    <string name="TypeCreditUnidentified">Неопознанные</string>
+
+    <string name="TypeIncomingSum">Сумма</string>
+    <string name="TypeIncomingPercent">Процент</string>
+    <string name="TypeIncomingAccumulation">Накопление</string>
+    <string name="TypeIncomingCredit">Кредит</string>
+    <string name="TypeIncomingUnidentified">Неопознанные</string>
+
+    <string name="RepeatType">Тип повтора</string>
+    <string name="Repeat">Повторять</string>
+
+    <string name="RepeatTypeDay">Каждые X дней</string>
+    <string name="RepeatTypeWeek">Каждые X недель</string>
+    <string name="RepeatTypeMonth">Каждые X месяцев</string>
+    <string name="RepeatTypeMonthEnd">Каждые X месяцев (в конце)</string>
+    <string name="RepeatTypeYear">Каждые X лет</string>
+    <string name="RepeatTypeYearEnd">Каждые X лет (в конце)</string>
+    <string name="RepeatTypeUnidentified">Неопознано</string>
+    <string name="RepeatTypeDayShort">Д</string>
+    <string name="RepeatTypeWeekShort">Н</string>
+    <string name="RepeatTypeMonthShort">М</string>
+    <string name="RepeatTypeYearShort">Г</string>
+
+    <string name="RepeatSubTasksAll">Все подзадачи</string>
+    <string name="RepeatSubTasksOnlyNotConfirmed">Незавершенные подзадачи</string>
+    <string name="RepeatSubTasksUnidentified">Неопознано</string>
+
+    <string name="CreditStatus">Статус кредита</string>
+    <string name="CreditStatusActive">Активный</string>
+    <string name="CreditStatusInactive">Неактивный</string>
+    <string name="CreditStatusUnidentified">Неопознано</string>
+
+    <string name="Money.LotAssetOperation.Create">Создание</string>
+    <string name="Money.LotAssetOperation.Buy">Покупка</string>
+    <string name="Money.LotAssetOperation.Revaluation">Переоценка</string>
+    <string name="Money.LotAssetOperation.Coupon">Выплата купона</string>
+    <string name="Money.LotAssetOperation.Dividend">Выплата дивидендов</string>
+    <string name="Money.LotAssetOperation.Sell">Продажа</string>
+    <string name="Money.LotAssetOperation.Finish">Закрытие</string>
+    <string name="Money.LotAssetOperation.PNLPlus">Пополнение кошелька</string>
+    <string name="Money.LotAssetOperation.PNLMinus">Вывод с кошелька</string>
+    <string name="Money.LotAssetOperation.CreditPlus">Выдача кредита</string>
+    <string name="Money.LotAssetOperation.CreditMinus">Погашение кредита</string>
+    <string name="Money.LotAssetOperation.Comission">Комиссия</string>
+    <string name="Money.LotAssetOperation.Income">Доход</string>
+    <string name="Money.LotAssetOperation.Undentified">Неопознано</string>
+
+    <string name="OperationnIsPlan">Плановость операции</string>
+    <string name="OperationnIsPlanTrue">Плановые операции</string>
+    <string name="OperationnIsPlanFalse">Фактические операции</string>
+    <string name="OperationnIsPlanAll">Все операции</string>
+    <string name="OperationnIsPlanUnidentified">Неопознано</string>
+
+    <string name="TypeCategory">Каткгория данных</string>
+    <string name="TypeCategoryAll"></string>
+    <string name="TypeCategoryIncrease">Доходы</string>
+    <string name="TypeCategoryCost">Расходы</string>
+    <string name="TypeCategoryWallet">Кошелек</string>
+    <string name="TypeCategoryUnidentified">Неопознано</string>
+
+    <string name="CategoryType">Тип категории</string>
+    <string name="CategoryTypeBase">Базовая</string>
+    <string name="CategoryTypeAdvanced">Расширенная</string>
+    <string name="CategoryTypeAdvancedPlus">Расширенная+</string>
+    <string name="CategoryTypeProject">Проектная</string>
+    <string name="CategoryTypeProjectPlus">Проектная+</string>
+    <string name="CategoryTypeAll">Все</string>
+    <string name="CategoryTypeWallet">Кошелек</string>
+    <string name="CategoryTypeAccumulation">Накопление</string>
+    <string name="CategoryTypeAccumulationPlus">Накопление+</string>
+    <string name="CategoryTypeUnidentified">Неопознано</string>
+
+    <!--    EnumPlanValue-->
+    <string name="Value">Значение</string>
+    <string name="Koef">Коэффициент</string>
+    <string name="InverseKoef">Обратный коэф</string>
+    <string name="EPVSum">Сумма</string>
+    <string name="Diff">Разница</string>
+    <string name="Multiplication">Умножение</string>
+    <string name="Dividing">Деление</string>
+
+    <string name="EnumBoard.TransactionBoard">Денежные операции за месяц</string>
+    <string name="EnumBoard.WalletBoard">Кошельки/накопления</string>
+    <string name="EnumBoard.GoalsAllBoard">Все цели</string>
+    <string name="EnumBoard.GoalsForYearBoard">Цели на год</string>
+    <string name="EnumBoard.WalletOperBoard">Оперативный бюджет</string>
+
+    <!-- Меню -->
+    <string name="ExpenseCategories">Затратные категории</string>
+    <string name="IncomeCategories">Доходные категории</string>
+    <string name="WalletCategories">Кошельки</string>
+    <string name="TransactionList">Список операций</string>
+    <string name="TargetList">Список целей</string>
+    <string name="TargetListForYear">Цели за год</string>
+    <string name="Credits">Кредиты</string>
+    <string name="GraphView">График</string>
+    <string name="TableView">Табличное представление</string>
+    <string name="Params">Параметры</string>
+    <string name="Tags">Теги</string>
+    <string name="Increase_">Рост доходов</string>
+    <string name="Cabinet">Кабинет</string>
+    <string name="Legend">Легенда</string>
+    <string name="Toolbar">Панель инструментов</string>
+    <string name="HideToolbar">Скрыть панель</string>
+    <string name="FormSettings">Настройки формы</string>
+    <string name="MainSettings">Настройки</string>
+    <string name="AchievedTargets">Достигнутые цели</string>
+
+    <!--    -->
+    <string name="Popup.SetupSavings">Настроить накопление</string>
+    <string name="Popup.StartSum">Начальная сумма</string>
+    <string name="Popup.AccumulationType">Тип</string>
+    <string name="Popup.AccumulationCoef">Коэффициент</string>
+    <string name="Popup.StartDate">С</string>
+    <string name="Popup.EndDate">По</string>
+
+    <!-- Subscription Popup-->
+    <string name="Popup.Subscription.Value0">Создавайте неограниченное количество целей: мечтайте и планируйте их реализацию без каких-либо лимитов</string>
+    <string name="Popup.Subscription.Value1">Создавайте неограниченное количество этапов роста доходов, бюджетов доходов и расходов (планируйте без ограничений)</string>
+    <string name="Popup.Subscription.Value2">Создавайте неограниченное количество индивидуальных категорий доходов и расходов, чтобы организовать учет максимально удобно и подробно</string>
+    <string name="Popup.Subscription.Value3">Формируйте любое количество накоплений и отслеживайте их прогресс</string>
+    <string name="Popup.Subscription.Value4">Изучайте отчеты за любые периоды: это ключ к осознанному планированию</string>
+    <string name="Popup.Subscription.Value5">Сохраняйте неограниченную историю ваших финансовых операций</string>
+    <string name="Popup.Subscription.Value6">Используйте оперативный бюджет без ограничений</string>
+    <string name="Popup.Subscription.Value7">Ведите учет долгов и кредитов без ограничений (в бета-версии)</string>
+    <string name="Popup.Subscription.Value8">Получайте напоминания о важнейших финансовых задачах (в бета-версии)</string>
+
+    <string name="Popup.Subscription.Value_1">Скоро в Premium-версии: Профили для разделения личных и рабочих финансов</string>
+    <string name="Popup.Subscription.Value_2">Скоро в Premium-версии: Парольная защита данных для дополнительной безопасности</string>
+    <string name="Popup.Subscription.Value_3">Скоро в Premium-версии: Синхронизация между устройствами – ведите учет с телефона и анализируйте с планшета</string>
+    <string name="Popup.Subscription.Value_4">Скоро в Premium-версии: Поддержка учета в нескольких валютах</string>
+    <string name="Popup.Subscription.Value_5">Скоро в Premium-версии: Анализ доходов и расходов с учетом инфляции</string>
+    <string name="Popup.Subscription.Value_6">Скоро в Premium-версии: Учет имеющегося капитала</string>
+    <string name="Popup.Subscription.Value_7">Скоро в Premium-версии: Списки покупок</string>
+
+    <string name="UnitOfMeasurementPieces">шт</string>
+</resources>

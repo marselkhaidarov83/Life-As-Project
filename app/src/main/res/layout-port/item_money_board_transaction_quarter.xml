@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/materialCardViewBoard"
+    style="@style/Board.MainLayout">
+
+    <LinearLayout
+        style="@style/Board.LinearLayout.Vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/Board.ConstraintLayout">
+
+            <TextView
+                android:id="@+id/textViewIntegers1Text"
+                style="@style/Board.TextView"
+                android:text="@string/QuarterlyIncome"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                style="@style/Board.ImageView"
+                android:src="@drawable/icons_money_incom_100_purple"
+                app:layout_constraintStart_toEndOf="@id/textViewIntegers1Text"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/Board.ConstraintLayout">
+
+            <TextView
+                android:id="@+id/textViewIntegers1"
+                style="@style/Board.TextView.End"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/Board.ConstraintLayout.Next">
+
+            <TextView
+                android:id="@+id/textViewIntegers2Text"
+                style="@style/Board.TextView"
+                android:text="@string/QuarterlyExpenses"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                style="@style/Board.ImageView"
+                android:src="@drawable/icons_money_cost_100_purple"
+                app:layout_constraintStart_toEndOf="@id/textViewIntegers2Text"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/Board.ConstraintLayout">
+
+            <TextView
+                android:id="@+id/textViewIntegers2"
+                style="@style/Board.TextView.End"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/Board.ConstraintLayout.Next">
+
+            <TextView
+                android:id="@+id/textViewIntegers3Text"
+                style="@style/Board.TextView"
+                android:text="@string/TotalFunds"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                style="@style/Board.ImageView"
+                android:src="@drawable/icons_money_acc_100_purple"
+                app:layout_constraintStart_toEndOf="@id/textViewIntegers3Text"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/Board.ConstraintLayout">
+
+            <TextView
+                android:id="@+id/textViewIntegers3"
+                style="@style/Board.TextView.End"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

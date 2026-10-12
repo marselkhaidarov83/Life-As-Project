@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_sheet_background"
+        android:padding="@dimen/BasePadding2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/NeedSubscription"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewLegend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:layout_marginBottom="@dimen/BasePadding"
+                android:textSize="@dimen/Popup.TextSize03"
+                android:text="
+Уважаемый пользователь напоминаю, что формат пользования программой - условно бесплатный\n\n
+Вы можете либо приобрести подписку на полную версию программы, либо пользоваться урезанной её формой.\n\n
+Для пользования всеми возможностями программы без ограничений приобретите подписку, нажав на кнопку\n"
+                android:textAlignment="gravity" />
+
+            <Button
+                android:id="@+id/buttonPaySubscription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/Popup.TextSize03"
+                android:text="Приобрести подписку"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/textViewLegend2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:layout_marginBottom="@dimen/BasePadding"
+                android:textSize="@dimen/Popup.TextSize03"
+                android:text="\n
+В урезанной версии доступна возможность неограниченного ввода информации и просмотра отчетности по доходам и расходам текущего месяца.\n\n
+А также доступна возможность ограниченной работы с доходами и расходами за любой период времени, с мечтами, целями, ростом доходов, активамми, проектами, задачами и отчетностью по финансам. \n\n
+Для пользования урезанной версией программы введите ключ."
+                android:textAlignment="gravity" />
+
+            <EditText
+                android:id="@+id/editTextKey"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:textSize="@dimen/Popup.TextSize03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/buttonKeySubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/Popup.TextSize03"
+                android:text="Ввести ключ"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:id="@+id/textViewLegend3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:layout_marginBottom="@dimen/BasePadding"
+                android:textSize="@dimen/Popup.TextSize03"
+                android:text="\n
+Ключи для пользования программой вы можете найти в чат-боте\n"
+                android:textAlignment="gravity" />
+
+            <TextView
+                android:id="@+id/textViewLegendLinkBot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:layout_marginBottom="@dimen/BasePadding"
+                android:textSize="@dimen/Popup.TextSize03"
+                android:text="@string/PrivacyLinkBot"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

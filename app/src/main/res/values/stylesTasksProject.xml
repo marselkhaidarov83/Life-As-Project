@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Recycle View Item-->
+    <style name="Tasks.Project.RViewItem.TextView.Name" parent="Tasks.RViewItem.TextView">
+        <item name="android:textSize">@dimen/Tasks.Popup.TextSize05</item>
+    </style>
+
+    <style name="Tasks.Project.RViewItem.TextView.Count" parent="Tasks.RViewItem.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/Tasks.Popup.TextSize04</item>
+    </style>
+
+    <!--Popup-->
+    <style name="Tasks.Project.Popup.Parent" parent="Tasks.Popup.TextView" />
+
+    <style name="Tasks.Project.Popup.TextView" parent="Tasks.Popup.TextView" />
+
+    <style name="Tasks.Project.Popup.TextView.Caption" parent="Tasks.Popup.TextView.Caption" />
+
+    <style name="Tasks.Project.Popup.EditText" parent="Tasks.Popup.EditText" />
+
+    <style name="Tasks.Project.Popup.Spinner.ParentProject" parent="Tasks.Popup.Spinner.ParentProject" />
+
+    <style name="Tasks.Project.Popup.Spinner.Status" parent="Tasks.Popup.Spinner.Status" />
+    <style name="Tasks.Project.Popup.Spinner.DropDown.Status" parent="Tasks.Popup.Spinner.DropDown.Status"/>
+
+    <style name="Tasks.Project.Popup.Layout.Caption" parent="Tasks.Popup.Layout.Caption" />
+
+    <style name="Tasks.Project.Popup.ImageView.Delete" parent="Tasks.Popup.ImageView.Delete">
+        <item name="contentDescription">@string/ButtonDeleteTasksProject</item>
+    </style>
+
+    <style name="Tasks.Project.Popup.ImageView.Close" parent="Tasks.Popup.ImageView.Close" />
+
+    <style name="Tasks.Project.Popup.Button.Save" parent="Tasks.Popup.Button.Save" />
+
+
+    <!--Settings-->
+
+
+</resources>

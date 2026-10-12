@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MainLayout">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewDreams"
+        style="@style/RView.WithMargins.Grid"
+        app:spanCount="1"
+        tools:listitem="@layout/item_money_dream" />
+
+</RelativeLayout>

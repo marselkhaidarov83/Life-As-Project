@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Recycle View Item-->
+    <style name="Tasks.Task.RViewItem.ImageView.Confirmed" parent="Tasks.RViewItem.ImageView.Custom1" />
+    <style name="Tasks.Task.RViewItem.ImageView.Type" parent="Tasks.RViewItem.ImageView.Custom1" />
+
+    <style name="Tasks.Task.RViewItem.TextView.Name" parent="Tasks.RViewItem.TextView.Bold" />
+    <style name="Tasks.Task.RViewItem.TextView.Comment" parent="Tasks.RViewItem.TextView" />
+    <style name="Tasks.Task.RViewItem.TextView.Date" parent="Tasks.RViewItem.TextView" />
+    <style name="Tasks.Task.RViewItem.TextView.Period" parent="Tasks.RViewItem.TextView" />
+    <style name="Tasks.Task.RViewItem.TextView.ProjectName" parent="Tasks.RViewItem.TextView.End" />
+
+    <!--Popup-->
+    <style name="Tasks.Task.Popup.EditText" parent="Tasks.Popup.EditText" />
+
+    <style name="Tasks.Task.Popup.TextView" parent="Tasks.Popup.TextView" />
+
+    <style name="Tasks.Task.Popup.TextView.Caption" parent="Tasks.Popup.TextView.Caption" />
+
+    <style name="Tasks.Task.Popup.TextView.Date" parent="Tasks.Popup.TextView.Date" />
+
+    <style name="Tasks.Task.Popup.TextView.Time" parent="Tasks.Popup.TextView.Time" />
+
+    <style name="Tasks.Task.Popup.TextView.Date.Title" parent="Tasks.Popup.TextView.Date.Title" />
+    <style name="Tasks.Task.Popup.TextView.Time.Title" parent="Tasks.Popup.TextView.Time.Title" />
+
+    <style name="Tasks.Task.Popup.TextView.Today" parent="Tasks.Popup.TextView.LeftColumn" />
+    <style name="Tasks.Task.Popup.TextView.Tomorrow" parent="Tasks.Popup.TextView.LeftColumn" />
+    <style name="Tasks.Task.Popup.TextView.ThisWeek" parent="Tasks.Popup.TextView.LeftColumn" />
+    <style name="Tasks.Task.Popup.TextView.OnTheWeekend" parent="Tasks.Popup.TextView.LeftColumn" />
+    <style name="Tasks.Task.Popup.TextView.NextWeek" parent="Tasks.Popup.TextView.LeftColumn" />
+    <style name="Tasks.Task.Popup.TextView.PostponeUntil" parent="Tasks.Popup.TextView.LeftColumn" />
+    <style name="Tasks.Task.Popup.TextView.WithoutTime" parent="Tasks.Popup.TextView.LeftColumn" />
+
+    <style name="Tasks.Task.Popup.TextView.Value" parent="Tasks.Popup.TextView.RightColumn.WithValue" />
+    <style name="Tasks.Task.Popup.TextView.Blank" parent="Tasks.Popup.TextView.RightColumn" />
+
+    <style name="Tasks.Task.Popup.Layout.Caption" parent="Tasks.Popup.Layout.Caption" />
+
+    <style name="Tasks.Task.Popup.ImageView.Delete" parent="Tasks.Popup.ImageView.Delete">
+        <item name="contentDescription">@string/ButtonDeleteTasksTask</item>
+    </style>
+
+    <style name="Tasks.Task.Popup.ImageView.Add" parent="Tasks.Popup.ImageView.Add" />
+
+    <style name="Tasks.Task.Popup.ImageView.Close" parent="Tasks.Popup.ImageView.Close" />
+
+    <style name="Tasks.Task.Popup.ImageView.Date.Minus" parent="Tasks.Popup.ImageView.Date.Minus" />
+
+    <style name="Tasks.Task.Popup.ImageView.Date.Plus" parent="Tasks.Popup.ImageView.Date.Plus" />
+
+    <style name="Tasks.Task.Popup.ImageView.Time.Minus" parent="Tasks.Popup.ImageView.Time.Minus" />
+
+    <style name="Tasks.Task.Popup.ImageView.Time.Plus" parent="Tasks.Popup.ImageView.Time.Plus" />
+
+    <style name="Tasks.Task.Popup.ImageView.PF.Repeat" parent="Tasks.Popup.ImageView.PF.Repeat" />
+
+    <style name="Tasks.Task.Popup.ImageView.Priority" parent="Tasks.Popup.ImageView.Priority" />
+
+    <style name="Tasks.Task.Popup.ImageView.ClearDate" parent="Tasks.Popup.ImageView.ClearDate" />
+
+    <style name="Tasks.Task.Popup.Button.Save" parent="Tasks.Popup.Button.Save" />
+
+    <style name="Tasks.Task.Popup.Button.Next" parent="Tasks.Popup.Button.Next" />
+
+    <style name="Tasks.Task.Popup.Button.Prev" parent="Tasks.Popup.Button.Prev" />
+
+    <style name="Tasks.Task.Popup.Button.OK" parent="Tasks.Popup.Button.OK" />
+
+    <style name="Tasks.Task.Popup.Spinner.RepeatSubTasks" parent="Tasks.Popup.Spinner.RepeatSubTasks" />
+    <style name="Tasks.Task.Popup.Spinner.DropDown.RepeatSubTasks" parent="Tasks.Popup.Spinner.DropDown.RepeatSubTasks" />
+
+    <style name="Tasks.Task.Popup.Spinner.RepeatType" parent="Tasks.Popup.Spinner.RepeatType" />
+    <style name="Tasks.Task.Popup.Spinner.DropDown.RepeatType" parent="Tasks.Popup.Spinner.DropDown.RepeatType" />
+
+    <style name="Tasks.Task.Popup.Spinner.Project" parent="Tasks.Popup.Spinner.Project" />
+    <style name="Tasks.Task.Popup.Spinner.DropDown.Project" parent="Tasks.Popup.Spinner.DropDown.Project" />
+
+    <style name="Tasks.Task.Popup.Spinner.Priority" parent="Tasks.Popup.Spinner.Priority" />
+    <style name="Tasks.Task.Popup.Spinner.DropDown.Priority" parent="Tasks.Popup.Spinner.DropDown.Priority" />
+
+    <style name="Tasks.Task.Popup.Spinner.Sorting" parent="Tasks.Popup.Spinner.Sorting" />
+    <style name="Tasks.Task.Popup.Spinner.DropDown.Sorting" parent="Tasks.Popup.Spinner.DropDown.Sorting" />
+
+    <style name="Tasks.Task.Popup.Spinner.Task" parent="Tasks.Popup.Spinner.Task" />
+    <style name="Tasks.Task.Popup.Spinner.DropDown.Task" parent="Tasks.Popup.Spinner.DropDown.Task" />
+
+    <!--Settings-->
+
+</resources>

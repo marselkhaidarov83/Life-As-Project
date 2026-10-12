@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimensions-->
+    <dimen name="Category.Popup.RVItem.Layout.Main.Width">60dp</dimen>
+    <dimen name="Category.Popup.RVItem.MaterialCard.ConstraintLayout.Height">22dp</dimen>
+    <dimen name="Category.Popup.RVItem.TextView.TextSize">7sp</dimen>
+    <dimen name="Category.Popup.RVItem.ImageView.Icon.Height">20dp</dimen>
+    <dimen name="Category.Popup.RecyclerView.Width">310dp</dimen>
+    <dimen name="Category.Popup.RecyclerView.Height">248dp</dimen>
+    <!-- Dimensions-->
+
+    <style name="Category.Popup.EditText.Text.Name" parent="Popup.EditText.Text">
+        <item name="android:hint">@string/HintCategoryName</item>
+    </style>
+
+    <style name="Category.Popup.RVItem.Layout.Main" parent="Popup">
+        <item name="android:layout_width">@dimen/Category.Popup.RVItem.Layout.Main.Width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/HalfPadding</item>
+    </style>
+
+    <style name="Category.Popup.RVItem.MaterialCard.LinearLayout" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="Category.Popup.RVItem.MaterialCard.ConstraintLayout" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Category.Popup.RVItem.MaterialCard.ConstraintLayout.Height</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="Category.Popup.RVItem.TextView.Name" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_gravity">center_vertical|center</item>
+        <item name="android:layout_marginTop">@dimen/Padding2dp</item>
+        <item name="android:layout_marginBottom">@dimen/Padding2dp</item>
+        <item name="android:minLines">1</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:text">@string/CustomString</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/Category.Popup.RVItem.TextView.TextSize</item>
+    </style>
+
+    <style name="Category.Popup.RVItem.ImageView.Icon" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Category.Popup.RVItem.ImageView.Icon.Height</item>
+        <item name="android:src">@drawable/icons_cirlce_50</item>
+    </style>
+
+    <style name="Category.Popup.RVItem.TextView.Sum" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/Padding2dp</item>
+        <item name="android:text">@string/CustomString</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/Category.Popup.RVItem.TextView.TextSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Category.Popup.RecyclerView" parent="Popup.RecyclerView.Grid">
+        <item name="android:layout_width">@dimen/Category.Popup.RecyclerView.Width</item>
+        <item name="android:layout_height">@dimen/Category.Popup.RecyclerView.Height</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:scrollbars">horizontal</item>
+        <item name="spanCount">5</item>
+    </style>
+
+    <style name="Categpry.Popup.EditText.Number.Amount" parent="Popup.EditText.Number.Amount">
+        <item name="android:inputType">numberDecimal|numberSigned</item>
+    </style>
+
+</resources>

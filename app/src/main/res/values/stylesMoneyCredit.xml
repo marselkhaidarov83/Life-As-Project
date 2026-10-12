@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Recycle View Item-->
+
+
+
+    <!--Popup-->
+
+
+
+    <!--NestedScrollView-->
+
+    <style name="Money.Credit.Popup.NestedScrollView1" parent="Money.Target.Popup.NestedScrollView">
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="Money.Credit.Popup.NestedScrollView2" parent="Money.Target.Popup.NestedScrollView">
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="Money.Credit.Popup.NestedScrollView3" parent="Money.Target.Popup.NestedScrollView">
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <!--Button-->
+    <style name="Money.Credit.Popup.Button.Save" parent="Money.Popup.Button.Save">
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="Money.Credit.Popup.Button.Next" parent="Money.Popup.Button.Next">
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+    <style name="Money.Credit.Popup.Button.Prev" parent="Money.Popup.Button.Prev">
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+    </style>
+
+    <!--CheckBox-->
+
+
+
+    <!--TextView-->
+
+
+
+    <!--EditText-->
+
+
+
+</resources>

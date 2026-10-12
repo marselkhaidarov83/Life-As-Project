@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimensions -->
+    <dimen name="PlanFact.RView.Item.Height">33dp</dimen>
+    <dimen name="PlanFact.MaterialCardView.Head.Height">30dp</dimen>
+    <dimen name="PlanFact.SeekBar.Data.Height">30dp</dimen>
+    <dimen name="PlanFact.RView.Item.TextView.Name.Width">160dp</dimen>
+    <dimen name="PlanFact.ConstraintLayout.TextView.0.Width">200dp</dimen>
+    <!-- Dimensions -->
+
+    <style name="PlanFact">
+        <item name="android:textSize">@dimen/Popup.TextSize09</item>
+    </style>
+
+    <style name="PlanFact.MaterialCardView.Head" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/PlanFact.MaterialCardView.Head.Height</item>
+        <item name="android:layout_margin">@dimen/BasePadding</item>
+    </style>
+
+    <style name="PlanFact.ConstraintLayout.First" parent="Custom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="PlanFact.ConstraintLayout" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+    </style>
+
+    <style name="PlanFact.ConstraintLayout.TextView" parent="PlanFact">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/CustomString</item>
+        <item name="android:layout_gravity">center_vertical|center</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="PlanFact.ConstraintLayout.TextView.0" parent="PlanFact.ConstraintLayout.TextView">
+        <item name="android:layout_width">@dimen/PlanFact.ConstraintLayout.TextView.0.Width</item>
+    </style>
+
+    <style name="PlanFact.SeekBar.Data" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/PlanFact.SeekBar.Data.Height</item>
+        <item name="android:min">1</item>
+        <item name="android:max">3</item>
+    </style>
+
+    <style name="PlanFact.RView.Item" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/PlanFact.RView.Item.Height</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="PlanFact.RView.Item.MaterialCardView.First" parent="Custom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="strokeColor">@color/white</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+    </style>
+
+    <style name="PlanFact.RView.Item.MaterialCardView" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+    </style>
+
+    <style name="PlanFact.RView.Item.MaterialCardView.Last" parent="PlanFact.RView.Item.MaterialCardView">
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+    </style>
+
+    <style name="PlanFact.RView.Item.TextView" parent="PlanFact">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:text">@string/CustomString</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="PlanFact.RView.Item.TextView.Name" parent="PlanFact.RView.Item.TextView">
+        <item name="android:layout_width">@dimen/PlanFact.RView.Item.TextView.Name.Width</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:paddingStart">@dimen/BasePadding</item>
+    </style>
+
+    <style name="PlanFact.RView.Item.TextView.Else" parent="PlanFact.RView.Item.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical|end</item>
+        <item name="android:paddingEnd">@dimen/BasePadding</item>
+    </style>
+
+</resources>

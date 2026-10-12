@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Recycle View Item-->
+
+
+    <!--Popup-->
+
+    <style name="Money.Target.Popup.TextView.Caption" parent="Money.Popup.TextView.Caption" />
+
+    <style name="Money.Target.Popup.Layout.Caption" parent="Money.Popup.Layout.Caption" />
+
+    <style name="Money.Target.Popup.ImageView.Delete" parent="Money.Popup.ImageView.Delete">
+        <item name="contentDescription">@string/ButtonDeleteMoneyTarget</item>
+    </style>
+
+    <style name="Money.Target.Popup.ImageView.Add" parent="Money.Popup.ImageView.Add" />
+
+    <style name="Money.Target.Popup.ImageView.Close" parent="Money.Popup.ImageView.Close" />
+
+    <style name="Money.Target.Popup.NestedScrollView" parent="Money.Popup.NestedScrollView">
+    </style>
+
+    <style name="Money.Target.Popup.Spinner.AccumulationType" parent="Money.Popup.Spinner.AccumulationType" />
+    <style name="Money.Target.Popup.Spinner.DropDown.AccumulationType" parent="Money.Popup.Spinner.DropDown" />
+
+    <!--NestedScrollView-->
+
+    <style name="Money.Target.Popup.NestedScrollView1" parent="Money.Target.Popup.NestedScrollView">
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="Money.Target.Popup.NestedScrollView2" parent="Money.Target.Popup.NestedScrollView">
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="Money.Target.Popup.NestedScrollView3" parent="Money.Target.Popup.NestedScrollView">
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <!--Button-->
+    <style name="Money.Target.Popup.Button.Save" parent="Money.Popup.Button.Save" />
+    <style name="Money.Target.Popup.Button.Next" parent="Money.Popup.Button.Next" />
+    <style name="Money.Target.Popup.Button.Prev" parent="Money.Popup.Button.Prev" />
+
+    <!--CheckBox-->
+    <style name="Money.Target.Popup.CheckBox" parent="Money.Popup.CheckBox">
+        <item name="android:textSize">@dimen/Popup.TextSize02</item>
+    </style>
+
+    <style name="Money.Target.Popup.CheckBox.ExistAccumulation" parent="Money.Target.Popup.CheckBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:text">@string/Popup.SetupSavings</item>
+    </style>
+
+    <!--TextView-->
+    <style name="Money.Target.Popup.TextView" parent="Money.Popup.TextView">
+        <item name="android:textSize">@dimen/Popup.TextSize02</item>
+    </style>
+
+    <style name="Money.Target.Popup.TextView.StartSum" parent="Money.Target.Popup.TextView">
+        <item name="android:text">@string/Popup.StartSum</item>
+    </style>
+
+    <style name="Money.Target.Popup.TextView.AccumulationType" parent="Money.Target.Popup.TextView">
+        <item name="android:text">@string/Popup.AccumulationType</item>
+    </style>
+
+    <style name="Money.Target.Popup.TextView.AccumulationCoef" parent="Money.Target.Popup.TextView">
+        <item name="android:text">@string/Popup.AccumulationCoef</item>
+    </style>
+
+    <style name="Money.Target.Popup.TextView.AccumulationStartDate" parent="Money.Target.Popup.TextView">
+        <item name="android:text">@string/Popup.StartDate</item>
+    </style>
+
+    <style name="Money.Target.Popup.TextView.AccumulationEndDate" parent="Money.Target.Popup.TextView">
+        <item name="android:text">@string/Popup.EndDate</item>
+    </style>
+
+    <!--EditText-->
+    <style name="Money.Target.Popup.EditText" parent="Money.Popup.EditText">
+        <item name="android:textSize">@dimen/Popup.TextSize02</item>
+    </style>
+
+    <style name="Money.Target.Popup.EditText.AccumulationStartSum" parent="Money.Target.Popup.EditText">
+        <item name="android:text">@string/CustomNum</item>
+    </style>
+
+    <style name="Money.Target.Popup.EditText.AccumulationCoef" parent="Money.Target.Popup.EditText">
+        <item name="android:text">@string/CustomNum</item>
+    </style>
+</resources>

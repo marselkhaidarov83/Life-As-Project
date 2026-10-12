@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Popup.LinearLayout.Main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCaption"
+        style="@style/Popup.ConstraintLayout.Caption">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            style="@style/Popup.ImageView.Delete"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/Popup.TextView.Caption"
+            android:text="@string/JobWithTagChange"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/Popup.ImageView.Close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/Popup.NestedScrollView.Main">
+
+        <LinearLayout
+            style="@style/Popup.LinearLayout.TopHead">
+
+            <TextView
+                android:id="@+id/textViewLegend"
+                style="@style/Popup.TextView.Legend"
+                android:text="
+Добавление нового тега или его редактирование осуществляется в 3 этапа:\n
+1) Для ввода/изменения названия тега поместите фокус в поле ввода наименования и укажите название тега;\n
+2) Для указания типа тега поместите фокус в поле ввода типа и выберите тип тега из списка;\n
+3) Для ввода/изменения комментария к тегу поместите фокус в поле ввода комментария и укажите комментарий;\n
+Для сохранения изменений нажмите кнопку 'Сохранить' в нижней части окна.\n
+\n
+Чтобы удалить тег нажмите кнопку [delete_purple] в левом верхнем углу окна.\n
+\n
+Удалить тег вы сможете только, если тег была сохранен хотя бы 1 раз, и если нет ни одного объкта с указанием этого тега.\n
+\n
+Если тег невозможно удалить, но вы больше не хотите видеть его на главном экране, то архивируйте его.
+Для этого установите статус тега 'Архивный' - нажмите на кнопку [archive] в правом верхнем углу окна. \n
+\n
+Если вы захотите повторно посмотреть легенду о том, как редактировать или удалить тег, нажмите кнопку [mascot] в правом верхнем углу окна.\n
+\n
+PS: вы всегда можете включить/отключить помощника в настройках программы - для этого выберите меню 'Настройки' через 3 точки в правом верхнем углу экрана.\n
+\n
+PPS: в бесплатной версии программы вы можете добавить не более [tag_free_count] тегов. Чтобы иметь возможность добавлять больше тегов, приобретите подписку. Для этого выберите меню 'Личный кабинет' через 3 точки в правом верхнем углу экрана.
+                "/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

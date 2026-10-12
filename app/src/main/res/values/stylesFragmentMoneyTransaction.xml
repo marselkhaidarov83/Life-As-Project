@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimens -->
+    <dimen name="Transaction.RView.Item.Layout.Main.Height">40dp</dimen>
+    <dimen name="Transaction.RView.Item.ImageView.Width">30dp</dimen>
+    <dimen name="Transaction.RView.Item.ImageView.Height">30dp</dimen>
+    <dimen name="Transaction.RView.Item.MaterialCardView.Icon.Width">34dp</dimen>
+    <dimen name="Transaction.RView.Item.MaterialCardView.Icon.CardCornerRadius">30dp</dimen>
+    <dimen name="Transaction.RView.Item.MaterialCardView.Icon.StrokeWidth">2dp</dimen>
+    <dimen name="Transaction.RView.Item.TextView.Width">150dp</dimen>
+    <!-- Dimens -->
+
+    <style name="Transaction.RView.Item.MaterialCardView.Main" parent="RView.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Transaction.RView.Item.Layout.Main.Height</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+        <item name="android:layout_marginBottom">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Transaction.RView.Item.ConstraintLayout.Main" parent="RView.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Transaction.RView.Item.MaterialCardView.Icon" parent="Custom">
+        <item name="android:layout_width">@dimen/Transaction.RView.Item.MaterialCardView.Icon.Width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingStart">@dimen/BasePadding</item>
+        <item name="android:layout_margin">@dimen/HalfPadding</item>
+        <item name="cardCornerRadius">@dimen/Transaction.RView.Item.MaterialCardView.Icon.CardCornerRadius</item>
+        <item name="strokeColor">@color/green</item>
+        <item name="strokeWidth">@dimen/Transaction.RView.Item.MaterialCardView.Icon.StrokeWidth</item>
+    </style>
+
+    <style name="Transaction.RView.Item.ImageView.Icon" parent="Custom">
+        <item name="android:layout_width">@dimen/Transaction.RView.Item.ImageView.Width</item>
+        <item name="android:layout_height">@dimen/Transaction.RView.Item.ImageView.Height</item>
+        <item name="android:layout_gravity">center_vertical|center</item>
+        <item name="android:src">@drawable/icons_cirlce_100</item>
+    </style>
+
+    <style name="Transaction.RView.Item.TextView.Date" parent="Custom">
+        <item name="android:layout_width">@dimen/Transaction.RView.Item.TextView.Width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:text">@string/CustomDate</item>
+        <item name="android:textSize">@dimen/Popup.TextSize02</item>
+    </style>
+
+    <style name="Transaction.RView.Item.TextView.Sum" parent="Custom">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+        <item name="android:gravity">center_vertical|end</item>
+        <item name="android:text">@string/CustomString</item>
+        <item name="android:textSize">@dimen/Popup.TextSize02</item>
+    </style>
+
+    <style name="Transaction.RView.Item.LinearLayout.3" parent="Custom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+</resources>

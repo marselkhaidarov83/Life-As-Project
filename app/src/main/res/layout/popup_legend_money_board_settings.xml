@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Popup.LinearLayout.Main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCaption"
+        style="@style/Popup.ConstraintLayout.Caption">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            style="@style/Popup.ImageView.Delete"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/Popup.TextView.Caption"
+            android:text="@string/JobWithSettings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/Popup.ImageView.Close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/Popup.NestedScrollView.Main">
+
+        <LinearLayout
+            style="@style/Popup.LinearLayout.TopHead">
+
+            <TextView
+                android:id="@+id/textViewLegend"
+                style="@style/Popup.TextView.Legend"
+                android:text="
+Форма настройки экрана обзора денег представляет возможность настраивать формат вывода данных на экран.\n
+\n
+Работа с настройками формы обзора денег осуществляется в несколько этапов:\n
+1) чтобы отбразить данные, установите флажок [archive] в соответствующей строке настроек;\n
+2) чтобы скрыть данные, снимите флажок [archive] в соответствующей строке настроек;\n
+\n
+Для изменения порядка вывода данных на экран перемещайте вверх/вниз строки настроек:\n
+1) для перемещения карточки вверх, используйте кнопку [up] соответствующей строки настройки;\n
+2) для перемещения карточки вниз, используйте кнопку [down] соответствующей строки настройки;\n
+\n
+Для применения настроек, нажмите кнопку 'Применить'.\n
+\n
+Если вы захотите повторно посмотреть легенду о форме настройки, нажмите [settings] в панели инструментов экрана.\n
+\n
+PS: вы всегда можете включить/отключить помощника в настройках программы - для этого выберите меню 'Настройки' через 3 точки в правом верхнем углу экрана.
+                "/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

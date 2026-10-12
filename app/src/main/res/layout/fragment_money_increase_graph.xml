@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart1"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/seekBarX" />
+
+    <SeekBar
+        android:id="@+id/seekBarY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="8dp"
+        android:layout_toStartOf="@+id/textViewShift"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="100dp"
+        android:max="200" />
+
+    <SeekBar
+        android:id="@+id/seekBarX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBarY"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="135dp"
+        android:layout_toStartOf="@+id/textViewCount"
+        android:layout_marginEnd="5dp"
+        android:max="20" />
+
+    <TextView
+        android:id="@+id/textViewCount"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekBarX"
+        android:layout_alignParentEnd="true"
+        android:text="@string/dash"
+        android:layout_marginEnd="10dp"
+        android:gravity="end"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textViewShift"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekBarY"
+        android:layout_alignParentEnd="true"
+        android:text="@string/dash"
+        android:layout_marginEnd="10dp"
+        android:gravity="end"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

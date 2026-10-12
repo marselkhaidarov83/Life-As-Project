@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCaption"
+        style="@style/Tasks.Project.Popup.Layout.Caption">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            style="@style/Tasks.Project.Popup.ImageView.Delete"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewCaption"
+            style="@style/Tasks.Project.Popup.TextView.Caption"
+            android:text="@string/PopupTypeAssetAdd"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/Tasks.Project.Popup.ImageView.Close"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/BasePadding"
+        android:layout_marginEnd="@dimen/BasePadding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:padding="@dimen/BasePadding2">
+
+                <TableRow
+                    android:id="@+id/tableRowGroupPortfolio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewGroupPortfolio"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/spinnerGroupPortfolio"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/GroupPortfolio"
+                        android:textAlignment="textEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinnerGroupPortfolio"
+                        style="@style/Tasks.Project.Popup.Spinner.Status"
+                        android:layout_weight="1"
+                        tools:listitem="@layout/simple_spinner_tasks_project_status_item">
+                    </Spinner>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowPortfolio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewPortfolio"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/spinnerPortfolio"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/Portfolio"
+                        android:textAlignment="textEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinnerPortfolio"
+                        style="@style/Tasks.Project.Popup.Spinner.Status"
+                        android:layout_weight="1"
+                        tools:listitem="@layout/simple_spinner_tasks_project_status_item">
+                    </Spinner>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewTypeAsset"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/spinnerTypeAsset"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/TypeAsset"
+                        android:textAlignment="textEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinnerTypeAsset"
+                        style="@style/Tasks.Project.Popup.Spinner.Status"
+                        android:layout_weight="1"
+                        tools:listitem="@layout/simple_spinner_tasks_project_status_item">
+                    </Spinner>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewAsset"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/spinnerTypeAsset"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/Asset"
+                        android:textAlignment="textEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinnerAsset"
+                        style="@style/Tasks.Project.Popup.Spinner.Status"
+                        android:layout_weight="1"
+                        tools:listitem="@layout/simple_spinner_tasks_project_status_item">
+                    </Spinner>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowOperation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewAssetOperation"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/spinnerTypeAsset"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/AssetOperation"
+                        android:textAlignment="textEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinnerAssetOperation"
+                        style="@style/Tasks.Project.Popup.Spinner.Status"
+                        android:layout_weight="1"
+                        tools:listitem="@layout/simple_spinner_tasks_project_status_item">
+                    </Spinner>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowOperationTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewAssetOperation2"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/spinnerTypeAsset"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/AssetOperation"
+                        android:textAlignment="textEnd" />
+
+                    <TextView
+                        android:id="@+id/textViewAssetOperationTV"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/spinnerTypeAsset"
+                        android:paddingStart="@dimen/BasePadding2"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/AssetOperation"
+                        android:textAlignment="textStart" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewCategory"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/spinnerTypeAsset"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/Category"
+                        android:textAlignment="textEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinnerCategory"
+                        style="@style/Tasks.Project.Popup.Spinner.Status"
+                        android:layout_weight="1"
+                        tools:listitem="@layout/simple_spinner_tasks_project_status_item">
+                    </Spinner>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowSubCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewSubCategory"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/spinnerTypeAsset"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/SubCategory"
+                        android:textAlignment="textEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinnerSubCategory"
+                        style="@style/Tasks.Project.Popup.Spinner.Status"
+                        android:layout_weight="1"
+                        tools:listitem="@layout/simple_spinner_tasks_project_status_item">
+                    </Spinner>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_span="3"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textViewDate"
+                            android:layout_width="200dp"
+                            android:layout_height="35dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center_vertical|center"
+                            android:text="@string/CustomDate"
+                            android:textAlignment="center"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageViewDateMinus"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="end"
+                            android:layout_toStartOf="@id/textViewDate"
+                            android:src="@drawable/icons_double_left_48" />
+
+                        <ImageView
+                            android:id="@+id/imageViewDatePlus"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_toEndOf="@id/textViewDate"
+                            android:src="@drawable/icons_double_right_48"
+                            android:textAlignment="textStart" />
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textViewDateTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Date"
+                        android:textAlignment="center"
+                        android:textSize="8sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textViewCount"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="wrap_content"
+                        android:labelFor="@id/editTextCount"
+                        android:gravity="center_vertical|end"
+                        android:text="@string/Count" />
+
+                    <EditText
+                        android:id="@+id/editTextCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:layout_marginTop="@dimen/BasePadding"
+                        android:text=""
+                        android:textAlignment="textStart"
+                        style="@style/Tasks.Project.Popup.EditText" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textViewPrice"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical|end"
+                        android:text="@string/Price"/>
+
+                    <EditText
+                        android:id="@+id/editTextPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:layout_marginTop="@dimen/BasePadding"
+                        android:text=""
+                        android:textAlignment="textStart"
+                        style="@style/Tasks.Project.Popup.EditText" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textViewSum_"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical|end"
+                        android:text="@string/Sum" />
+
+                    <TextView
+                        android:id="@+id/textViewSum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:layout_marginStart="@dimen/BasePadding"
+                        android:text=""
+                        android:textAlignment="textStart"
+                        style="@style/Tasks.Project.Popup.EditText" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textViewAccumulatedPrice"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical|end"
+                        android:text="@string/AccumulatedPrice"/>
+
+                    <EditText
+                        android:id="@+id/editTextAccumulatedPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:layout_marginTop="@dimen/BasePadding"
+                        android:text=""
+                        android:textAlignment="textStart"
+                        style="@style/Tasks.Project.Popup.EditText" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textViewAccumulatedSum_"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical|end"
+                        android:text="@string/AccumulatedSum" />
+
+                    <TextView
+                        android:id="@+id/textViewAccumulatedSum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:layout_marginStart="@dimen/BasePadding"
+                        android:text=""
+                        android:textAlignment="textStart"
+                        style="@style/Tasks.Project.Popup.EditText" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textViewComission"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical|end"
+                        android:text="@string/Comission"/>
+
+                    <EditText
+                        android:id="@+id/editTextComission"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:layout_marginTop="@dimen/BasePadding"
+                        android:text=""
+                        android:textAlignment="textStart"
+                        style="@style/Tasks.Project.Popup.EditText" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/buttonSave"
+                style="@style/Tasks.Project.Popup.Button.Save"
+                android:layout_width="match_parent">
+
+            </Button>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

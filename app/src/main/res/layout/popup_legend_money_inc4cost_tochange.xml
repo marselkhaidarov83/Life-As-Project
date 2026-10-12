@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Popup.LinearLayout.Main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCaption"
+        style="@style/Popup.ConstraintLayout.Caption">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            style="@style/Popup.ImageView.Delete"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/Popup.TextView.Caption"
+            android:text="@string/JobWithInc4Cost"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/Popup.ImageView.Close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/Popup.NestedScrollView.Main">
+
+        <LinearLayout
+            style="@style/Popup.LinearLayout.TopHead">
+
+            <TextView
+                android:id="@+id/textViewLegend"
+                style="@style/Popup.TextView.Legend"
+                android:text="
+Добавление нового распределения дохода в оперативный бюджет или его редактирование осуществляется в несколько этапов:\n
+\n
+1) Для ввода/изменения суммы операции поместите фокус в поле ввода суммы и укажите сумму операции;\n
+2) Укажите/скорректируйте категорию расхода (правая верхняя иконка в центральной части окна), куда будет зачислена сумма оперативного бюджета;\n
+3) Укажите/скорректируйте подкатегорию расхода (список иконок в нижней части окна), куда будет зачислена сумма оперативного бюджета;\n
+4) Для ввода/изменения даты операции нажмите на дату и укажите её во всплывающем окне либо воспользуйтесь кнопками кнопки [double_left_arrow], [double_right_arrow] для смещения даты в прошлое или в будущее.\n
+\n
+Для сохранения изменений нажмите кнопку 'Сохранить' в нижней части окна.\n
+\n
+Чтобы удалить распределения дохода в оперативный бюджет нажмите кнопку [delete_purple] в левом верхнем углу окна.\n
+\n
+Если вы захотите повторно посмотреть легенду о том, как редактировать или удалять распределение дохода в оперативный бюджет, нажмите кнопку [mascot] в правом верхнем углу окна.\n
+\n
+PS: вы всегда можете включить/отключить помощника в настройках программы - для этого выберите меню 'Настройки' через 3 точки в правом верхнем углу экрана.\n
+\n
+PPS: в бесплатной версии программы вы можете добавлять сколько угодно операций с деньгами в рамках текущего месяца.
+                "/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

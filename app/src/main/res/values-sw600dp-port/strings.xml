@@ -1,0 +1,19 @@
+<resources>
+    <!--    Наименование приложения-->
+    <!--    Кнопки-->
+    <string name="money_target">Dream/Targets</string>
+    <string name="money_increase">Revenue growth</string>
+    <string name="money_board">Money overview</string>
+    <string name="money_board_short">Money overview</string>
+
+    <!--    Надписи экранов-->
+    <!--    Ошибки-->
+    <!--    Действия для пользователя-->
+    <!--    Надписи на формах-->
+    <!--    Directories-->
+    <!--    Arrays-->
+    <!--    Тексты-->
+    <!--    Custom strings-->
+
+    <!--    Кнопки-->
+</resources>

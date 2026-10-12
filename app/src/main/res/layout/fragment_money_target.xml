@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/moneyTargetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/BasePadding"
+    android:orientation="horizontal"
+    tools:context="com.MH83.LifeAsProject.view.Money.MoneyTarget.FragmentMoneyTargetTable">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardViewDream"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/BasePadding"
+        android:layout_marginTop="@dimen/BasePadding">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="@dimen/RView.Item.ImageView.Status.Width"
+                android:layout_height="@dimen/RView.Item.ImageView.Status.Width"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:layout_marginTop="@dimen/BasePadding"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageViewStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@color/white">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/textViewStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="88"
+                        android:textAlignment="center"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:layout_marginBottom="@dimen/BasePadding"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textViewDreamName"
+                    style="@style/MoneyTargetTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="@dimen/BasePadding"
+                    android:text="@string/CustomString"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical|end"
+                    android:scaleType="centerInside">
+
+                    <com.MH83.LifeAsProject.custom.CustomImageViewW
+                        android:id="@+id/imageViewDreamImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listViewR"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_money_target" />
+
+</LinearLayout>

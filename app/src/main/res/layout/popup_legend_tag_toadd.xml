@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Popup.LinearLayout.Main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCaption"
+        style="@style/Popup.ConstraintLayout.Caption">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            style="@style/Popup.ImageView.Delete"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/Popup.TextView.Caption"
+            android:text="@string/JobWithTag"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/Popup.ImageView.Close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/Popup.NestedScrollView.Main">
+
+        <LinearLayout
+            style="@style/Popup.LinearLayout.TopHead">
+
+            <TextView
+                android:id="@+id/textViewLegend"
+                style="@style/Popup.TextView.Legend"
+                android:text="
+Расходные денежные операции можно анализировать в разрезе категории, при этом иногда такой анализ будет недостаточным.\n
+Информационные теги при добавлении их в расходные операции дают возможность проводить анализ в разрезе, отличном от разреза категорий.\n
+\n
+Создайте теги, указывайет их при необходимости в расходных денежных операциях и анализируйте.\n
+\n
+1) Чтобы добавить тег, нажмите кнопку [plus] в правом нижнем углу экрана.\n
+2) Чтобы изменить тег, нажмите на соответствующую карточку тега.\n
+3) Чтобы удалить тег, зайдите в режим редактирования и удалите тег.\n
+4) Если тег стала неактуальным, его можно либо удалить, либо установить ему статус архивного. Архивные теги можно скрыть из видимости через окно настроек, которое вызывается через панель инструментов.\n
+\n
+Если вы захотите повторно посмотреть легенду о том, как добавлять тег, нажмите кнопку [mascot] в правом нижнем углу экрана.\n
+\n
+Если вы захотите получить больше информации об экране тегов, выберите меню 'Легенда' через 3 точки в правом верхнем углу экрана.\n
+\n
+PS: вы всегда можете включить/отключить помощника в настройках программы - для этого выберите меню 'Настройки' через 3 точки в правом верхнем углу экрана.\n
+\n
+PPS: в бесплатной версии программы вы можете добавить не более [tag_free_count] тегов. Чтобы иметь возможность добавлять больше тегов, приобретите подписку. Для этого выберите меню 'Личный кабинет' через 3 точки в правом верхнем углу экрана.
+                "/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

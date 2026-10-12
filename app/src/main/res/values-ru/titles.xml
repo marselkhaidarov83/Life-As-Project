@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DescriptionDDDDD">Тексты используются в стаарых версиях popupView</string>
+
+    <string name="fragmentMoneyIncreasePopupAddTitle">Рост доходов - добавление</string>
+    <string name="fragmentMoneyIncreasePopupUpdateTitle">Рост доходов - изменение</string>
+
+    <string name="fragmentMoneyDreamPopupAddTitle">Мечта - добавление</string>
+    <string name="fragmentMoneyDreamPopupUpdateTitle">Мечта - изменение</string>
+
+    <string name="fragmentMoneyTargetPopupAddTitle">Цель - добавление</string>
+    <string name="fragmentMoneyTargetPopupUpdateTitle">Цель - изменение</string>
+
+    <string name="fragmentMoneyCategoryPopupAddTitle">Категория денег - добавление</string>
+    <string name="fragmentMoneyCategoryPopupUpdateTitle">Категория денег - изменение</string>
+
+    <string name="fragmentMoneyIncomingPopupAddTitle">План. доход - добавление</string>
+    <string name="fragmentMoneyIncomingPopupUpdateTitle">План. доход - изменение</string>
+
+    <string name="fragmentMoneyCostPopupAddTitle">План. расход - добавление</string>
+    <string name="fragmentMoneyCostPopupUpdateTitle">План. расход - изменение</string>
+
+    <string name="fragmentMoneyPlanPopupAddTitle">План денег - добавление</string>
+    <string name="fragmentMoneyPlanPopupUpdateTitle">План денег - изменение</string>
+
+    <string name="fragmentIncreaseSelectPopupAddTitle">Рост - выбор</string>
+    <string name="fragmentIncreaseSelectUpdateTitle">Рост - выбор</string>
+
+    <string name="fragmentMoneyFactIncomingPopupAddTitle">Доход - добавление</string>
+    <string name="fragmentMoneyFactIncomingPopupUpdateTitle">Доход - изменение</string>
+
+    <string name="fragmentMoneyFactCostPopupAddTitle">Расход - добавление</string>
+    <string name="fragmentMoneyFactCostPopupUpdateTitle">Расход - изменение</string>
+
+    <string name="fragmentMoneyPNLPopupAddTitle">Расход - добавление</string>
+    <string name="fragmentMoneyPNLPopupUpdateTitle">Расход - изменение</string>
+
+    <string name="fragmentMoneyInc4CostPopupAddTitle">Распред. дохода - добавление</string>
+    <string name="fragmentMoneyInc4CostPopupUpdateTitle">Распред. дохода - изменение</string>
+
+    <string name="fragmentMoneyMovingPopupAddTitle">Перемещение - добавление</string>
+    <string name="fragmentMoneyMovingPopupUpdateTitle">Перемещение - изменение</string>
+
+    <string name="fragmentMoneyCreditPopupAddTitle">Кредит - добавление</string>
+    <string name="fragmentMoneyCreditPopupUpdateTitle">Кредит - изменение</string>
+
+    <string name="fragmentMoneyCreditPivotPopupAddTitle">Поворотная точка - добавление</string>
+    <string name="fragmentMoneyCreditPivotPopupUpdateTitle">Поворотная точка - изменение</string>
+
+    <string name="fragmentMoneyCategoryPopupSelectTitle">Выбор категории</string>
+
+    <string name="fragmentSubscriptionPopupSelectTitle">Подписка - выбор</string>
+</resources>

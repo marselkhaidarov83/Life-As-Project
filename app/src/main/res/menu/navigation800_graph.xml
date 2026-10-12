@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/groupButtons">
+
+    <item
+        android:id="@+id/navig_graph"
+        android:orderInCategory="800"
+        android:icon="@drawable/icons_graph_100_white"
+        android:title="@string/GraphView"
+        android:onClick="onGraphClick"
+        app:showAsAction="never" />
+
+    </group>
+
+</menu>

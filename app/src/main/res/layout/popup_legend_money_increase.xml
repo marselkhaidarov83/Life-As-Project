@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_sheet_background"
+        android:padding="@dimen/BasePadding2">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icons8_delete_100_purple"
+            android:visibility="invisible"
+            android:contentDescription="@string/ButtonDeleteIncrease"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/JobWithIncrease"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icons8_close_window_100_purple"
+            android:contentDescription="@string/ButtonCloseWindow"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewLegend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:layout_marginBottom="@dimen/BasePadding"
+                android:text="
+Важно, чтобы ваши доходы росли. Хотя бы просто потому, что у нас есть инфляция - и чтобы не отставать от цен, необходимо, как минимум, не отставать от их роста.
+\n\n
+Зафиксируйте ваш ожидаемй рост доходов, и держите его каждый день перед глазами.\n
+Достаточно 3-5 этапов роста доходов, чтобы вспомнив о них утром, у вас появлялись мотивация и энергия.\n
+\n
+Чтобы добавить этап роста доходов, нажмите кнопку [plus] в правом верхнем углу экрана. Во всплывающем окне:\n
+1) Для указания даты наступления роста доходов нажмите на дату 'Апрель 2024' и выберите месяц роста доходов или воспользуйтесь кнопками [double_left_arrow] и [double_right_arrow] для смещения на 1 месяц ранее или позднее текущей выбранной даты;\n
+2) Для указания суммы роста доходов мечты поместите фокус в крайнее правое поле ввода и введите сумму;\n
+При наличии данных, программа будет показывать, какие суммы роста доходов имеются до текущей выбранной даты и полсед екущей выбранной даты.\n
+\n
+Чтобы изменить мечту, нажмите на карточку этапа роста доходов. Во всплывающем окне:\n
+1) Для изменнения даты наступления роста доходов нажмите на дату 'Апрель 2024' и выберите месяц роста доходов или воспользуйтесь кнопками [double_left_arrow] и [double_right_arrow] для смещения на 1 месяц ранее или позднее текущей выбранной даты;\n
+2) Для изменнения суммы роста доходов мечты поместите фокус в крайнее правое поле ввода и введите сумму;\n
+При наличии данных, программа будет показывать, какие суммы роста доходов имеются до текущей выбранной даты и после текущей выбранной даты.\n
+\n
+Чтобы удалить этап роста доходов, есть 3 способа:\n
+1) войдите в изменение этапа роста доходов и нажмите кнопку [delete_purple];\n
+2) свайпните влево карточку этапа роста доходов до появления и фиксации кнопки [delete] и затем нажмите на кнопку;\n
+3) свайпните влево до конца экрана карточку этапа роста доходов.\n
+\n
+Удалить этап роста доходов вы сможете только, если для этапа не введено ни одной детализации по доходам или расходам.\n
+\n
+Если вы захотите повторно посмотреть легенду, нажмите кнопку [legend] в правом верхнем углу экрана.\n
+\n
+Приятного пользования программой.\n
+PS: вы всегда можете дать обратную связь по программе или предложить ваш вариант доработки. Для этого перейдите в нашу группу Telegram по ссылке в личном кабинете. В личный кабинет вы можете попасть по кнопке [cabinet] в левом верхнум углу экрана.
+"
+                android:textAlignment="gravity" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

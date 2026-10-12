@@ -1,0 +1,20 @@
+<resources>
+    <!--   Наименование приложения-->
+    <!--   Кнопки-->
+    <string name="money_target">Мечты/Цели</string>
+    <string name="money_increase">Рост доходов</string>
+    <string name="money_board">Обзор по деньгам</string>
+    <string name="money_board_short">Обзор по деньгам</string>
+
+    <string name="money_your_accounting">Учет денежных средств</string>
+
+    <!--    Надписи экранов-->
+    <!--    Ошибки-->
+    <!--    Действия для пользователя-->
+    <!--    Надписи на формах-->
+    <!--    Directories-->
+    <!--    Arrays-->
+    <!--    Тексты-->
+    <!--    Custom strings-->
+    <!--    Кнопки-->
+</resources>

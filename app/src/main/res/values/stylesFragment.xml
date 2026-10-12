@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimens -->
+    <dimen name="RView.Item.ImageView.Status.Width">30dp</dimen>
+    <dimen name="Date.ImageView.Width">40dp</dimen>
+    <dimen name="Date.ImageView.Height">40dp</dimen>
+    <dimen name="Date.Spinner.Width">300dp</dimen>
+    <dimen name="Fragment.TextView.Date.Name.Weight">40</dimen>
+    <dimen name="Fragment.Divider.Layout.Main.Height">30dp</dimen>
+    <dimen name="Fragment.MainActivity.Toolbar.Height">40dp</dimen>
+    <dimen name="Fragment.MainActivity.Toolbar.TopLeft.Width">150dp</dimen>
+    <dimen name="Fragment.MainActivity.Toolbar.TopLeft.Height">50dp</dimen>
+    <dimen name="Fragment.MainActivity.CustomRingTextView.Width">32dp</dimen>
+    <dimen name="Fragment.MainActivity.CustomRingTextView.Height">32dp</dimen>
+    <dimen name="Fragment.MainActivity.BottomMenu.Height">62dp</dimen>
+    <!-- Dimens -->
+
+    <!-- Activity Main-->
+    <style name="Fragment.MainActivity.Toolbar" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Fragment.MainActivity.Toolbar.Height</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:theme">?attr/actionBarTheme</item>
+        <item name="android:transitionGroup">true</item>
+    </style>
+
+    <style name="Fragment.MainActivity.Toolbar.TopRight.2" parent="Fragment.MainActivity.Toolbar">
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="Fragment.MainActivity.Toolbar.TopLeft" parent="Fragment.MainActivity.Toolbar">
+        <item name="android:layout_width">@dimen/Fragment.MainActivity.Toolbar.TopLeft.Width</item>
+        <item name="android:layout_height">@dimen/Fragment.MainActivity.Toolbar.TopLeft.Height</item>
+    </style>
+
+    <style name="Fragment.MainActivity.Toolbar.TextView" parent="Custom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_gravity">center_vertical|center</item>
+        <item name="android:textSize">@dimen/Popup.TextSize10</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/CustomString</item>
+    </style>
+
+    <style name="Fragment.MainActivity.ContainerMain" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="Fragment.MainActivity.CustomRingTextView" parent="Custom">
+        <item name="android:textSize">@dimen/Popup.TextSize10</item>
+        <item name="android:layout_width">@dimen/Fragment.MainActivity.CustomRingTextView.Width</item>
+        <item name="android:layout_height">@dimen/Fragment.MainActivity.CustomRingTextView.Height</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding2</item>
+        <item name="android:layout_marginTop">@dimen/BasePadding</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical|center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:text">$</item>
+    </style>
+
+    <style name="Fragment.MainActivity.BottomMenu" parent="@style/Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Fragment.MainActivity.BottomMenu.Height</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="itemIconTint">@color/white</item>
+        <item name="itemTextColor">@color/white</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemIconSize">30dp</item>
+        <item name="itemPaddingBottom">8dp</item>
+        <item name="itemPaddingTop">8dp</item>
+    </style>
+
+    <style name="Fragment.MainActivity.BottomMenu.Invisible" parent="Fragment.MainActivity.BottomMenu">
+        <item name="android:visibility">invisible</item>
+    </style>
+    <!-- Activity Main-->
+
+    <!-- Main -->
+    <style name="MainLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- Main -->
+
+    <!-- Date -->
+    <style name="Date.Layout" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Date.ImageView" parent="Custom">
+        <item name="android:layout_width">@dimen/Date.ImageView.Width</item>
+        <item name="android:layout_height">@dimen/Date.ImageView.Height</item>
+    </style>
+
+    <style name="Date.ImageView.Back" parent="Date.ImageView">
+        <item name="android:src">@drawable/icons_double_left_48</item>
+    </style>
+
+    <style name="Date.ImageView.Forward">
+        <item name="android:src">@drawable/icons_double_right_48</item>
+    </style>
+
+    <style name="Date.Spinner" parent="Custom">
+        <item name="android:layout_width">@dimen/Date.Spinner.Width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_gravity">center_vertical|center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <!-- Date -->
+
+    <!-- LinearLayout -->
+    <style name="Fragment.LinearLayout" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="Fragment.LinearLayout.Horizontal" parent="Fragment.LinearLayout">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Fragment.LinearLayout.Vertical" parent="Fragment.LinearLayout">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- LinearLayout -->
+
+    <!-- RView -->
+    <style name="RView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="RView.Linear" parent="RView">
+        <item name="layoutManager">androidx.recyclerview.widget.LinearLayoutManager</item>
+    </style>
+
+    <style name="RView.WithMargins" parent="RView">
+        <item name="android:layout_marginStart">@dimen/HalfPadding</item>
+        <item name="android:layout_marginEnd">@dimen/HalfPadding</item>
+        <item name="android:layout_marginBottom">@dimen/BasePadding</item>
+    </style>
+
+    <style name="RView.WithMargins.Grid" parent="RView.WithMargins">
+        <item name="layoutManager">androidx.recyclerview.widget.GridLayoutManager</item>
+    </style>
+
+    <style name="RView.Item" parent="Custom">
+        <item name="android:textSize">@dimen/Popup.TextSize09</item>
+    </style>
+
+    <style name="RView.Item.MaterialCardView.Main" parent="RView.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">190dp</item>
+        <item name="android:layout_marginStart">@dimen/HalfPadding</item>
+        <item name="android:layout_marginEnd">@dimen/HalfPadding</item>
+        <item name="android:layout_marginTop">@dimen/BasePadding</item>
+        <item name="android:paddingTop">@dimen/BasePadding</item>
+        <item name="android:paddingBottom">@dimen/BasePadding</item>
+    </style>
+
+    <style name="RView.Item.MaterialCardView.LinearLayout.Main" parent="RView.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="RView.Item.MaterialCardView.Status" parent="RView.Item">
+        <item name="android:layout_width">@dimen/RView.Item.ImageView.Status.Width</item>
+        <item name="android:layout_height">@dimen/RView.Item.ImageView.Status.Width</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+        <item name="android:layout_marginTop">@dimen/BasePadding</item>
+    </style>
+
+    <style name="RView.Item.MaterialCardView.Image" parent="RView.Item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">@dimen/BasePadding</item>
+    </style>
+
+    <style name="RView.Item.RelativeLayout.Status" parent="RView.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="RView.Item.ImageView.Status" parent="RView.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:src">@color/white</item>
+    </style>
+
+    <style name="RView.Item.TextView.Custom" parent="RView.Item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/Popup.TextSize02</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding2</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:text">@string/CustomString</item>
+    </style>
+
+    <style name="RView.Item.TextView.Custom.Bold" parent="RView.Item.TextView.Custom">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RView.Item.TextView.Status" parent="RView.Item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/Popup.TextSize02</item>
+        <item name="android:layout_gravity">center_vertical|center</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:text">88</item>
+    </style>
+
+    <style name="RView.Item.TextView.Name" parent="RView.Item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding2</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding2</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:minLines">1</item>
+        <item name="maxLines">3</item>
+        <item name="singleLine">false</item>
+    </style>
+
+    <style name="Fragment.TextView.Date" parent="Custom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">@dimen/Fragment.TextView.Date.Name.Weight</item>
+        <item name="android:textSize">@dimen/Popup.TextSize10</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/CustomString</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="Fragment.TextView.Date.Name" parent="Fragment.TextView.Date">
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Fragment.TextView.Date.Sum" parent="Fragment.TextView.Date">
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Fragment.Spinner.OneValue" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:text">@string/CustomString</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/BasePadding</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/Popup.TextSize09</item>
+    </style>
+
+    <style name="Fragment.Spinner.OneValue.Bold" parent="Fragment.Spinner.OneValue">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Fragment.Spinner.DropDown" parent="Fragment.Spinner.OneValue">
+        <item name="android:layout_height">@dimen/Popup.Settings.Spinner.DropDown.Height</item>
+    </style>
+
+    <style name="Fragment.Spinner.DropDown.Bold" parent="Fragment.Spinner.OneValue.Bold">
+        <item name="android:layout_height">@dimen/Popup.Settings.Spinner.DropDown.Height</item>
+    </style>
+
+    <!-- Divider -->
+    <style name="Fragment.Divider.Layout.Main" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Fragment.Divider.Layout.Main.Height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Fragment.Divider.Layout.PNL" parent="Fragment.Divider.Layout.Main">
+        <item name="android:background">@color/lightLightGrey</item>
+    </style>
+
+    <style name="Fragment.Divider.Layout.Task" parent="Fragment.Divider.Layout.Main">
+        <item name="android:background">@color/lightLightGrey</item>
+    </style>
+
+    <style name="Fragment.Divider.Layout.Task.High" parent="Fragment.Divider.Layout.Main">
+        <item name="android:background">@color/lightlightRed</item>
+    </style>
+
+    <style name="Fragment.Divider.Layout.Task.Low" parent="Fragment.Divider.Layout.Main">
+        <item name="android:background">@color/lightBlue</item>
+    </style>
+
+    <style name="Fragment.Divider.Layout.Task.Middle" parent="Fragment.Divider.Layout.Main">
+        <item name="android:background">@color/lightOrange</item>
+    </style>
+
+    <style name="Fragment.Divider.Layout.Task.Overdue" parent="Fragment.Divider.Layout.Main">
+        <item name="android:background">@color/lightlightRed</item>
+    </style>
+
+    <style name="Fragment.Divider.Layout.Task.Today" parent="Fragment.Divider.Layout.Main">
+        <item name="android:background">@color/lightLightGreen</item>
+    </style>
+
+    <style name="Fragment.Divider.TextView" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/CustomString</item>
+        <item name="android:textSize">@dimen/Popup.TextSize02</item>
+    </style>>
+
+    <style name="Fragment.Divider.TextView.1" parent="Fragment.Divider.TextView">
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:paddingStart">@dimen/BasePadding2</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Fragment.Divider.TextView.2" parent="Fragment.Divider.TextView">
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:paddingEnd">@dimen/BasePadding2</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+    <!-- Divider -->
+
+</resources>

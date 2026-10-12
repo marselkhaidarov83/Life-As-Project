@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navig_plan"
+        android:orderInCategory="790"
+        android:icon="@drawable/icons_letter_p"
+        android:title=""
+        app:showAsAction="always" />
+
+</menu>

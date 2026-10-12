@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/HalfPadding">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardViewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewIcon"
+                android:layout_width="@dimen/Money.Category.Popup.Icon.Width"
+                android:layout_height="@dimen/Money.Category.Popup.Icon.Width"
+                android:layout_margin="@dimen/HalfPadding"
+                android:src="@drawable/icons_settings_purple_100" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

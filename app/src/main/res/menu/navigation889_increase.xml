@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navig_increase"
+        android:orderInCategory="889"
+        android:icon="@drawable/icons_tree_100_white"
+        android:title="@string/money_increase"
+        android:onClick="onIncreaseClick"
+        app:showAsAction="never" />
+
+</menu>

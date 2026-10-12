@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MainLayout">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewBoard"
+        style="@style/Board.RView.Grid"
+        tools:listitem="@layout/item_money_board_transaction" />
+
+</LinearLayout>

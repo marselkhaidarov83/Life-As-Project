@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Popup.LinearLayout.Main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCaption"
+        style="@style/Popup.ConstraintLayout.Caption">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            style="@style/Popup.ImageView.Delete"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/Popup.TextView.Caption"
+            android:text="@string/JobWithPNL"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/Popup.ImageView.Close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/Popup.NestedScrollView.Main">
+
+        <LinearLayout
+            style="@style/Popup.LinearLayout.TopHead">
+
+            <TextView
+                android:id="@+id/textViewLegend"
+                style="@style/Popup.TextView.Legend"
+                android:text="
+Учет денежных средств важен не только для того, чтобы знать, сколько денег есть у вас сейчас...\n
+Но и для того, чтобы понимать, а сколько денег вы можете потратить на свои хотелки и цели.\n
+\n
+Фиксируйте каждый день ваши доходы и расходы в приложении, чтобы иметь полную картину доходов, расходов и имеющихся средств перед глазами.\n
+От ошибок никто не застрахован, поэтому приложение дает возможность корректировать и удалять введенные операции.\n
+\n
+1) Чтобы изменить операцию, нажмите на соответствующую карточку операции.\n
+2) Чтобы удалить операцию, зайдите в режим редактирования и удалите операцию.\n
+\n
+Если вы захотите повторно посмотреть легенду о том, как изменять или удалять операцию с денежными средствами, нажмите кнопку [mascot] в правом нижнем углу экрана.\n
+\n
+Если вы захотите получить больше информации об экране денежных операций, выберите меню 'Легенда' через 3 точки в правом верхнем углу экрана.\n
+\n
+PS: вы всегда можете включить/отключить помощника в настройках программы - для этого выберите меню 'Настройки' через 3 точки в правом верхнем углу экрана.\n
+\n
+PPS: в бесплатной версии программы вы можете добавлять сколько угодно операций с деньгами в рамках текущего месяца.
+                "/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimensions-->
+    <dimen name="Popup.ImageView.Delete.Width">30dp</dimen>
+    <dimen name="Popup.ImageView.Delete.Height">30dp</dimen>
+    <dimen name="Popup.ImageView.Close.Width">30dp</dimen>
+    <dimen name="Popup.ImageView.Close.Height">30dp</dimen>
+    <dimen name="Popup.ImageView.Mascot.Width">30dp</dimen>
+    <dimen name="Popup.ImageView.Mascot.Height">30dp</dimen>
+    <dimen name="Popup.ImageView.SelectPhoto.Width">35dp</dimen>
+    <dimen name="Popup.ImageView.SelectPhoto.Height">35dp</dimen>
+    <dimen name="Popup.ImageView.Archive.Width">35dp</dimen>
+    <dimen name="Popup.ImageView.Archive.Height">35dp</dimen>
+    <dimen name="Popup.ImageView.Visible.Width">35dp</dimen>
+    <dimen name="Popup.ImageView.Visible.Height">35dp</dimen>
+    <dimen name="Popup.ImageView.Up.Width">20dp</dimen>
+    <dimen name="Popup.ImageView.Up.Height">35dp</dimen>
+    <dimen name="Popup.ImageView.Down.Width">20dp</dimen>
+    <dimen name="Popup.ImageView.Down.Height">35dp</dimen>
+    <dimen name="Popup.ImageView.AddToRView.Width">35dp</dimen>
+    <dimen name="Popup.ImageView.AddToRView.Height">30dp</dimen>
+    <dimen name="Popup.CheckBox.Height">50dp</dimen>
+    <dimen name="Popup.TextView.ForSpinner.Height">50dp</dimen>
+    <dimen name="Popup.Spinner.DropDown.Height">50dp</dimen>
+    <dimen name="Popup.LayoutCaption.Height">50dp</dimen>
+    <!-- Dimensions-->
+
+    <style name="Popup" parent="Custom">
+        <item name="android:textSize">@dimen/Popup.TextSize03</item>
+    </style>
+
+    <style name="Popup.ConstraintLayout.Caption" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Popup.LayoutCaption.Height</item>
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+        <item name="android:padding">@dimen/BasePadding2</item>
+        <item name="android:textSize">@dimen/Popup.TextSize09</item>
+    </style>
+
+    <style name="Popup.LinearLayout.TopHead" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+<!--        <item name="android:background">@drawable/bottom_sheet_background</item>-->
+        <item name="android:orientation">vertical</item>
+        <!-- Не удалять ни в коем случае scrollbars-->
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="Popup.ConstraintLayout.Head" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+        <item name="android:padding">@dimen/BasePadding2</item>
+    </style>
+
+    <style name="Popup.ConstraintLayout.1Line" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Popup.NestedScrollView.Main" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Popup.NestedScrollView.Main.Visible" parent="Popup.NestedScrollView.Main">
+        <item name="android:layout_weight">0</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="Popup.NestedScrollView.Main.Invisible" parent="Popup.NestedScrollView.Main">
+        <item name="android:layout_weight">1</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="Popup.NestedScrollView.LinearLayout.Main" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <!-- Не удалять scrollbars ни в коем случае-->
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="Popup.NestedScrollView.LinearLayout.Head" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Popup.NestedScrollView.LinearLayout.Head.GravityEnd" parent="Popup.NestedScrollView.LinearLayout.Head">
+        <item name="android:gravity">end</item>
+    </style>
+
+    <style name="Popup.NestedScrollView.ConstraintLayout.Invisible" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:paddingTop">@dimen/BasePadding</item>
+        <item name="android:paddingBottom">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Popup.NestedScrollView.LinearLayout.Invisible" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Popup.LinearLayout.Main" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Popup.TextView.Caption" parent="Popup">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/Popup.TextSize08</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Popup.TextView.Legend" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/BasePadding</item>
+        <item name="android:textAlignment">gravity</item>
+    </style>
+
+    <style name="Popup.ImageView.Delete" parent="Popup">
+        <item name="android:layout_height">@dimen/Popup.ImageView.Delete.Height</item>
+        <item name="android:layout_width">@dimen/Popup.ImageView.Delete.Width</item>
+        <item name="android:visibility">invisible</item>
+        <item name="contentDescription">@string/ButtonDelete</item>
+        <item name="android:src">@drawable/icons8_delete_100_purple</item>
+    </style>
+
+    <style name="Popup.ImageView.Mascot" parent="Popup">
+        <item name="android:layout_width">@dimen/Popup.ImageView.Mascot.Width</item>
+        <item name="android:layout_height">@dimen/Popup.ImageView.Mascot.Height</item>
+        <item name="contentDescription">@string/ButtonCloseWindow</item>
+        <item name="android:src">@drawable/mascot</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Popup.ImageView.Close" parent="Popup">
+        <item name="android:layout_width">@dimen/Popup.ImageView.Close.Width</item>
+        <item name="android:layout_height">@dimen/Popup.ImageView.Close.Height</item>
+        <item name="contentDescription">@string/ButtonCloseWindow</item>
+        <item name="android:src">@drawable/icons8_close_window_100_purple</item>
+    </style>
+
+    <style name="Popup.ImageView.SelectPhoto" parent="Popup">
+        <item name="android:layout_width">@dimen/Popup.ImageView.SelectPhoto.Width</item>
+        <item name="android:layout_height">@dimen/Popup.ImageView.SelectPhoto.Height</item>
+        <item name="contentDescription">@string/ButtonSelectPicture</item>
+        <item name="android:src">@drawable/icons_photo_purple_100</item>
+    </style>
+
+    <style name="Popup.ImageView.Archive" parent="Popup">
+        <item name="android:layout_width">@dimen/Popup.ImageView.Archive.Width</item>
+        <item name="android:layout_height">@dimen/Popup.ImageView.Archive.Height</item>
+        <item name="contentDescription">@string/ButtonSelectPicture</item>
+        <item name="android:layout_marginTop">@dimen/BasePadding</item>
+        <item name="android:src">@drawable/icons_nonarchive</item>
+    </style>
+
+    <style name="Popup.ImageView.AddToRView" parent="Popup">
+        <item name="android:layout_width">@dimen/Popup.ImageView.AddToRView.Width</item>
+        <item name="android:layout_height">@dimen/Popup.ImageView.AddToRView.Height</item>
+        <item name="android:paddingEnd">@dimen/BasePadding</item>
+        <item name="android:src">@drawable/icons_add_100_purple</item>
+    </style>
+
+    <style name="Popup.CheckBox" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Popup.CheckBox.Height</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+        <item name="android:textSize">@dimen/Popup.TextSize03</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="Popup.TextView.ForSpinner" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Popup.TextView.ForSpinner.Height</item>
+        <item name="android:textSize">@dimen/Popup.TextSize03</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingStart">@dimen/BasePadding2</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Popup.Spinner" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Popup.Spinner.OneValue" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:text">@string/CustomString</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/BasePadding</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/Popup.TextSize03</item>
+    </style>
+
+    <style name="Popup.Spinner.DropDown" parent="Popup.Spinner.OneValue">
+        <item name="android:layout_height">@dimen/Popup.Spinner.DropDown.Height</item>
+    </style>
+
+    <style name="Popup.Button.Save" parent="Button.Save">
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Popup.Button.OK" parent="Button.OK">
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Popup.Button.Save.4Next" parent="Popup.Button.Save">
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Popup.Button.Save.4Prev" parent="Popup.Button.Save">
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Popup.TableLayout" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/BasePadding2</item>
+        <item name="android:paddingEnd">@dimen/BasePadding2</item>
+        <item name="android:paddingTop">@dimen/BasePadding</item>
+<!--        <item name="android:paddingBottom">@dimen/BasePadding</item>-->
+    </style>
+
+    <style name="Popup.TableRow" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/BasePadding</item>
+        <item name="android:layout_marginBottom">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Popup.TextView" parent="Popup">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/Popup.TextSize03</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:layout_gravity">center_vertical|end</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Popup.TextView.ForNum" parent="Popup.TextView">
+        <item name="android:layout_marginBottom">7dp</item>
+    </style>
+
+    <style name="Popup.TextView.Right" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/Popup.TextSize03</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginStart">8dp</item>
+    </style>
+
+    <style name="Popup.EditText.Text" parent="Popup">
+        <item name="android:textSize">@dimen/Popup.TextSize03</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:inputType">text</item>
+        <item name="android:paddingStart">@dimen/BasePadding2</item>
+        <item name="android:text">@string/CustomString</item>
+    </style>
+
+    <style name="Popup.EditText.Text.2Line" parent="Popup">
+        <item name="android:textSize">@dimen/Popup.TextSize03</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="maxLines">2</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:paddingStart">@dimen/BasePadding2</item>
+        <item name="android:text">@string/CustomString</item>
+    </style>
+
+    <style name="Popup.EditText.Number" parent="Popup">
+        <item name="android:textSize">@dimen/Popup.TextSize03</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:inputType">number</item>
+        <item name="android:paddingStart">@dimen/BasePadding2</item>
+        <item name="android:text">@string/CustomNum</item>
+    </style>
+
+    <style name="Popup.EditText.Number.Amount" parent="Popup.EditText.Number">
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:hint">@string/HintAccountingSum</item>
+    </style>
+
+    <style name="Popup.RecyclerView" parent="Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="Popup.RecyclerView.Linear" parent="Popup.RecyclerView">
+        <item name="layoutManager">androidx.recyclerview.widget.LinearLayoutManager</item>
+    </style>
+
+    <style name="Popup.RecyclerView.Linear.Horizontal" parent="Popup.RecyclerView.Linear">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:scrollbars">horizontal</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Popup.RecyclerView.Grid" parent="Popup">
+        <item name="layoutManager">androidx.recyclerview.widget.GridLayoutManager</item>
+    </style>
+
+    <style name="Popup.TextView.OverRV" parent="Popup">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/BasePadding2</item>
+        <item name="android:textSize">@dimen/Popup.TextSize08</item>
+    </style>
+
+    <style name="Popup.TextView.OverRV.2" parent="Popup.TextView.OverRV">
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Popup.RView.Item.TextView" parent="Popup">
+        <item name="android:textSize">@dimen/Popup.TextSize09</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:text">@string/CustomString</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="singleLine">true</item>
+    </style>
+
+    <style name="Popup.RView.ImageView" parent="Popup">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Popup.RView.ImageView.Visible" parent="Popup.RView.ImageView">
+        <item name="android:layout_width">@dimen/Popup.ImageView.Visible.Width</item>
+        <item name="android:layout_height">@dimen/Popup.ImageView.Visible.Height</item>
+        <item name="android:src">@drawable/icons_nonarchive</item>
+    </style>
+
+    <style name="Popup.RView.ImageView.Up" parent="Popup.RView.ImageView">
+        <item name="android:layout_width">@dimen/Popup.ImageView.Up.Width</item>
+        <item name="android:layout_height">@dimen/Popup.ImageView.Up.Height</item>
+        <item name="android:src">@drawable/icons_up_100_purple</item>
+    </style>
+
+    <style name="Popup.RView.ImageView.Down" parent="Popup.RView.ImageView">
+        <item name="android:layout_width">@dimen/Popup.ImageView.Down.Width</item>
+        <item name="android:layout_height">@dimen/Popup.ImageView.Down.Height</item>
+        <item name="android:src">@drawable/icons_down_100_purple</item>
+    </style>
+
+</resources>

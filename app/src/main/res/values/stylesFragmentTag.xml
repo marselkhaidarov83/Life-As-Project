@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimens -->
+    <dimen name="Tag.RView.Item.ImageView.Archive.Width">40dp</dimen>
+    <dimen name="Tag.RView.Item.ImageView.Archive.Height">40dp</dimen>
+    <!-- Dimens -->
+
+    <style name="Tag.RView.Item.MaterialCardView.Main" parent="RView.Item.MaterialCardView.Main">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Tag.RView.Item.ImageView.Archive" parent="RView.Item">
+        <item name="android:layout_width">@dimen/Tag.RView.Item.ImageView.Archive.Width</item>
+        <item name="android:layout_height">@dimen/Tag.RView.Item.ImageView.Archive.Height</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:src">@drawable/icons_nonarchive</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Tag.RView.Item.TextView.Custom" parent="RView.Item">
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:text">@string/CustomString</item>
+    </style>
+
+    <style name="Tag.RView.Item.TextView.Name" parent="Tag.RView.Item.TextView.Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="singleLine">true</item>
+    </style>
+
+    <style name="Tag.RView.Item.TextView.Comment" parent="Tag.RView.Item.TextView.Custom">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:maxLines">2</item>
+        <item name="singleLine">false</item>
+    </style>
+
+</resources>

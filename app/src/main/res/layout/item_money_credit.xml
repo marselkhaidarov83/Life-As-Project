@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="40dp"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageViewIcon"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="32dp"-->
+<!--            android:paddingStart="5dp"-->
+<!--            android:paddingEnd="0dp"-->
+<!--            android:layout_margin="3dp"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            android:src="@drawable/icons_cirlce_100"/>-->
+
+        <LinearLayout
+            android:id="@+id/linear_layout_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewDateStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:textSize="@dimen/Popup.TextSize02"
+                android:textStyle="bold"
+                android:gravity="center_vertical|start"
+                app:layout_constraintLeft_toRightOf="@id/imageViewIcon"
+                app:layout_constraintTop_toTopOf="@id/linear_layout_item"
+                android:text="@string/CustomDate" />
+
+            <TextView
+                android:id="@+id/textViewDateEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:textSize="@dimen/Popup.TextSize02"
+                android:gravity="center_vertical|start"
+                app:layout_constraintLeft_toRightOf="@id/imageViewIcon"
+                app:layout_constraintTop_toTopOf="@id/linear_layout_item"
+                android:text="@string/CustomDate" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_2"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/BasePadding5"
+            app:layout_constraintLeft_toRightOf="@id/linear_layout_1"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/Popup.TextSize02"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:textAlignment="textStart"
+                android:text="@string/CustomString" />
+
+            <TextView
+                android:id="@+id/textViewTargetName"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:textSize="@dimen/Popup.TextSize02"
+                android:gravity="center_vertical|start"
+                app:layout_constraintLeft_toRightOf="@id/imageViewIcon"
+                app:layout_constraintTop_toTopOf="@id/linear_layout_item"
+                android:text="@string/CustomString" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_3"
+            android:layout_width="wrap_content"
+            android:layout_weight="0"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/BasePadding5"
+            app:layout_constraintLeft_toRightOf="@id/linear_layout_2"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/Popup.TextSize02"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:textAlignment="textEnd"
+                android:text="@string/CustomString" />
+
+            <TextView
+                android:id="@+id/textViewPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/Popup.TextSize02"
+                android:layout_marginStart="@dimen/BasePadding"
+                android:textAlignment="center"
+                android:text="@string/CustomString" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_4"
+            android:layout_width="wrap_content"
+            android:layout_weight="0"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            app:layout_constraintLeft_toRightOf="@id/linear_layout_3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/textViewSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/Popup.TextSize02"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:textStyle="bold"
+                android:gravity="center_vertical|end"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/CustomString"/>
+
+            <TextView
+                android:id="@+id/textViewStartSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/Popup.TextSize02"
+                android:layout_marginEnd="@dimen/BasePadding"
+                android:gravity="center_vertical|end"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/CustomString"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

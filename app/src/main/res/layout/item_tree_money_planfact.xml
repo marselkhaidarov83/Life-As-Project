@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/PlanFact.RView.Item"
+    android:layout_marginTop="@dimen/HalfPadding">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewName"
+        style="@style/PlanFact.RView.Item.MaterialCardView.First">
+
+        <TextView
+            android:id="@+id/textViewName"
+            style="@style/PlanFact.RView.Item.TextView.Name" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewPlan"
+        style="@style/PlanFact.RView.Item.MaterialCardView">
+
+        <TextView
+            android:id="@+id/textViewPlan"
+            style="@style/PlanFact.RView.Item.TextView.Else" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewFact"
+        style="@style/PlanFact.RView.Item.MaterialCardView">
+
+        <TextView
+            android:id="@+id/textViewFact"
+            style="@style/PlanFact.RView.Item.TextView.Else" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewDelta"
+        style="@style/PlanFact.RView.Item.MaterialCardView.Last">
+
+        <TextView
+            android:id="@+id/textViewDelta"
+            style="@style/PlanFact.RView.Item.TextView.Else" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

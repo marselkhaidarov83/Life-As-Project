@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/BasePadding"
+    android:scrollbars="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/BasePadding">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            style="@style/MoneyTargetPopup1Row">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageViewPhoto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icons_foto_purple_100"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </ImageView>
+
+                <EditText
+                    android:id="@+id/editTextName"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:autofillHints="false"
+                    android:inputType="text"
+                    android:text="@string/CustomString"
+                    android:textSize="14sp"
+                    android:gravity="start"
+                    android:paddingTop="@dimen/BasePadding"
+                    app:layout_constraintEnd_toStartOf="@id/imageViewPhoto"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/MoneyTargetPopup2Row">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageViewDateBack"
+                    style="@style/MoneyTargetPopup2Column"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/icons_double_left_96"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageViewDateForward"
+                    style="@style/MoneyTargetPopup4Column"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/icons_double_right_96"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewDate"
+                    style="@style/MoneyTargetPopup3Column"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:background="@color/lightGrey"
+                    android:text="@string/CustomDate"
+                    app:layout_constraintEnd_toStartOf="@id/imageViewDateForward"
+                    app:layout_constraintStart_toEndOf="@id/imageViewDateBack"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/BasePadding">
+
+            <TextView
+                android:id="@+id/textViewStatus"
+                style="@style/MoneyTargetPopup.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:labelFor="@id/editTextPrice"
+                android:text="@string/TargetStatus"
+                android:textAlignment="textEnd" />
+
+            <Spinner
+                android:id="@+id/spinnerStatus"
+                style="@style/MoneyCategoryPopup.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/BasePadding">
+
+            </Spinner>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/MoneyTargetPopup1row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MoneyTargetPopup3Row">
+
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                style="@style/MoneyTargetPopup.TextView"
+                android:labelFor="@id/editTextPrice"
+                android:text="@string/Price"
+                android:textAlignment="textEnd" />
+
+            <EditText
+                android:id="@+id/editTextPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MoneyTargetPopup.EditText"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:text="@string/CustomNum" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/MoneyTargetPopup4Row">
+
+            <TextView
+                android:layout_marginEnd="10dp"
+                android:labelFor="@id/editTextAccumulation"
+                style="@style/MoneyTargetPopup.TextView"
+                android:text="@string/Accumulation"
+                android:textAlignment="textEnd" />
+
+            <EditText
+                android:id="@+id/editTextAccumulation"
+                android:layout_width="match_parent"
+                style="@style/MoneyTargetPopup.EditText"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:text="@string/CustomNum" />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/MoneyTargetPopup5Row">
+
+            <TextView
+                android:layout_marginEnd="10dp"
+                android:labelFor="@id/editTextCredit"
+                style="@style/MoneyTargetPopup.TextView"
+                android:text="@string/Credit"
+                android:textAlignment="textEnd" />
+
+            <EditText
+                android:id="@+id/editTextCredit"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                style="@style/MoneyTargetPopup.EditText"
+                android:enabled="false"
+                android:inputType="number"
+                android:text="@string/CustomNum" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardViewImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <com.MH83.LifeAsProject.custom.CustomSubsamplingScaleImageViewW
+            android:id="@+id/subsamplingScaleImageView"
+            android:layout_width="match_parent"
+            android:layout_height="225dp">
+
+        </com.MH83.LifeAsProject.custom.CustomSubsamplingScaleImageViewW>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

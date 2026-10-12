@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Fragment.Divider.Layout.Task">
+
+    <TextView
+        android:id="@+id/textView1Text"
+        style="@style/Fragment.Divider.TextView.1" />
+
+</LinearLayout>

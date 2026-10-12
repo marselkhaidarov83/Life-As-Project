@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/groupProgram">
+
+    <item
+        android:id="@+id/navig_main_settings"
+        android:orderInCategory="930"
+        android:icon="@drawable/icons_settings_white_100"
+        android:title="@string/MainSettings"
+        android:onClick="onMainSettingsClick"
+        app:showAsAction="never"/>
+
+    </group>
+
+</menu>

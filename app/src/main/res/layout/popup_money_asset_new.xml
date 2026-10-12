@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCaption"
+        style="@style/Tasks.Project.Popup.Layout.Caption">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            style="@style/Tasks.Project.Popup.ImageView.Delete"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewCaption"
+            style="@style/Tasks.Project.Popup.TextView.Caption"
+            android:text="@string/PopupTypeAssetAdd"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/Tasks.Project.Popup.ImageView.Close"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/BasePadding"
+        android:layout_marginEnd="@dimen/BasePadding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="325dp"
+                android:padding="@dimen/BasePadding2">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textViewName"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="wrap_content"
+                        android:labelFor="@id/editTextName"
+                        android:gravity="center_vertical|end"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:text="@string/Name" />
+
+                    <EditText
+                        android:id="@+id/editTextName"
+                        style="@style/Tasks.Project.Popup.EditText"
+                        android:layout_weight="1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textViewTicker"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="wrap_content"
+                        android:labelFor="@id/editTextTicker"
+                        android:gravity="center_vertical|end"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:text="@string/Ticker" />
+
+                    <EditText
+                        android:id="@+id/editTextTicker"
+                        style="@style/Tasks.Project.Popup.EditText"
+                        android:layout_weight="1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewTypeAsset"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/spinnerTypeAsset"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/TypeAsset"
+                        android:textAlignment="textEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinnerTypeAsset"
+                        style="@style/Tasks.Project.Popup.Spinner.Status"
+                        android:layout_weight="1"
+                        tools:listitem="@layout/simple_spinner_tasks_project_status_item">
+                    </Spinner>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewKindAsset"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/spinnerKindAsset"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/KindAsset"
+                        android:textAlignment="textEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinnerKindAsset"
+                        style="@style/Tasks.Project.Popup.Spinner.Status"
+                        android:layout_weight="1"
+                        tools:listitem="@layout/simple_spinner_tasks_project_status_item">
+                    </Spinner>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewCurrencyAsset"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/spinnerCurrencyAsset"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/CurrencyAsset"
+                        android:textAlignment="textEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinnerCurrencyAsset"
+                        style="@style/Tasks.Project.Popup.Spinner.Status"
+                        android:layout_weight="1"
+                        tools:listitem="@layout/simple_spinner_tasks_project_status_item">
+                    </Spinner>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewStatus"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/spinnerParent"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/Status"
+                        android:textAlignment="textEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinnerStatus"
+                        style="@style/Tasks.Project.Popup.Spinner.Status"
+                        android:layout_weight="1"
+                        tools:listitem="@layout/simple_spinner_tasks_project_status_item">
+                    </Spinner>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textViewComment"
+                        style="@style/Tasks.Project.Popup.TextView"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/editTextComment"
+                        android:layout_gravity="center_vertical|end"
+                        android:text="@string/Comment"
+                        android:textAlignment="textEnd"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:id="@+id/editTextComment"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Tasks.Project.Popup.EditText.Height2"
+                        style="@style/Tasks.Project.Popup.EditText"
+                        android:layout_weight="1"
+                        android:minLines="1"
+                        android:maxLines="3"
+                        android:inputType="textMultiLine"
+                        android:text="@string/CustomString2Lines"
+                        android:textAlignment="textStart" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/buttonSave"
+                style="@style/Tasks.Project.Popup.Button.Save"
+                android:layout_width="match_parent">
+
+            </Button>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

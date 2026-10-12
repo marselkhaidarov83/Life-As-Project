@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="Popup.MoneyDream.EditText.Text.DreamName.Height">45dp</dimen>
+
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="Popup.Settings.CheckBox.Height">60dp</dimen>
+    <dimen name="Popup.Settings.Spinner.DropDown.Height">60dp</dimen>
+</resources>

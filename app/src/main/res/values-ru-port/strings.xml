@@ -1,0 +1,19 @@
+<resources>
+    <!--    Наименование приложения-->
+    <!--    Кнопки-->
+    <string name="money_target">Мечты</string>
+    <string name="money_increase">Рост</string>
+    <string name="money_planfactmoney">ПФ по деньгам</string>
+    <string name="money_board_short">Обзор</string>
+
+    <!--    Надписи экранов-->
+    <string name="money_your_accounting">Учет ДС</string>
+
+    <!--    Ошибки-->
+    <!--    Действия для пользователя-->
+    <!--    Надписи на формах-->
+    <!--    Directories-->
+    <!--    Arrays-->
+    <!--    Тексты-->
+    <!--    Custom strings-->
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimensions-->
+    <dimen name="Accounting.Popup.ImageView.IsPlan.Width">50dp</dimen>
+    <dimen name="Accounting.Popup.ImageView.IsPlan.Height">52dp</dimen>
+    <dimen name="Accounting.Popup.EditText.UnderSum.MarginEnd">50dp</dimen>
+    <dimen name="Accounting.Popup.EditText.Percent.Height">54dp</dimen>
+    <dimen name="Accounting.Popup.EditText.TotalSum.Height">54dp</dimen>
+    <dimen name="Accounting.Popup.ImageView.Category.Height">50dp</dimen>
+    <dimen name="Accounting.Popup.ImageView.Arrow.Height">50dp</dimen>
+    <dimen name="Accounting.Popup.ImageView.Arrow.MarginTop">38dp</dimen>
+    <dimen name="Accounting.Popup.TextView.Date.Width">240dp</dimen>
+    <dimen name="Accounting.Popup.RecyclerView.Height">90dp</dimen>
+    <dimen name="Accounting.Popup.EditText.Sum.Height">55dp</dimen>
+    <!-- Dimensions-->
+
+</resources>

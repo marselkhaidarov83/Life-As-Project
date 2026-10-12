@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Category.RView.Item.LinearLayout.Main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/imageViewIcon"
+            style="@style/Category.RView.Item.ImageView.Icon" />
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/Category.RView.Item.TextView.Name" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sum"
+        style="@style/Category.RView.Item.TextView.Sum"
+        android:layout_weight="3" />
+
+    <ImageView
+        android:id="@+id/imageViewTransferBudget"
+        style="@style/Category.RView.Item.ImageView.TransferBudget" />
+
+</LinearLayout>

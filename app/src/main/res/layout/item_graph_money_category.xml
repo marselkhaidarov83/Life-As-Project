@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Category.Popup.RVItem.Layout.Main">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_item"
+            style="@style/Category.Popup.RVItem.MaterialCard.LinearLayout">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/Category.Popup.RVItem.MaterialCard.ConstraintLayout">
+
+                <TextView
+                    android:id="@+id/textViewName"
+                    style="@style/Category.Popup.RVItem.TextView.Name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageViewIcon"
+                style="@style/Category.Popup.RVItem.ImageView.Icon" />
+
+            <TextView
+                android:id="@+id/textViewSum"
+                style="@style/Category.Popup.RVItem.TextView.Sum" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

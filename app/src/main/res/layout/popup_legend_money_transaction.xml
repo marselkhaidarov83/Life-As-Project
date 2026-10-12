@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Popup.LinearLayout.Main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCaption"
+        style="@style/Popup.ConstraintLayout.Caption">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            style="@style/Popup.ImageView.Delete"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/Popup.TextView.Caption"
+            android:text="@string/JobWithPNL"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/Popup.ImageView.Close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/Popup.NestedScrollView.Main">
+
+        <LinearLayout
+            style="@style/Popup.LinearLayout.TopHead">
+
+            <TextView
+                android:id="@+id/textViewLegend"
+                style="@style/Popup.TextView.Legend"
+                android:text="
+Форма операций с деньгами представляет возможность просматривать введенные денежные операции в режиме списка.\n
+\n
+Форма дает возможность видеть на экране информацию по операциям за период времени:\n
+1) За день;\n
+2) За неделю;\n
+3) За месяц;\n
+4) За квартал;\n
+5) За год.\n
+Для выбора периода нажмите на период и в выпадающем списке выберите необходимый период данных.\n
+Для смещения периода влево или вправо используйте кнопки [double_left_arrow], [double_right_arrow].\n
+\n
+В левом верхнем углу формы отражается название кошелька или категории доходов/расходов, по которому отображаются операции.
+Если в настройках формы не выбрана ни 1 категория, то название отображаться не будет.\n
+\n
+В правом верхнем углу отражается сумма доходов за вычетом расходов по отображаемым операциям.\n
+\n
+Все операции на форме сгруппированы по датам. Группировка по датам обозначается строкой данных серого цвета.\n
+В левой части групировки отражается дата операций. В правой части - сумма доходов за минусом расходов за дату.\n
+\n
+Карточка самой операции (безцветная строка данных) также несет значимую информацию:\n
+1) В левой части карточки операции отображается иконка категории в цветной оправе:\n
+- зеленая оправа для доходной операции;\n
+- оранжевая оправа для расходной операции;\n
+- серая оправа для операции перемещения;\n
+2) Далее идет дата операции (опционально для разных устройств);\n
+3) Далее идет информация о категориях операции (откуда деньги пришли и куда потрачены);\n
+4) В правой части карточки отображается сумма операции.\n
+\n
+Если вы захотите повторно посмотреть легенду об экране денежных операций, выберите меню 'Легенда' через 3 точки в правом верхнем углу экрана.\n
+\n
+PS: вы всегда можете включить/отключить помощника в настройках программы - для этого выберите меню 'Настройки' через 3 точки в правом верхнем углу экрана.\n
+\n
+PPS: в бесплатной версии программы вы можете добавлять сколько угодно операций с деньгами в рамках текущего месяца.
+                "/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

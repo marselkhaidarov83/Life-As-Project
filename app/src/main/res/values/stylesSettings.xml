@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="Popup.Settings.ImageView.Close.Width">30dp</dimen>
+    <dimen name="Popup.Settings.ImageView.Close.Height">30dp</dimen>
+    <dimen name="Popup.Settings.CheckBox.Height">50dp</dimen>
+    <dimen name="Popup.Settings.TextView.ForSpinner.Height">50dp</dimen>
+    <dimen name="Popup.Settings.Spinner.DropDown.Height">50dp</dimen>
+
+    <style name="Popup.Settings.LinearLayout.TopHead" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Popup.Settings.ConstraintLayout.Head" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+        <item name="android:padding">@dimen/BasePadding2</item>
+    </style>
+
+    <style name="Popup.Settings.NestedScrollView.Main" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Popup.Settings.LinearLayout.Main" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Popup.Settings.TextView.Caption" parent="Custom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/Popup.TextSize08</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Popup.Settings.ImageView.Close" parent="Custom">
+        <item name="android:layout_width">@dimen/Popup.Settings.ImageView.Close.Width</item>
+        <item name="android:layout_height">@dimen/Popup.Settings.ImageView.Close.Height</item>
+        <item name="contentDescription">@string/ButtonCloseWindow</item>
+        <item name="android:src">@drawable/icons8_close_window_100_purple</item>
+    </style>
+
+    <style name="Popup.Settings.CheckBox" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Popup.Settings.CheckBox.Height</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+        <item name="android:textSize">@dimen/Popup.TextSize03</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="Popup.Settings.LinearLayout.ForSpinner" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Popup.Settings.TextView.ForSpinner" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Popup.Settings.TextView.ForSpinner.Height</item>
+        <item name="android:textSize">@dimen/Popup.TextSize03</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingStart">@dimen/BasePadding2</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Popup.Settings.Spinner" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="Popup.Settings.Spinner.OneValue" parent="Custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:text">@string/CustomString</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/BasePadding</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/Popup.TextSize03</item>
+    </style>
+
+    <style name="Popup.Settings.Spinner.DropDown" parent="Popup.Settings.Spinner.OneValue">
+        <item name="android:layout_height">@dimen/Popup.Settings.Spinner.DropDown.Height</item>
+    </style>
+
+    <style name="Popup.Settings.Button.OK" parent="Popup.Button.OK">
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+        <item name="android:textSize">@dimen/Popup.TextSize09</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+</resources>

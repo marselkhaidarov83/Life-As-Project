@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tasksTaskLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinnerDate"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/imageViewDateBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@id/spinnerDate"
+            android:src="@drawable/icons_double_left_48">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imageViewDateForward"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@id/spinnerDate"
+            android:src="@drawable/icons_double_right_48">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:paddingBottom="@dimen/BasePadding"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewName"
+            style="@style/Tasks.Project.RViewItem.TextView.Name"
+            android:text=""
+            android:textSize="@dimen/Tasks.Popup.TextSize03"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/BasePadding" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/BasePadding"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textViewSumStart"
+                style="@style/Tasks.Project.RViewItem.TextView.Name"
+                android:textSize="@dimen/Tasks.Popup.TextSize03"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="1" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/BasePadding"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textViewSumThisPeriodPlus"
+                style="@style/Tasks.Project.RViewItem.TextView.Name"
+                android:textSize="@dimen/Tasks.Popup.TextSize03"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="1" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/BasePadding"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textViewSumThisPeriodMinus"
+                style="@style/Tasks.Project.RViewItem.TextView.Name"
+                android:textSize="@dimen/Tasks.Popup.TextSize03"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="1" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/BasePadding"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textViewSumEnd"
+                style="@style/Tasks.Project.RViewItem.TextView.Name"
+                android:textSize="@dimen/Tasks.Popup.TextSize03"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/BasePadding"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textViewDifference"
+                style="@style/Tasks.Project.RViewItem.TextView.Name"
+                android:textSize="@dimen/Tasks.Popup.TextSize03"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/BasePadding"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textViewDifferenceTotal"
+                style="@style/Tasks.Project.RViewItem.TextView.Name"
+                android:textSize="@dimen/Tasks.Popup.TextSize03"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <com.MH83.LifeAsProject.custom.treeview.TreeView
+        android:id="@+id/tree_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_tree_money_lot_asset" />
+
+</LinearLayout>
+

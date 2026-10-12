@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/materialCardViewSubscription"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/BasePadding">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSubscription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Subscription.TextView"
+            android:gravity="center_vertical|start"
+            android:maxLines="3"
+            android:minLines="1"
+            android:textStyle="bold"
+            android:singleLine="false"
+            android:text="@string/CustomString" />
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Subscription.TextView"
+                android:gravity="center_vertical|start"
+                android:maxLines="3"
+                android:minLines="1"
+                android:singleLine="false"
+                android:text="@string/CustomString" />
+
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Subscription.TextView"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/BasePadding"
+                android:gravity="center_vertical|end"
+                android:maxLines="3"
+                android:minLines="1"
+                android:singleLine="false"
+                android:text="@string/CustomString" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

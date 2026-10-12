@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/materialCardViewDream"
+    style="@style/RView.Item.MaterialCardView.Main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardViewStatus"
+            style="@style/RView.Item.MaterialCardView.Status"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                style="@style/RView.Item.RelativeLayout.Status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageViewStatus"
+                    style="@style/RView.Item.ImageView.Status" />
+
+                <TextView
+                    android:id="@+id/textViewStatus"
+                    style="@style/RView.Item.TextView.Status" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardViewImageView"
+            style="@style/RView.Item.MaterialCardView.Image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.MH83.LifeAsProject.custom.CustomImageViewH
+                android:id="@+id/imageViewImage"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/tmp400_300" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/textViewName"
+            style="@style/RView.Item.TextView.Name"
+            android:text="@string/CustomString"
+            app:layout_constraintEnd_toStartOf="@id/materialCardViewImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Tasks" parent="Custom" />
+
+    <style name="Tasks.Popup" parent="Tasks">
+        <item name="android:textSize">@dimen/Tasks.Popup.TextSize03</item>
+    </style>
+
+    <!--EditText-->
+    <style name="Tasks.Popup.EditText" parent="Tasks.Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:text">@string/CustomString</item>
+    </style>
+
+    <!--TextView-->
+    <style name="Tasks.RViewItem.TextView" parent="Tasks.Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/Tasks.Popup.TextSize02</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:text">@string/CustomString</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Tasks.RViewItem.TextView.Bold" parent="Tasks.RViewItem.TextView">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Tasks.RViewItem.TextView.End" parent="Tasks.RViewItem.TextView">
+        <item name="android:textAlignment">textEnd</item>
+    </style>
+
+    <style name="Tasks.Popup.TextView" parent="Tasks.Popup">
+        <item name="android:layout_height">@dimen/Tasks.Popup.TextView.Height</item>
+    </style>
+
+    <style name="Tasks.Popup.TextView.Column" parent="Tasks.Popup.TextView">
+        <item name="android:textSize">@dimen/Tasks.Popup.TextSize03</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Tasks.Popup.TextView.Column.Height</item>
+    </style>
+
+    <style name="Tasks.Popup.TextView.LeftColumn" parent="Tasks.Popup.TextView.Column">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+    <style name="Tasks.Popup.TextView.RightColumn" parent="Tasks.Popup.TextView.Column">
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Tasks.Popup.TextView.RightColumn.WithValue" parent="Tasks.Popup.TextView.RightColumn">
+        <item name="android:text">@string/CustomString</item>
+    </style>
+
+    <style name="Tasks.Popup.TextView.Caption" parent="Tasks.Popup.TextView">
+        <item name="android:textSize">@dimen/Tasks.Popup.TextSize04</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Tasks.Popup.TextView.Date" parent="Tasks.Popup.TextView">
+        <item name="android:textSize">@dimen/Tasks.Popup.TextSize04</item>
+        <item name="android:text">@string/CustomDate</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">@dimen/Tasks.Popup.TextView.Date.Height</item>
+        <item name="android:layout_width">@dimen/Tasks.Popup.TextView.Date.Width</item>
+    </style>
+
+    <style name="Tasks.Popup.TextView.Time" parent="Tasks.Popup.TextView">
+        <item name="android:textSize">@dimen/Tasks.Popup.TextSize04</item>
+        <item name="android:text">@string/CustomTime</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">@dimen/Tasks.Popup.TextView.Time.Height</item>
+        <item name="android:layout_width">@dimen/Tasks.Popup.TextView.Time.Width</item>
+    </style>
+
+    <style name="Tasks.Popup.TextView.Date.Title">
+        <item name="android:textSize">@dimen/Tasks.Popup.TextSize01</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Tasks.Popup.TextView.Time.Title">
+        <item name="android:textSize">@dimen/Tasks.Popup.TextSize01</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!--Layout-->
+    <style name="Tasks.Popup.Layout" parent="Tasks.Popup" />
+
+    <style name="Tasks.Popup.Layout.Caption" parent="Tasks.Popup.Layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Tasks.Popup.Layout.Caption.Height</item>
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+        <item name="android:padding">@dimen/BasePadding2</item>
+    </style>
+
+    <!--ImageView-->
+    <style name="Tasks.Popup.ImageView" parent="Tasks.Popup" />
+
+    <style name="Tasks.RViewItem.ImageView.Custom1" parent="Tasks.Popup.ImageView">
+        <item name="android:layout_width">@dimen/Tasks.Popup.ImageView.Custom.Height</item>
+        <item name="android:layout_height">@dimen/Tasks.Popup.ImageView.Custom.Height</item>
+        <item name="android:src">@drawable/icons_cirlce_100</item>
+        <item name="android:layout_margin">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Tasks.Popup.ImageView.Date" parent="Tasks.Popup.ImageView">
+        <item name="android:layout_width">@dimen/Tasks.Popup.TextView.Date.Height</item>
+        <item name="android:layout_height">@dimen/Tasks.Popup.TextView.Date.Height</item>
+    </style>
+
+    <style name="Tasks.Popup.ImageView.Time" parent="Tasks.Popup.ImageView">
+        <item name="android:layout_width">@dimen/Tasks.Popup.TextView.Time.Height</item>
+        <item name="android:layout_height">@dimen/Tasks.Popup.TextView.Time.Height</item>
+    </style>
+
+    <style name="Tasks.Popup.ImageView.Date.Minus" parent="Tasks.Popup.ImageView.Date">
+        <item name="android:src">@drawable/icons_double_left_48</item>
+    </style>
+
+    <style name="Tasks.Popup.ImageView.Date.Plus" parent="Tasks.Popup.ImageView.Date">
+        <item name="android:src">@drawable/icons_double_right_48</item>
+    </style>
+
+    <style name="Tasks.Popup.ImageView.Time.Minus" parent="Tasks.Popup.ImageView.Time">
+        <item name="android:src">@drawable/icons_minus_48_red</item>
+    </style>
+
+    <style name="Tasks.Popup.ImageView.Time.Plus" parent="Tasks.Popup.ImageView.Time">
+        <item name="android:src">@drawable/icons_plus_48_green</item>
+    </style>
+
+    <style name="Tasks.Popup.ImageView.Delete" parent="Tasks.Popup.ImageView">
+        <item name="android:layout_height">@dimen/Tasks.Popup.ImageView.Delete.Height</item>
+        <item name="android:layout_width">@dimen/Tasks.Popup.ImageView.Delete.Width</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:src">@drawable/icons8_delete_100_purple</item>
+    </style>
+
+    <style name="Tasks.Popup.ImageView.Add" parent="Tasks.Popup">
+        <item name="android:layout_height">@dimen/Tasks.Popup.ImageView.Add.Height</item>
+        <item name="android:layout_width">@dimen/Tasks.Popup.ImageView.Add.Width</item>
+        <item name="contentDescription">@string/ButtonAdd</item>
+    </style>
+
+    <style name="Tasks.Popup.ImageView.Close" parent="Tasks.Popup">
+        <item name="android:layout_height">@dimen/Tasks.Popup.ImageView.Close.Height</item>
+        <item name="android:layout_width">@dimen/Tasks.Popup.ImageView.Close.Width</item>
+        <item name="contentDescription">@string/ButtonCloseWindow</item>
+        <item name="android:src">@drawable/icons8_close_window_100_purple</item>
+    </style>
+
+    <style name="Tasks.Popup.ImageView.PF" parent="Tasks.Popup.ImageView">
+        <item name="android:layout_width">@dimen/Tasks.Popup.ImageView.PF.Width</item>
+        <item name="android:layout_height">@dimen/Tasks.Popup.ImageView.PF.Width</item>
+    </style>
+
+    <style name="Tasks.Popup.ImageView.PF.Repeat" parent="Tasks.Popup.ImageView.PF"/>
+
+    <style name="Tasks.Popup.ImageView.Priority" parent="Tasks.Popup.ImageView">
+        <item name="android:layout_width">@dimen/Tasks.Popup.ImageView.Priority</item>
+        <item name="android:layout_height">@dimen/Tasks.Popup.ImageView.Priority</item>
+    </style>
+
+    <style name="Tasks.Popup.ImageView.ClearDate" parent="Tasks.Popup.ImageView">
+        <item name="android:layout_width">@dimen/Tasks.Popup.ImageView.ClearDate.Width</item>
+        <item name="android:layout_height">@dimen/Tasks.Popup.ImageView.ClearDate.Width</item>
+    </style>
+
+    <!--Button-->
+    <style name="Tasks.Button" parent="Tasks">
+        <item name="android:textSize">@dimen/Tasks.Popup.TextSize05</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:layout_height">@dimen/Tasks.Popup.Button.Save.Height</item>
+    </style>
+
+    <style name="Tasks.Popup.Button.OK" parent="Tasks.Button">
+        <item name="android:text">@string/OK</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Tasks.Popup.Button.Save" parent="Tasks.Button">
+        <item name="android:text">@string/Save</item>
+    </style>
+
+    <style name="Tasks.Popup.Button.Next" parent="Tasks.Button">
+        <item name="android:text">@string/Next</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:layout_width">40dp</item>
+    </style>
+
+    <style name="Tasks.Popup.Button.Prev" parent="Tasks.Button">
+        <item name="android:text">@string/Prev</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:layout_width">40dp</item>
+    </style>
+
+    <!--Spinner-->
+    <style name="Tasks.Popup.Spinner" parent="Tasks.Popup">
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:paddingStart">@dimen/BasePadding</item>
+        <item name="android:text">@string/CustomString</item>
+    </style>
+
+    <style name="Tasks.Popup.Spinner.DropDown" parent="Tasks.Popup.Spinner">
+        <item name="android:paddingTop">@dimen/BasePadding</item>
+        <item name="android:paddingBottom">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Tasks.Popup.Spinner.RepeatSubTasks" parent="Tasks.Popup.Spinner" />
+    <style name="Tasks.Popup.Spinner.DropDown.RepeatSubTasks" parent="Tasks.Popup.Spinner.DropDown"/>
+
+    <style name="Tasks.Popup.Spinner.RepeatType" parent="Tasks.Popup.Spinner" />
+    <style name="Tasks.Popup.Spinner.DropDown.RepeatType" parent="Tasks.Popup.Spinner.DropDown"/>
+
+    <style name="Tasks.Popup.Spinner.ParentProject" parent="Tasks.Popup.Spinner" />
+    <style name="Tasks.Popup.Spinner.DropDown.ParentProject" parent="Tasks.Popup.Spinner.DropDown"/>
+
+    <style name="Tasks.Popup.Spinner.Status" parent="Tasks.Popup.Spinner" />
+    <style name="Tasks.Popup.Spinner.DropDown.Status" parent="Tasks.Popup.Spinner.DropDown"/>
+
+    <style name="Tasks.Popup.Spinner.Task" parent="Tasks.Popup.Spinner" />
+    <style name="Tasks.Popup.Spinner.DropDown.Task" parent="Tasks.Popup.Spinner.DropDown"/>
+
+    <style name="Tasks.Popup.Spinner.Project" parent="Tasks.Popup.Spinner" />
+    <style name="Tasks.Popup.Spinner.DropDown.Project" parent="Tasks.Popup.Spinner.DropDown"/>
+
+    <style name="Tasks.Popup.Spinner.Priority" parent="Tasks.Popup.Spinner" />
+    <style name="Tasks.Popup.Spinner.DropDown.Priority" parent="Tasks.Popup.Spinner.DropDown"/>
+
+    <style name="Tasks.Popup.Spinner.Sorting" parent="Tasks.Popup.Spinner" />
+    <style name="Tasks.Popup.Spinner.DropDown.Sorting" parent="Tasks.Popup.Spinner.DropDown"/>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="Money.Popup.TextSize01">12sp</dimen>
+    <dimen name="Money.Popup.TextSize02">18sp</dimen>
+    <dimen name="Money.Popup.TextSize03">20sp</dimen>
+    <dimen name="Money.Popup.TextSize04">24sp</dimen>
+    <dimen name="Money.Popup.TextSize05">26sp</dimen>
+
+    <dimen name="Money.Popup.TextView.Height">40dp</dimen>
+
+</resources>

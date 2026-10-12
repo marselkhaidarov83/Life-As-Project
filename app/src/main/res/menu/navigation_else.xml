@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_cabinet"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_money_target"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_money_increase"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_money_portfolio"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_money_typeasset"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_money_asset"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_money_category"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_increase"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_money_pnl"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_credit"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_param"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_tag"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_tasks_tasks_fromproject"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_main_settings"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_money_incoming_fact"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_money_planfact_income"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_money_planfact_cost"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_money_incoming"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_money_costs_fact"
+        android:title="" />
+
+</menu>

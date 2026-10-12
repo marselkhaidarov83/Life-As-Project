@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/groupButtons">
+
+    <item
+        android:id="@+id/navig_param"
+        android:orderInCategory="891"
+        android:icon="@drawable/icons_tree_100_white"
+        android:title="@string/Params"
+        android:onClick="onParamsClick"
+        app:showAsAction="never" />
+
+    </group>
+
+</menu>

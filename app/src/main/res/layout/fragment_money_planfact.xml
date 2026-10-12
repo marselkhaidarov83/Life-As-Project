@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainLayout">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutDate"
+        style="@style/Date.Layout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewDateBack"
+            style="@style/Date.ImageView.Back"
+            android:layout_toStartOf="@id/spinnerDate" />
+
+        <Spinner
+            android:id="@+id/spinnerDate"
+            style="@style/Date.Spinner"
+            tools:listitem="@layout/simple_spinner_period_item"/>
+
+        <ImageView
+            android:id="@+id/imageViewDateForward"
+            style="@style/Date.ImageView.Forward"
+            android:layout_toEndOf="@id/spinnerDate" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardViewResult"
+        style="@style/PlanFact.MaterialCardView.Head"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayoutDate"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/resultLinearLayout"
+            style="@style/Fragment.LinearLayout.Horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutResult"
+                style="@style/PlanFact.ConstraintLayout.First">
+
+                <TextView
+                    android:id="@+id/textView0Result"
+                    style="@style/PlanFact.ConstraintLayout.TextView.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:text="@string/Sum" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintResultLayout1"
+                    style="@style/PlanFact.ConstraintLayout">
+
+                    <TextView
+                        android:id="@+id/textView1Result"
+                        style="@style/PlanFact.ConstraintLayout.TextView"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:gravity="center_vertical|center" />
+
+                    <ImageView
+                        android:id="@+id/imageViewSelectIncrease"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:paddingTop="@dimen/HalfPadding"
+                        android:paddingEnd="@dimen/BasePadding"
+                        android:src="@drawable/icons_money_acc_100_purple"
+                        android:gravity="center_vertical|center"
+                        app:layout_constraintEnd_toStartOf="@id/textView1Result"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintResultLayout2"
+                    style="@style/PlanFact.ConstraintLayout">
+
+                    <TextView
+                        android:id="@+id/textView2Result"
+                        style="@style/PlanFact.ConstraintLayout.TextView"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintResultLayout3"
+                    style="@style/PlanFact.ConstraintLayout">
+
+                    <TextView
+                        android:id="@+id/textView3Result"
+                        style="@style/PlanFact.ConstraintLayout.TextView"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/materialCardViewResult"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.MH83.LifeAsProject.custom.treeview.TreeView
+            android:id="@+id/treeViewData"
+            style="@style/RView"
+            tools:listitem="@layout/item_tree_money_planfact" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBarData"
+        style="@style/PlanFact.SeekBar.Data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

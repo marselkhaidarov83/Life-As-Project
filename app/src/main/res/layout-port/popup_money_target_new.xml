@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!---->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCaption"
+        style="@style/Money.Target.Popup.Layout.Caption">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            style="@style/Money.Target.Popup.ImageView.Delete"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewCaption"
+            style="@style/Money.Target.Popup.TextView.Caption"
+            android:text="@string/PopupDreamAdd"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/Money.Target.Popup.ImageView.Close"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView1"
+        style="@style/Money.Target.Popup.NestedScrollView1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/BasePadding"
+            android:paddingEnd="@dimen/BasePadding"
+            android:paddingTop="@dimen/BasePadding"
+            android:scrollbars="vertical">
+
+            <TableLayout
+                android:id="@+id/tableLayoutHead"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:paddingTop="@dimen/BasePadding">
+
+                <TableRow
+                    style="@style/MoneyTargetPopup1Row"
+                    android:layout_width="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imageViewPhoto"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/icons_photo_purple_100"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                        </ImageView>
+
+                        <EditText
+                            android:id="@+id/editTextName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:autofillHints="false"
+                            style="@style/MoneyTargetPopup.EditText.TargetName"
+                            android:gravity="start"
+                            android:inputType="text"
+                            android:paddingTop="@dimen/BasePadding"
+                            tools:text="@string/CustomString"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toStartOf="@id/imageViewPhoto"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/MoneyTargetPopup2Row"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imageViewDateBackBack"
+                            style="@style/MoneyTargetPopup2Column"
+                            android:src="@drawable/icons_double_left_96"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageViewDateBack"
+                            style="@style/MoneyTargetPopup2Column"
+                            android:src="@drawable/icons_left_96"
+                            app:layout_constraintStart_toEndOf="@id/imageViewDateBackBack"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageViewDateForward"
+                            style="@style/MoneyTargetPopup4Column"
+                            android:src="@drawable/icons_right_green_96"
+                            app:layout_constraintEnd_toStartOf="@id/imageViewDateForwardForward"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageViewDateForwardForward"
+                            style="@style/MoneyTargetPopup4Column"
+                            android:src="@drawable/icons_double_right_96"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textViewDate"
+                            style="@style/MoneyTargetPopup3Column"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:background="@color/lightGrey"
+                            android:text="@string/CustomDate"
+                            app:layout_constraintEnd_toStartOf="@id/imageViewDateForward"
+                            app:layout_constraintStart_toEndOf="@id/imageViewDateBack"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewStatus"
+                        style="@style/MoneyTargetPopup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:labelFor="@id/editTextPrice"
+                        android:text="@string/TargetStatus"
+                        android:textAlignment="textEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinnerStatus"
+                        style="@style/MoneyCategoryPopup.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:paddingTop="@dimen/BasePadding">
+
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/MoneyTargetPopup1row"
+                    style="@style/MoneyTargetPopup3Row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textViewPrice"
+                        style="@style/MoneyTargetPopup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:labelFor="@id/editTextPrice"
+                        android:text="@string/Price"
+                        android:textAlignment="textEnd" />
+
+                    <EditText
+                        android:id="@+id/editTextPrice"
+                        style="@style/MoneyTargetPopup.EditText.Price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="false"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:text="@string/CustomNum" />
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/MoneyTargetPopup4Row"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/MoneyTargetPopup.TextView"
+                        android:layout_marginEnd="10dp"
+                        android:labelFor="@id/editTextAccumulation"
+                        android:text="@string/Accumulation"
+                        android:textAlignment="textEnd" />
+
+                    <EditText
+                        android:id="@+id/editTextAccumulation"
+                        style="@style/MoneyTargetPopup.EditText.Accumulation"
+                        android:layout_width="match_parent"
+                        android:autofillHints="false"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:text="@string/CustomNum" />
+
+                </TableRow>
+
+                <TableRow style="@style/MoneyTargetPopup5Row">
+
+                    <TextView
+                        style="@style/MoneyTargetPopup.TextView"
+                        android:layout_marginEnd="10dp"
+                        android:labelFor="@id/editTextCredit"
+                        android:text="@string/Credit"
+                        android:textAlignment="textEnd" />
+
+                    <EditText
+                        android:id="@+id/editTextCredit"
+                        style="@style/MoneyTargetPopup.EditText.Credit"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:autofillHints="false"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:text="@string/CustomNum" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardViewImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <com.MH83.LifeAsProject.custom.CustomSubsamplingScaleImageViewW
+                    android:id="@+id/subsamplingScaleImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                </com.MH83.LifeAsProject.custom.CustomSubsamplingScaleImageViewW>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonSave"
+                    style="@style/Money.Target.Popup.Button.Save"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/buttonNext2"
+                    style="@style/Money.Target.Popup.Button.Next"
+                    android:layout_weight="0"
+                    android:layout_marginStart="@dimen/BasePadding">
+
+                </Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView2"
+        style="@style/Money.Target.Popup.NestedScrollView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/BasePadding"
+            android:paddingEnd="@dimen/BasePadding">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutNSV2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/BasePadding"
+                android:paddingBottom="@dimen/BasePadding">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutHeadNSV2"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TableLayout
+                        android:id="@+id/tableLayoutAccumulation"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_marginEnd="@dimen/BasePadding">
+
+                        <TableRow>
+
+                            <CheckBox
+                                android:id="@+id/checkBoxExistAccumulation"
+                                style="@style/Money.Target.Popup.CheckBox.ExistAccumulation"
+                                android:layout_span="2" />
+
+                            <TextView
+                                android:id="@+id/textViewStartSum"
+                                android:layout_marginStart="@dimen/BasePadding2"
+                                style="@style/Money.Target.Popup.TextView.StartSum"/>
+
+                            <EditText
+                                android:id="@+id/editTextAccumulationStartSum"
+                                android:inputType="number"
+                                style="@style/Money.Target.Popup.EditText.AccumulationStartSum"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:autofillHints="false"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginStart="@dimen/BasePadding">
+
+                            <TextView
+                                android:id="@+id/textViewAccumulationType"
+                                style="@style/Money.Target.Popup.TextView.AccumulationType"/>
+
+                            <Spinner
+                                android:id="@+id/spinnerAccumulationType"
+                                style="@style/MoneyCategoryPopup.EditText"
+                                android:layout_width="match_parent" />
+
+                            <TextView
+                                android:id="@+id/textViewAccumulationCoef"
+                                android:layout_marginStart="@dimen/BasePadding"
+                                style="@style/Money.Target.Popup.TextView.AccumulationCoef"/>
+
+                            <EditText
+                                android:id="@+id/editTextProgressionCoefficient"
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberDecimal"
+                                style="@style/Money.Target.Popup.EditText.AccumulationStartSum" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginStart="@dimen/BasePadding">
+
+                            <TextView
+                                android:id="@+id/textViewStartDate"
+                                style="@style/Money.Target.Popup.TextView.AccumulationStartDate" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/imageViewDateAccumulationBackBack"
+                                    style="@style/MoneyTargetPopup2Column"
+                                    android:src="@drawable/icons_double_left_96"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/imageViewDateAccumulationBack"
+                                    style="@style/MoneyTargetPopup2Column"
+                                    android:src="@drawable/icons_left_96"
+                                    app:layout_constraintStart_toEndOf="@id/imageViewDateBackBack"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/textViewAccumulationStartDate"
+                                    style="@style/MoneyTargetPopup3Column"
+                                    android:layout_width="150dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/lightGrey"
+                                    android:text="@string/CustomDate"/>
+
+                                <ImageView
+                                    android:id="@+id/imageViewDateAccumulationForward"
+                                    style="@style/MoneyTargetPopup4Column"
+                                    android:src="@drawable/icons_right_green_96"
+                                    app:layout_constraintEnd_toStartOf="@id/imageViewDateForwardForward"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/imageViewDateAccumulationForwardForward"
+                                    style="@style/MoneyTargetPopup4Column"
+                                    android:src="@drawable/icons_double_right_96"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textViewEndDate"
+                                android:layout_marginStart="@dimen/BasePadding"
+                                style="@style/Money.Target.Popup.TextView.AccumulationEndDate" />
+
+                            <TextView
+                                android:id="@+id/textViewAccumulationEndDate"
+                                style="@style/MoneyTargetPopup3Column"
+                                android:layout_width="150dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_span="1"
+                                android:background="@color/lightGrey"
+                                android:text="@string/CustomDate"/>
+
+                            <ImageView
+                                android:id="@+id/imageViewAddPlanAccumulation"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="@dimen/BasePadding"
+                                style="@style/Popup.ImageView.AddToRView"
+                                android:src="@drawable/icons_add_100_purple" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleViewPlanAccumulation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintTop_toBottomOf="@id/linearLayoutHeadNSV2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:listitem="@layout/item_planvalue" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutNSV2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/buttonPrev"
+                    style="@style/Money.Target.Popup.Button.Prev"
+                    android:layout_marginEnd="@dimen/BasePadding"
+                    android:layout_weight="0" />
+
+                <Button
+                    android:id="@+id/buttonSave2"
+                    style="@style/Money.Target.Popup.Button.Save"
+                    android:layout_marginEnd="@dimen/BasePadding"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/buttonNext3"
+                    style="@style/Money.Target.Popup.Button.Next"
+                    android:layout_weight="0" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView3"
+        style="@style/Money.Target.Popup.NestedScrollView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/BasePadding"
+            android:paddingEnd="@dimen/BasePadding"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutNSV3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingTop="@dimen/BasePadding"
+                android:paddingBottom="@dimen/BasePadding">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutHeadNSV3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent">
+
+                    <TextView
+                        android:id="@+id/textViewParentTarget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/MoneyTargetPopup.TextView"
+                        android:paddingStart="@dimen/BasePadding2"
+                        android:text="@string/TargetParent"
+                        android:layout_marginEnd="@dimen/BasePadding"
+                        />
+
+                    <Spinner
+                        android:id="@+id/spinnerParentTarget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        style="@style/MoneyTargetPopup.EditText"
+                        android:paddingTop="@dimen/BasePadding"
+                        />
+
+                    <ImageView
+                        android:id="@+id/imageViewAdd"
+                        android:layout_width="35dp"
+                        android:layout_height="30dp"
+                        android:paddingEnd="@dimen/BasePadding"
+                        style="@style/MoneyTargetPopup.ImageViewAdd"
+                        android:src="@drawable/icons_add_100_purple" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleViewPlanValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/linearLayoutHeadNSV3"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_planvalue" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutNSV3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/buttonPrev2"
+                    style="@style/Money.Target.Popup.Button.Prev"
+                    android:layout_weight="0"
+                    android:layout_marginEnd="@dimen/BasePadding">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/buttonSave3"
+                    style="@style/Money.Target.Popup.Button.Save"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent">
+
+                </Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

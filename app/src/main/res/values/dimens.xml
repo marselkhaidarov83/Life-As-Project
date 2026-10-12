@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="NonePadding">0dp</dimen>
+    <dimen name="Padding1dp">1dp</dimen>
+    <dimen name="Padding2dp">2dp</dimen>
+    <dimen name="HalfPadding">3dp</dimen>
+    <dimen name="BasePadding">5dp</dimen>
+    <dimen name="Padding7dp">7dp</dimen>
+    <dimen name="Padding8dp">8dp</dimen>
+    <dimen name="BasePadding2">10dp</dimen>
+    <dimen name="BasePadding5">25dp</dimen>
+    <dimen name="UnknownToolbarHeight">24dp</dimen>
+    <dimen name="UnknownPortraitHeight">80dp</dimen>
+    <dimen name="UnknownLandscapeHeight">65dp</dimen>
+    <dimen name="PopupTitleHeight">50dp</dimen>
+    <dimen name="PopupBottomHeight">75dp</dimen>
+    <dimen name="CustomIndent">5dp</dimen>
+    <dimen name="ImageViewMascotAddMarginEnd">60dp</dimen>
+
+    <dimen name="ToolbarTextViewPadding">80dp</dimen>
+    <dimen name="PlanValuePopupWidth">500dp</dimen>
+    <dimen name="MoneyInc4CostConstraintLayoutNSV2.Height">500dp</dimen>
+
+    <dimen name="MoneyDreamBottomToolbarHeight">62dp</dimen>
+    <dimen name="MoneyDreamLineBasedBorderLineDp">20dp</dimen>
+
+    <dimen name="MoneyTarget.Item.ImageViewStatus.Width">30dp</dimen>
+    <dimen name="MoneyTarget.Button.Next.Width">80dp</dimen>
+
+    <dimen name="MoneyPopup.ImageViewDelete.Height">30dp</dimen>
+    <dimen name="MoneyPopup.ImageViewDelete.Width">30dp</dimen>
+
+    <dimen name="MoneyPopup.ImageViewClose.Height">30dp</dimen>
+    <dimen name="MoneyPopup.ImageViewClose.Width">30dp</dimen>
+
+    <dimen name="MoneyPopup.ImageViewAdd.Height">30dp</dimen>
+    <dimen name="MoneyPopup.ImageViewAdd.Width">30dp</dimen>
+
+    <dimen name="MoneyPopup.ImageViewSelectPhoto.Height">40dp</dimen>
+    <dimen name="MoneyPopup.ImageViewSelectPhoto.Width">40dp</dimen>
+
+    <dimen name="MoneyPopup.Increase.Width">565dp</dimen>
+
+    <dimen name="MoneyPopup.Category.Width">450dp</dimen>
+    <dimen name="MoneyPopup.Asset.Width">500dp</dimen>
+    <dimen name="MoneyPopup.Lot.Asset.Width">600dp</dimen>
+
+    <dimen name="MoneyPopup.PNL.Width">450dp</dimen>
+    <dimen name="MoneyPopup.PNL.Width_">390dp</dimen>
+
+    <dimen name="MoneyPopup.Credit.Width">600dp</dimen>
+    <dimen name="MoneyPopup.Credit.Pivot.Width">600dp</dimen>
+
+    <dimen name="MoneyPopupSettings.Incoming.Width">600dp</dimen>
+    <dimen name="MoneyPopupSettings.Capital.Width">600dp</dimen>
+
+    <dimen name="MoneyPopup.Category4PNL.Width">400dp</dimen>
+
+    <dimen name="MoneyPopup.IncomingAndCost.Width">500dp</dimen>
+
+    <dimen name="MoneyPopup.Subscription.Width">500dp</dimen>
+
+    <dimen name="MoneyPopup.ButtonSave.Height">45dp</dimen>
+
+    <dimen name="MoneyDreamPopupEditTextLayoutHeight">45dp</dimen>
+    <dimen name="MoneyDreamPopup.LayoutCaption.Height">50dp</dimen>
+
+    <dimen name="MoneyCategoryPopup.LayoutCaption.Height">50dp</dimen>
+
+    <dimen name="MoneyTargetPopupEditTextLayoutHeight">45dp</dimen>
+    <dimen name="MoneyTargetPopup.LayoutCaption.Height">50dp</dimen>
+
+    <dimen name="MoneyTargetPopupRowHeight">30dp</dimen>
+    <dimen name="MoneyTargetLineBasedBorderLineDp">20dp</dimen>
+    <dimen name="MoneyTargetSpinnerItemHeight">25dp</dimen>
+    <dimen name="MoneyTargetSpinnerParentItemHeight">35dp</dimen>
+
+    <dimen name="MoneyPlanFactPopup.LayoutCaption.Height">50dp</dimen>
+
+
+    <dimen name="ParamPopup.LayoutCaption.Height">50dp</dimen>
+    <dimen name="ParamPopup.ImageViewDelete.Height">30dp</dimen>
+    <dimen name="ParamPopup.ImageViewDelete.Width">30dp</dimen>
+    <dimen name="ParamPopup.ImageViewClose.Height">30dp</dimen>
+    <dimen name="ParamPopup.ImageViewClose.Width">30dp</dimen>
+
+    <dimen name="ParamSpinnerItemHeight">35dp</dimen>
+    <dimen name="PlanValueSpinnerItemHeight">35dp</dimen>
+
+
+    <dimen name="MoneyIncreaseLineBasedBorderLineDp">16dp</dimen>
+
+
+
+    <dimen name="MoneyCategorySpinnerItemHeight">35dp</dimen>
+    <dimen name="MoneyCategoryLineBasedBorderLineDp">16dp</dimen>
+
+    <dimen name="MoneyIncomingTopTextView1RowHeight">28dp</dimen>
+    <dimen name="MoneyIncomingTopTextView2RowHeight">45dp</dimen>
+
+    <dimen name="MoneyAccountingPopup.LayoutCaption.Height">50dp</dimen>
+
+    <dimen name="MoneyAccounitingRViewIncomingHeight">60dp</dimen>
+    <dimen name="MoneyAccountingSpinnerItemHeight">40dp</dimen>
+
+    <dimen name="MoneyPNLLineBasedBorderLineDp">16dp</dimen>
+
+    <dimen name="MoneyTypeDataSpinnerItemHeight">35dp</dimen>
+    <dimen name="MoneyPeriodDataSpinnerItemHeight">35dp</dimen>
+
+    <dimen name="treeview_default_indentation_width">35dp</dimen>
+    <dimen name="treeview_money_incoming_row_height">35dp</dimen>
+    <dimen name="CustomRViewItemWidth">60dp</dimen>
+
+    <dimen name="EnumConfirmedSpinnerItemHeight">35dp</dimen>
+
+    <dimen name="MoneyIncomingRowHeight">40dp</dimen>
+
+
+    <dimen name="MoneyBoardPicWidth">24dp</dimen>
+    <dimen name="MoneyPopup.Portfolio.Height1">190dp</dimen>
+    <dimen name="MoneyPopup.Portfolio.Height2">305dp</dimen>
+    <dimen name="MoneyPopup.LotAssetOperation.Height">530dp</dimen>
+    <dimen name="MoneyPopup.LotAsset.Height1">95dp</dimen>
+</resources>

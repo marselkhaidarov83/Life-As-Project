@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Popup.LinearLayout.Main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCaption"
+        style="@style/Popup.ConstraintLayout.Caption">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            style="@style/Popup.ImageView.Delete"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/Popup.TextView.Caption"
+            android:text="@string/JobWithPlanFact"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/Popup.ImageView.Close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/Popup.NestedScrollView.Main">
+
+        <LinearLayout
+            style="@style/Popup.LinearLayout.TopHead">
+
+            <TextView
+                android:id="@+id/textViewLegend"
+                style="@style/Popup.TextView.Legend"
+                android:text="
+Учет фактических доходов и расходов полезен, но без планирования и последующего анализа превращается в пустую трату времени.\n
+\n
+Для того, чтобы ваши цели реализовывались, важно в начале месяца, квартала или года планировать доходы и расходы, а в конце соответствующего периода анализировать факт по отношению к плану.\n
+\n
+Планируйте доходы и расходы, анализируйте отклонения. И ваши цели реализуются.\n
+\n
+Чтобы ввести плановое значение дохода или расхода для категории:\n
+1) выберите период 'месяц';\n
+2) укажите необходимый месяц с помощью кнопок [double_left_arrow], [double_right_arrow];\n
+3) нажмите на ячейку с плановым значением для категории на нижнем уровне дерева категорий (для подкатегории). \n
+\n
+Если вы захотите повторно посмотреть легенду о том, как вводить плановое значение дохода или расхода, нажмите кнопку [mascot] в правом нижнем углу экрана.\n
+\n
+Если вы захотите получить больше информации об экране план/факта, выберите меню 'Легенда' через 3 точки в правом верхнем углу экрана.\n
+\n
+PS: вы всегда можете включить/отключить помощника в настройках программы - для этого выберите меню 'Настройки' через 3 точки в правом верхнем углу экрана.\n
+\n
+PPS: в бесплатной версии программы вы можете работать с формой план/факта только в рамках текущего месяца.                "/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

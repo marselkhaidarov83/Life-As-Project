@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Tag.RView.Item.MaterialCardView.Main">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutItem"
+        style="@style/RView.Item.MaterialCardView.LinearLayout.Main">
+
+        <TextView
+            android:id="@+id/textViewName"
+            style="@style/Popup.RView.Item.TextView"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/imageViewUp"
+            style="@style/Popup.RView.ImageView.Up" />
+
+        <ImageView
+            android:id="@+id/imageViewDown"
+            style="@style/Popup.RView.ImageView.Down" />
+
+        <ImageView
+            android:id="@+id/imageViewVisible"
+            style="@style/Popup.RView.ImageView.Visible" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

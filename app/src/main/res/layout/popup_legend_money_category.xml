@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Popup.LinearLayout.Main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCaption"
+        style="@style/Popup.ConstraintLayout.Caption">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            style="@style/Popup.ImageView.Delete"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/Popup.TextView.Caption"
+            android:text="@string/JobWithCategory"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/Popup.ImageView.Close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/Popup.NestedScrollView.Main">
+
+        <LinearLayout
+            style="@style/Popup.LinearLayout.TopHead">
+
+            <TextView
+                android:id="@+id/textViewLegend"
+                style="@style/Popup.TextView.Legend"
+                android:text="
+Учет финансов становится эффективным в том случае, если мы учитываем доходы и расходы в разрезре категорий.
+То есть если мы разбиваем доходы и расходы по маленьким группам и анализируем их отдельно.\n
+\n
+Выделите 3-5 категорий доходов и 5-10 категорий расходов, чтобы учет финансов позволял не только видеть общую сумму денег в вашем кармане и на счетах, но и позволял анализировать ваши доходы и расходы. \n
+\n
+Экран категорий представляет собой древовидный перечень карточек категорий. Учет финансов возможен по дочерним категориям, группировка затрат производится по родительским категориям.\n
+\n
+Категории затрат могут быть 3 видов: доходные, расходные, кошельки.\n
+На форме категорий могут отдельно отображаться категории только одного вида.\n
+\n
+Основной информацией категории является (слева направо) её иконка, название и сумма.\n
+Для доходной категории сумма будет представлять собой сумму денег основного долга по кредиту, выданному через данную категорию (подробнее в функционале 'Кредиты').\n
+Для кошелька сумма будет представлять собой сумму в кошельке.\n
+Для расходной категории сумма будет представлять собой сумму оперативного бюджета по данной категории (подробнее в функционале 'Оперативный бюджет').\n
+\n
+У каждой дочерней категории расходного типа на экране присутствует кнопка [plus]. Нажава на эту кнопку, вы можете добавить сумму оперативного бюджета по данной категории (подробнее в функционале 'Оперативный бюджет').\n
+\n
+Также у экрана 'Категории' есть панель инструментов.
+Вызвать панель вы можете либо выбрав меню 'Панель инструментов' через 3 точки в правом верхнем углу экрана, либо нажав на название экрана 'План/факт':\n
+1) По кнопке [expand_all] вы можете одним нажатием раскрыть все узлы дерева категорий;\n
+2) По кнопке [collapse_all] вы можете одним нажатием свернуть все узлы дерева категорий;\n
+3) По кнопке [circle_purple] вы можете включить показ категорий с пустыми суммами;\n
+4) По кнопке [circle_half_purple] вы можете отключить показ категорий с пустыми суммами;\n
+5) По кнопке [settings] вы можете открыть окно настроек формы.\n
+\n
+Если вы захотите повторно посмотреть легенду об экране категорий, выберите меню 'Легенда' через 3 точки в правом верхнем углу экрана.\n
+\n
+PS: вы всегда можете включить/отключить помощника в настройках программы - для этого выберите меню 'Настройки' через 3 точки в правом верхнем углу экрана.\n
+\n
+PPS: в бесплатной версии программы вы можете добавить не более [category_free_count] категорий. Чтобы иметь возможность добавлять больше категорий, приобретите подписку. Для этого выберите меню 'Личный кабинет' через 3 точки в правом верхнем углу экрана.
+            "/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

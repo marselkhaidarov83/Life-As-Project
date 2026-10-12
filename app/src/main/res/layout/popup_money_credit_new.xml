@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCaption"
+        style="@style/MoneyCategoryPopup.LayoutCaption"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            style="@style/MoneyCategoryPopup.ImageViewDelete"
+            android:src="@drawable/icons8_delete_100_purple"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewCaption"
+            style="@style/Popup.TextView.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/PopupCreditAdd"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            style="@style/MoneyCategoryPopup.ImageViewClose"
+            android:src="@drawable/icons8_close_window_100_purple"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView1"
+        style="@style/Money.Credit.Popup.NestedScrollView1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/BasePadding">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewName"
+                        style="@style/MoneyCategoryPopup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/BasePadding"
+                        android:labelFor="@id/editTextName"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/Name"
+                        android:textAlignment="textEnd" />
+
+                    <EditText
+                        android:id="@+id/editTextName"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        style="@style/MoneyCategoryPopup.EditText"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:text="@string/CustomString"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewTarget"
+                        style="@style/MoneyCategoryPopup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/BasePadding"
+                        android:labelFor="@id/spinnerTarget"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/Target"
+                        android:textAlignment="textEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinnerTarget"
+                        style="@style/MoneyCategoryPopup.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:paddingTop="@dimen/BasePadding">
+
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewStartSum"
+                        style="@style/MoneyCategoryPopup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/BasePadding"
+                        android:labelFor="@id/editTextStartSum"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/Sum"
+                        android:textAlignment="textEnd" />
+
+                    <EditText
+                        android:id="@+id/editTextStartSum"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        style="@style/MoneyCategoryPopup.EditText"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:text="@string/CustomString"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewSum"
+                        style="@style/MoneyCategoryPopup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/BasePadding"
+                        android:labelFor="@id/editTextSum"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/ResidualSum"
+                        android:textAlignment="textEnd" />
+
+                    <EditText
+                        android:id="@+id/editTextSum"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        style="@style/MoneyCategoryPopup.EditText"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:text="@string/CustomString"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_span="2"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textViewDate"
+                            android:layout_width="200dp"
+                            android:layout_height="35dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center_vertical|center"
+                            android:text="@string/CustomDate"
+                            android:textAlignment="center"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageViewDateMinus"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="end"
+                            android:layout_toStartOf="@id/textViewDate"
+                            android:src="@drawable/icons_double_left_48" />
+
+                        <ImageView
+                            android:id="@+id/imageViewDatePlus"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_toEndOf="@id/textViewDate"
+                            android:src="@drawable/icons_double_right_48"
+                            android:textAlignment="textStart" />
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textViewDateTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Date"
+                        android:textAlignment="center"
+                        android:textSize="8sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewLoanTerm"
+                        style="@style/MoneyCategoryPopup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/BasePadding"
+                        android:labelFor="@id/editTextLoanTerm"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/LoanTerm"
+                        android:textAlignment="textEnd" />
+
+                    <EditText
+                        android:id="@+id/editTextLoanTerm"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        style="@style/MoneyCategoryPopup.EditText"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:text="@string/CustomString"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewTypeCredit"
+                        style="@style/MoneyCategoryPopup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/BasePadding"
+                        android:labelFor="@id/spinnerTypeCredit"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/TypeCredit"
+                        android:textAlignment="textEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinnerTypeCredit"
+                        style="@style/MoneyCategoryPopup.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:paddingTop="@dimen/BasePadding">
+
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewPercent"
+                        style="@style/MoneyCategoryPopup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/BasePadding"
+                        android:labelFor="@id/editTextPercent"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/CreditPercent"
+                        android:textAlignment="textEnd" />
+
+                    <EditText
+                        android:id="@+id/editTextPercent"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        style="@style/MoneyCategoryPopup.EditText"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:text="@string/CustomString"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewWallet"
+                        style="@style/MoneyCategoryPopup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/BasePadding"
+                        android:labelFor="@id/editTextPercent"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="@string/WalletToUp"
+                        android:textAlignment="textEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinnerWallet"
+                        style="@style/MoneyCategoryPopup.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:paddingTop="@dimen/BasePadding">
+
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewInc4CostCategoryId"
+                        style="@style/MoneyCategoryPopup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/BasePadding"
+                        android:labelFor="@id/editTextPercent"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="Оперативный план (категория)"
+                        android:textAlignment="textEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinnerInc4CostCategoryId"
+                        style="@style/MoneyCategoryPopup.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:paddingTop="@dimen/BasePadding">
+
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/BasePadding">
+
+                    <TextView
+                        android:id="@+id/textViewInc4CostSubCategoryId"
+                        style="@style/MoneyCategoryPopup.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/BasePadding"
+                        android:labelFor="@id/editTextPercent"
+                        android:paddingBottom="@dimen/BasePadding"
+                        android:text="Оперативный план (подкатегория)"
+                        android:textAlignment="textEnd" />
+
+                    <Spinner
+                        android:id="@+id/spinnerInc4CostSubCategoryId"
+                        style="@style/MoneyCategoryPopup.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:paddingTop="@dimen/BasePadding">
+
+                    </Spinner>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonSave"
+                    style="@style/Money.Credit.Popup.Button.Save"
+                    android:layout_marginStart="@dimen/BasePadding"/>
+
+                <Button
+                    android:id="@+id/buttonNext"
+                    style="@style/Money.Credit.Popup.Button.Next" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView2"
+        style="@style/Money.Credit.Popup.NestedScrollView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutNSV2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/BasePadding"
+                android:paddingBottom="@dimen/BasePadding">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent">
+
+                    <TextView
+                        android:id="@+id/textViewStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/MoneyAccountingPopup.TextView"
+                        android:paddingStart="@dimen/BasePadding"
+                        android:text="@string/Status"
+                        android:paddingTop="@dimen/BasePadding"
+                        android:layout_marginEnd="@dimen/BasePadding" />
+
+                    <Spinner
+                        android:id="@+id/spinnerStatus"
+                        style="@style/MoneyCategoryPopup.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:paddingTop="@dimen/BasePadding">
+
+                    </Spinner>
+
+                    <ImageView
+                        android:id="@+id/imageViewAdd"
+                        android:layout_width="35dp"
+                        android:layout_height="30dp"
+                        android:paddingEnd="@dimen/BasePadding"
+                        style="@style/Popup.ImageView.AddToRView"
+                        android:src="@drawable/icons_add_100_purple" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleViewPNLCredit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"
+                    android:layout_marginTop="@dimen/BasePadding"
+                    app:layout_constraintTop_toBottomOf="@id/linearLayoutHead"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_money_pnl_credit" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutNSV2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonPrev"
+                    style="@style/Money.Credit.Popup.Button.Prev">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/buttonSave2"
+                    style="@style/Money.Credit.Popup.Button.Save">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/buttonNext2"
+                    style="@style/Money.Credit.Popup.Button.Next" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView3"
+        style="@style/Money.Credit.Popup.NestedScrollView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutNSV3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/BasePadding"
+                android:paddingBottom="@dimen/BasePadding">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutHead2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageViewAdd2"
+                        android:layout_width="35dp"
+                        android:layout_height="30dp"
+                        android:paddingEnd="@dimen/BasePadding"
+                        style="@style/Popup.ImageView.AddToRView"
+                        android:src="@drawable/icons_add_100_purple" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleViewPivots"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"
+                    android:layout_marginTop="@dimen/BasePadding"
+                    app:layout_constraintTop_toBottomOf="@id/linearLayoutHead2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_money_pnl_credit" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutNSV3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonPrev3"
+                    style="@style/Money.Credit.Popup.Button.Prev">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/buttonSave3"
+                    style="@style/Money.Credit.Popup.Button.Save"
+                    android:layout_marginEnd="@dimen/BasePadding">
+
+                </Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

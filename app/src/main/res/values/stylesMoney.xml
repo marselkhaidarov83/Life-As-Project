@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Money" parent="Custom" />
+
+    <style name="Money.Popup" parent="Money">
+        <item name="android:textSize">@dimen/Money.Popup.TextSize03</item>
+    </style>
+
+    <!--Button-->
+    <style name="Money.Popup.Button.Save" parent="Popup.Button.Save">
+    </style>
+
+    <style name="Money.Popup.Button.Next" parent="Popup.Button.Next">
+    </style>
+
+    <style name="Money.Popup.Button.Prev" parent="Popup.Button.Prev">
+    </style>
+
+    <!--Spinner-->
+    <style name="Money.Popup.Spinner" parent="Money.Popup">
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">@dimen/Popup.TextSize02</item>
+        <item name="android:paddingStart">@dimen/BasePadding</item>
+        <item name="android:text">@string/CustomString</item>
+    </style>
+
+    <style name="Money.Popup.Spinner.DropDown" parent="Money.Popup.Spinner">
+        <item name="android:paddingTop">@dimen/BasePadding</item>
+        <item name="android:paddingBottom">@dimen/BasePadding</item>
+        <item name="android:textSize">@dimen/Popup.TextSize02</item>
+    </style>
+
+    <style name="Money.Popup.Spinner.AccumulationType" parent="Money.Popup.Spinner" />
+
+    <!--TextView-->
+
+    <style name="Money.Popup.TextView" parent="Money.Popup">
+        <item name="android:layout_height">@dimen/Money.Popup.TextView.Height</item>
+    </style>
+
+    <style name="Money.Popup.TextView.Caption" parent="Money.Popup.TextView">
+        <item name="android:textSize">@dimen/Money.Popup.TextSize04</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!--EditText-->
+    <style name="Money.Popup.EditText" parent="Money.Popup" />
+
+    <!--Layout-->
+    <style name="Money.Popup.Layout" parent="Money.Popup" />
+
+    <style name="Money.Popup.Layout.Caption" parent="Money.Popup.Layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Money.Popup.Layout.Caption.Height</item>
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+        <item name="android:padding">@dimen/BasePadding2</item>
+    </style>
+
+    <!--ImageView-->
+    <style name="Money.Popup.ImageView" parent="Money.Popup" />
+
+    <style name="Money.Popup.ImageView.Delete" parent="Money.Popup.ImageView">
+        <item name="android:layout_height">@dimen/Money.Popup.ImageView.Delete.Height</item>
+        <item name="android:layout_width">@dimen/Money.Popup.ImageView.Delete.Width</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:src">@drawable/icons8_delete_100_purple</item>
+    </style>
+
+    <style name="Money.Popup.ImageView.Add" parent="Money.Popup">
+        <item name="android:layout_height">@dimen/Money.Popup.ImageView.Add.Height</item>
+        <item name="android:layout_width">@dimen/Money.Popup.ImageView.Add.Width</item>
+        <item name="contentDescription">@string/ButtonAdd</item>
+    </style>
+
+    <style name="Money.Popup.ImageView.Close" parent="Money.Popup">
+        <item name="android:layout_height">@dimen/Money.Popup.ImageView.Close.Height</item>
+        <item name="android:layout_width">@dimen/Money.Popup.ImageView.Close.Width</item>
+        <item name="contentDescription">@string/ButtonCloseWindow</item>
+        <item name="android:src">@drawable/icons8_close_window_100_purple</item>
+    </style>
+
+    <!--NestedScrollView-->
+    <style name="Money.Popup.NestedScrollView" parent="Money.Popup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!--CheckBox-->
+    <style name="Money.Popup.CheckBox" parent="Money.Popup">
+
+    </style>
+</resources>

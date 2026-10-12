@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="Money.Popup.TextSize01">10sp</dimen>
+    <dimen name="Money.Popup.TextSize02">14sp</dimen>
+    <dimen name="Money.Popup.TextSize03">16sp</dimen>
+    <dimen name="Money.Popup.TextSize04">20sp</dimen>
+    <dimen name="Money.Popup.TextSize05">22sp</dimen>
+
+    <dimen name="Money.Popup.TextView.Height">31dp</dimen>
+
+    <dimen name="Money.Popup.ImageView.Delete.Height">30dp</dimen>
+    <dimen name="Money.Popup.ImageView.Delete.Width">30dp</dimen>
+
+    <dimen name="Money.Popup.ImageView.Add.Height">30dp</dimen>
+    <dimen name="Money.Popup.ImageView.Add.Width">30dp</dimen>
+
+    <dimen name="Money.Popup.ImageView.Close.Height">30dp</dimen>
+    <dimen name="Money.Popup.ImageView.Close.Width">30dp</dimen>
+
+    <dimen name="Money.Popup.Button.Save.Height">45dp</dimen>
+
+    <dimen name="Money.Popup.Layout.Caption.Height">50dp</dimen>
+
+
+</resources>

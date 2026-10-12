@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/groupShowIncreasePercent">
+
+    <item
+        android:id="@+id/navig_showincreaseprecent"
+        android:orderInCategory="70"
+        android:icon="@drawable/icons_increase_white_100"
+        android:title="Показать процент роста"
+        app:showAsAction="always" />
+
+    </group>
+
+</menu>

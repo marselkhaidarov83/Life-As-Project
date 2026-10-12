@@ -1,0 +1,21 @@
+<resources>
+    <!--    Наименование приложения-->
+    <!--    Кнопки-->
+    <string name="money_target">Dreams</string>
+    <string name="money_increase">Growth</string>
+    <string name="money_board">Overview</string>
+    <string name="money_board_short">Overview</string>
+    <string name="money_planfactmoney">PF money</string>
+
+    <!--    Надписи экранов-->
+
+    <!--    Ошибки-->
+    <!--    Действия для пользователя-->
+    <!--    Надписи на формах-->
+    <!--    Directories-->
+    <!--    Arrays-->
+    <!--    Тексты-->
+    <!--    Custom strings-->
+
+    <!--    Кнопки-->
+</resources>

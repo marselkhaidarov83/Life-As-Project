@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Param" parent="Custom"></style>
+
+    <style name="ParamTable" parent="Money"></style>
+
+    <style name="ParamRViewItem" parent="MoneyDreamTable">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MoneyDreamTable" parent="Money"></style>
+
+    <style name="MoneyDreamBottomToolbar" parent="@style/Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="android:layout_height">@dimen/MoneyDreamBottomToolbarHeight</item>
+    </style>
+
+    <style name="MoneyTargetTable" parent="Money"></style>
+
+    <style name="MoneyTargetTextView" parent="MoneyTargetTable">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MoneyTargetRViewItem" parent="MoneyTargetTable">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MoneyTargetRViewItem.TextView" parent="MoneyIncreaseRViewItem"></style>
+
+    <style name="MoneyTargetRViewItem.TextViewLeft" parent="MoneyTargetRViewItem">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">@dimen/HalfPadding</item>
+        <item name="android:paddingBottom">@dimen/HalfPadding</item>
+        <item name="android:layout_gravity">start</item>
+    </style>
+
+    <style name="MoneyTargetRViewItem.TextViewLeft2" parent="MoneyTargetRViewItem">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:paddingTop">@dimen/HalfPadding</item>
+    </style>
+
+    <style name="MoneyTargetRViewItem.TextViewRight" parent="MoneyTargetRViewItem">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:gravity">end</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">@dimen/HalfPadding</item>
+        <item name="android:paddingBottom">@dimen/HalfPadding</item>
+    </style>
+
+    <style name="MoneyTargetRViewItem.TextViewRight2" parent="MoneyTargetRViewItem">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:gravity">end</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">@dimen/HalfPadding</item>
+    </style>
+
+    <style name="MoneyTargetRViewItem.Image" parent="MoneyTargetRViewItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center|end</item>
+    </style>
+
+    <style name="MoneyPopup" parent="Money">
+    </style>
+
+    <style name="MoneyPopup.ImageViewDelete" parent="MoneyPopup">
+        <item name="android:layout_height">@dimen/MoneyPopup.ImageViewDelete.Height</item>
+        <item name="android:layout_width">@dimen/MoneyPopup.ImageViewDelete.Width</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="MoneyPopup.ImageViewClose" parent="MoneyPopup">
+        <item name="android:layout_height">@dimen/MoneyPopup.ImageViewClose.Height</item>
+        <item name="android:layout_width">@dimen/MoneyPopup.ImageViewClose.Width</item>
+        <item name="contentDescription">@string/ButtonCloseWindow</item>
+    </style>
+
+    <style name="MoneyPopup.ImageViewAdd" parent="MoneyPopup">
+        <item name="android:layout_height">@dimen/MoneyPopup.ImageViewAdd.Height</item>
+        <item name="android:layout_width">@dimen/MoneyPopup.ImageViewAdd.Width</item>
+        <item name="contentDescription">@string/ButtonAdd</item>
+    </style>
+
+    <style name="MoneyPopup.ImageViewSelectPhoto" parent="MoneyPopup">
+        <item name="android:layout_height">@dimen/MoneyPopup.ImageViewSelectPhoto.Height</item>
+        <item name="android:layout_width">@dimen/MoneyPopup.ImageViewSelectPhoto.Width</item>
+        <item name="contentDescription">@string/ButtonSelectPicture</item>
+    </style>
+
+    <style name="MoneyPopup.Button" parent="MoneyPopup">
+        <item name="android:textSize">22sp</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:layout_height">@dimen/MoneyPopup.ButtonSave.Height</item>
+    </style>
+
+    <style name="MoneyPopup.ButtonSave" parent="MoneyPopup.Button">
+        <item name="android:text">@string/Save</item>
+    </style>
+
+    <style name="MoneyPopup.ButtonNext" parent="MoneyPopup.Button">
+        <item name="android:text">@string/Next</item>
+    </style>
+
+    <style name="MoneyPopup.ButtonPrev" parent="MoneyPopup.Button">
+        <item name="android:text">@string/Prev</item>
+    </style>
+
+    <style name="MoneyPopup.ButtonOK" parent="MoneyPopup">
+        <item name="android:textSize">22sp</item>
+        <item name="android:text">@string/OK</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:layout_height">@dimen/MoneyPopup.ButtonSave.Height</item>
+    </style>
+
+    <style name="MoneyTargetPopup" parent="Money">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MoneyTargetPopup.LayoutCaption" parent="MoneyTargetPopup">
+        <item name="android:layout_height">@dimen/MoneyTargetPopup.LayoutCaption.Height</item>
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+        <item name="android:padding">@dimen/BasePadding2</item>
+    </style>
+
+    <style name="MoneyTargetPopup.ImageViewDelete" parent="MoneyPopup.ImageViewDelete">
+        <item name="contentDescription">@string/ButtonDeleteTarget</item>
+    </style>
+
+    <style name="MoneyTargetPopup.ImageViewClose" parent="MoneyPopup.ImageViewClose">
+    </style>
+
+    <style name="MoneyTargetPopup.ImageViewAdd" parent="MoneyPopup.ImageViewAdd">
+    </style>
+
+    <style name="MoneyTargetPopup.ButtonSave" parent="MoneyPopup.ButtonSave">
+    </style>
+
+    <style name="MoneyTargetPopup.ButtonNext" parent="MoneyPopup.ButtonNext">
+    </style>
+
+    <style name="MoneyTargetPopup.ButtonPrev" parent="MoneyPopup.ButtonPrev">
+    </style>
+
+    <style name="MoneyTargetPopup.TextView" parent="MoneyTargetPopup">
+        <item name="android:textSize">18sp</item>
+
+    </style>
+
+    <style name="MoneyTargetPopup.EditText" parent="MoneyTargetPopup"></style>
+
+    <style name="MoneyTargetPopup.EditText.TargetName" parent="MoneyTargetPopup.EditText">
+        <item name="android:hint">@string/HintTargetName</item>
+    </style>
+
+    <style name="MoneyTargetPopup.EditText.Price" parent="MoneyTargetPopup.EditText">
+    </style>
+
+    <style name="MoneyTargetPopup.EditText.Accumulation" parent="MoneyTargetPopup.EditText">
+    </style>
+
+    <style name="MoneyTargetPopup.EditText.Credit" parent="MoneyTargetPopup.EditText">
+    </style>
+
+    <style name="MoneyCategoryPopup.ImageViewDelete" parent="MoneyPopup.ImageViewDelete">
+        <item name="contentDescription">@string/ButtonDeleteCategory</item>
+    </style>
+
+    <style name="MoneyCategoryPopup.LayoutCaption" parent="MoneyCategoryPopup">
+        <item name="android:layout_height">@dimen/MoneyCategoryPopup.LayoutCaption.Height</item>
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+        <item name="android:padding">@dimen/BasePadding2</item>
+    </style>
+
+    <style name="MoneyCategoryPopup.ImageViewClose" parent="MoneyPopup.ImageViewClose">
+    </style>
+
+    <style name="MoneyCategoryPopup.ButtonSave" parent="MoneyPopup.ButtonSave">
+    </style>
+
+    <style name="MoneyAccountingPopup" parent="Money">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="MoneyAccountingPopup.TextView" parent="MoneyAccountingPopup">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ParamPopup" parent="Popup">
+    </style>
+
+    <style name="ParamPopup.Button" parent="ParamPopup">
+        <item name="android:textSize">22sp</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:layout_height">@dimen/MoneyPopup.ButtonSave.Height</item>
+    </style>
+
+    <style name="ParamPopup.ButtonSave" parent="MoneyPopup.Button">
+        <item name="android:text">@string/Save</item>
+    </style>
+
+    <style name="ParamPopup.LayoutCaption" parent="ParamPopup">
+        <item name="android:layout_height">@dimen/ParamPopup.LayoutCaption.Height</item>
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+        <item name="android:padding">@dimen/BasePadding2</item>
+    </style>
+
+    <style name="ParamPopup.ImageViewClose" parent="ParamPopup">
+        <item name="android:layout_height">@dimen/ParamPopup.ImageViewClose.Height</item>
+        <item name="android:layout_width">@dimen/ParamPopup.ImageViewClose.Width</item>
+        <item name="contentDescription">@string/ButtonCloseWindow</item>
+    </style>
+
+    <style name="ParamPopup.ImageViewDelete" parent="MoneyPopup.ImageViewDelete">
+        <item name="contentDescription">@string/ButtonDeleteParam</item>
+    </style>
+
+    <style name="ParamPopup.TextViewCaption" parent="Popup">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ParamPopup.TextView" parent="ParamPopup"></style>
+
+    <style name="ParamPopup.EditText" parent="ParamPopup"></style>
+
+
+    <style name="MoneyTargetPopupRow" parent="MoneyTargetPopup">
+        <item name="android:layout_height">@dimen/MoneyTargetPopupRowHeight</item>
+    </style>
+
+    <style name="MoneyTargetPopup1Row" parent="MoneyTargetPopupRow"></style>
+
+    <style name="MoneyTargetPopup2Row" parent="MoneyTargetPopupRow"></style>
+
+    <style name="MoneyTargetPopup3Row" parent="MoneyTargetPopupRow"></style>
+
+    <style name="MoneyTargetPopup4Row" parent="MoneyTargetPopupRow"></style>
+
+    <style name="MoneyTargetPopup5Row" parent="MoneyTargetPopupRow"></style>
+
+    <style name="MoneyTargetPopup1Column" parent="MoneyTargetPopup">
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginTop">@dimen/BasePadding</item>
+        <item name="android:paddingTop">@dimen/BasePadding</item>
+        <item name="android:paddingStart">@dimen/BasePadding</item>
+    </style>
+
+    <style name="MoneyTargetPopup2Column" parent="MoneyTargetPopup">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginTop">@dimen/BasePadding</item>
+    </style>
+
+    <style name="MoneyTargetPopup3Column" parent="MoneyTargetPopup">
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">@dimen/BasePadding</item>
+        <item name="android:paddingTop">@dimen/BasePadding</item>
+        <item name="android:paddingEnd">@dimen/BasePadding</item>
+        <item name="android:layout_width">150dp</item>
+    </style>
+
+    <style name="MoneyTargetPopup4Column" parent="MoneyTargetPopup">
+        <item name="android:layout_marginTop">@dimen/BasePadding</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="MoneyTargetPopup5Column" parent="MoneyTargetPopup">
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:layout_marginTop">@dimen/BasePadding</item>
+        <item name="android:paddingEnd">@dimen/BasePadding</item>
+    </style>
+
+    <style name="MoneyTargetPopup5ColumnValue" parent="MoneyTargetPopup5Column">
+        <item name="android:textAlignment">textEnd</item>
+    </style>
+
+
+    <style name="MoneyIncreasePopup">
+        <item name="android:textSize">16sp</item>
+        <item name="height">30dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="MoneyIncreasePopup1Column" parent="MoneyIncreasePopup">
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:paddingStart">@dimen/BasePadding</item>
+        <item name="android:paddingTop">@dimen/BasePadding</item>
+    </style>
+
+    <style name="MoneyIncreasePopup2Column" parent="MoneyIncreasePopup">
+        <item name="android:layout_width">30dp</item>
+    </style>
+
+    <style name="MoneyIncreasePopup3Column" parent="MoneyIncreasePopup">
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:paddingTop">@dimen/BasePadding</item>
+        <item name="android:paddingEnd">@dimen/BasePadding</item>
+        <item name="android:layout_width">150dp</item>
+    </style>
+
+    <style name="MoneyIncreasePopup4Column" parent="MoneyIncreasePopup">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+    </style>
+
+    <style name="MoneyIncreasePopup5Column" parent="MoneyIncreasePopup">
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:paddingEnd">@dimen/BasePadding</item>
+    </style>
+
+    <style name="MoneyIncreasePopup5ColumnValue" parent="MoneyIncreasePopup5Column">
+        <item name="android:textAlignment">textEnd</item>
+    </style>
+
+    <style name="MoneyIncreaseTable" parent="Money"></style>
+
+    <style name="MoneyIncreaseRViewItem" parent="MoneyIncreaseTable">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MoneyIncreaseRViewItem.TextView" parent="MoneyIncreaseRViewItem"></style>
+
+
+    <style name="MoneyCategory" parent="Money">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MoneyCategoryPopup" parent="Money">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MoneyCategoryPopup.EditText" parent="MoneyCategoryPopup"></style>
+
+    <style name="MoneyCategoryPopup.TextView" parent="MoneyCategoryPopup"></style>
+
+
+    <style name="MoneyIncoming" parent="Money">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MoneyIncoming.TextView" parent="MoneyIncoming"></style>
+
+    <style name="MoneyIncoming.RView" parent="MoneyIncoming"></style>
+
+    <style name="MoneyIncoming.RView.Item" parent="MoneyIncoming.RView"></style>
+
+    <style name="MoneyIncomingPopup" parent="Money">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MoneyIncomingPopup.TextView" parent="MoneyIncomingPopup"></style>
+
+    <style name="MoneyIncomingPopup.EditText" parent="MoneyIncomingPopup"></style>
+
+    <style name="MoneyIncoming.RView.Item.MaterialCardView" parent="MoneyIncoming.RView.Item">
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MoneyIncoming.RView.Item.TextView" parent="MoneyIncoming.RView.Item">
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MoneyIncoming.Popup" parent="MoneyIncoming">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MoneyIncoming.Popup.EditText" parent="MoneyIncoming.Popup" />
+
+    <style name="MoneyIncoming.Popup.TextView" parent="MoneyIncoming.Popup" />
+
+    <style name="MoneyPNL" parent="Money"></style>
+
+    <style name="MoneyPNL.RView" parent="MoneyPNL"></style>
+
+    <style name="MoneyPNL.RView.Item" parent="MoneyPNL.RView"></style>
+
+    <style name="MoneyPNL.RView.Item.TextView" parent="MoneyPNL.RView.Item">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Subscription"></style>
+
+    <style name="Subscription.TextView" parent="Subscription">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">@dimen/BasePadding</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Subscription.TextViewValue" parent="Subscription">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="Cabinet">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Cabinet.MaterialCardViewSubscription" parent="Cabinet" />
+
+    <style name="Cabinet.MaterialCardViewSubscription.TextViewHead" parent="Cabinet.MaterialCardViewSubscription" />
+
+    <style name="Cabinet.MaterialCardViewSubscription.TextView">
+        <item name="android:layout_marginEnd">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Cabinet.MaterialCardViewCabinet" parent="Cabinet" />
+
+    <style name="Cabinet.MaterialCardViewCabinet.TextView" parent="Cabinet.MaterialCardViewCabinet" />
+
+    <style name="Cabinet.MaterialCardViewSocial" parent="Cabinet" />
+
+    <style name="Cabinet.MaterialCardViewSocial.TextViewHead" parent="Cabinet.MaterialCardViewSocial" />
+
+    <style name="Cabinet.MaterialCardViewSocial.TextView">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+    </style>
+</resources>

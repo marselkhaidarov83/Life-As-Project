@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_tasks_project"
+        android:icon="@drawable/icons_tasks_project"
+        android:title="@string/tasks_project"/>
+
+    <item
+        android:id="@+id/navigation_tasks_today"
+        android:icon="@drawable/icons_tasks_today"
+        android:title="@string/tasks_today"/>
+
+    <item
+        android:id="@+id/navigation_tasks_tasks"
+        android:icon="@drawable/icons_tasks_tasks"
+        android:title="@string/tasks_tasks"/>
+
+    <item
+        android:id="@+id/navigation_tasks_inbox"
+        android:icon="@drawable/icons_tasks_inbox"
+        android:title="@string/tasks_inbox"/>
+
+    <item
+        android:id="@+id/navigation_tasks_canban"
+        android:icon="@drawable/icons_noticeboard_100"
+        android:title="@string/tasks_canban"/>
+</menu>

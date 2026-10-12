@@ -1,0 +1,737 @@
+<resources>
+    <!--    Наименование приложения-->
+    <string name="app_name">Financial literacy+</string>
+    <string name="PrivacyLinkBot"><a href="https://t.me/finLiteracyPlusBot">Telegram bot @finLiteracyPlusBot</a></string>
+    <string name="PrivacyLink"><a href="https://sbsite.pro/st/51d16944">Privacy policy</a></string>
+
+    <!--    Кнопки-->
+    <string name="money">Money</string>
+    <string name="tasks">Tasks</string>
+    <string name="assistants">Assistants</string>
+
+    <string name="money_target">Dreams/Targets</string>
+    <string name="money_increase">Revenue growth</string>
+    <string name="money_board">Money overview</string>
+    <string name="money_board_short">Money overview</string>
+    <string name="money_incoming">Income</string>
+    <string name="money_costs">Expenses</string>
+    <string name="money_planfact_income">Plan/fact income</string>
+    <string name="money_planfact_cost">Plan/fact expenses</string>
+    <string name="money_accounting">Accounting</string>
+    <string name="money_capital">Capital</string>
+    <string name="money_planfactmoney">Plan/fact money</string>
+    <string name="back">Back</string>
+
+    <string name="tasks_today">Today</string>
+    <string name="tasks_project">Projects</string>
+    <string name="tasks_tasks">Tasks</string>
+    <string name="tasks_favourites">Favourites</string>
+    <string name="tasks_canban">Canban</string>
+    <string name="tasks_inbox">Inbox</string>
+
+    <string name="assistants1">Assistants1</string>
+    <string name="assistants2">Assistants2</string>
+    <string name="assistants3">Assistants3</string>
+    <string name="assistants4">Assistants4</string>
+    <string name="assistants5">Assistants5</string>
+
+    <!--    Надписи экранов-->
+    <string name="source1">Source 1</string>
+    <string name="source2">Source 2</string>
+    <string name="param">Parameter</string>
+    <string name="params">Parameters</string>
+    <string name="tags">Tags</string>
+    <string name="money_increaseP">Income plan</string>
+    <string name="money_increaseF">Actual income</string>
+    <string name="money_incoming_plan">Income plan</string>
+    <string name="money_costs_plan">Expense plan</string>
+    <string name="money_incoming_fact">Income fact</string>
+    <string name="money_costs_fact">Expense fact</string>
+    <string name="cabinet">Cabinet</string>
+    <string name="main_settings">Main settings</string>
+    <string name="money_your_dream">My dreams</string>
+    <string name="money_your_target">My targets</string>
+    <string name="money_your_incoming">My income</string>
+    <string name="money_your_cost">My expenses</string>
+    <string name="money_your_accounting">Cash accounting</string>
+    <string name="money_your_acc_oper">Money transactions</string>
+    <string name="money_credit">Credits/debts</string>
+    <string name="money_category_increase">Cost categories (income)</string>
+    <string name="money_category_cost">Cost categories (expenses)</string>
+    <string name="money_category_wallet">Wallets</string>
+    <string name="money_portfolio">Portfolio</string>
+    <string name="money_typeasset">Type of financial asset</string>
+    <string name="money_asset">Assets</string>
+
+    <string name="tasks_your_project">My projects</string>
+    <string name="tasks_your_tasks">My tasks</string>
+    <string name="tasks_your_tasks_today">My tasks today</string>
+    <string name="tasks_your_tasks_inbox">My inbound tasks</string>
+
+    <string name="MonthlyIncome">Monthly income</string>
+    <string name="MonthlyExpenses">Monthly expenses</string>
+    <string name="QuarterlyIncome">Quarterly income</string>
+    <string name="QuarterlyExpenses">Quarterly expenses</string>
+    <string name="YearlyIncome">Yearly income</string>
+    <string name="YearlyExpenses">Yearly expenses</string>
+    <string name="TotalFunds">Total funds</string>
+    <string name="TotalSavings">Total savings</string>
+    <string name="TotalOperPlan">Total oper. plan</string>
+    <string name="Difference">Difference</string>
+    <string name="MonthlySavings">Monthly savings</string>
+    <string name="СostOfGoalsForYear">Сost of goals for year</string>
+    <string name="СostOfAllGoals">Сost of all goals</string>
+    <string name="SavingsOfGoalsForYear">Savings</string>
+    <string name="SavingsOfAllGoals">Savings of all goals</string>
+    <string name="NeedToSavingsForYear">Need to savings</string>
+    <string name="NeedToSavingsForallGoals">Need to savings</string>
+
+    <!--    Ошибки-->
+    <string name="errorDeletedPlanValueNotFound">The plan value being deleted was not found in the database</string>
+    <string name="errorDeleteMPlanValue">Error deleting a plan value: </string>
+
+    <string name="errorDeletedMoneyInc4CostNotFound">The revenue distribution to delete was not found in the database</string>
+    <string name="errorDeleteMoneyInc4Cost">Error deleting a revenue distribution: </string>
+
+    <string name="errorDeletedMoneyIncreaseNotFound">The growth record being deleted was not found in the database</string>
+    <string name="errorDeleteMoneyIncrease">Error deleting an income growth record: </string>
+    <string name="errorUpdateMoneyIncrease">Error updating the revenue growth record</string>
+
+    <string name="errorDeletedMoneyDreamNotFound">The dream record being deleted was not found in the database</string>
+    <string name="errorDeleteMoneyDream">Error deleting a dream record: </string>
+    <string name="errorUpdateMoneyDream">Dream record update error</string>
+    <string name="errorUpdateMoneyDreamPosition">Error updating the dream record position: </string>
+
+    <string name="errorDeletedMoneyTargetNotFound">The target record being deleted was not found in the database</string>
+    <string name="errorUpdateMoneyTarget">Error updating the target record</string>
+    <string name="errorDeleteMoneyTarget">Error deleting a target entry: </string>
+
+    <string name="errorDeletedMoneyCategoryNotFound">The money category record to be deleted was not found in the database</string>
+    <string name="errorDeleteMoneyCategory">Error deleting a money category entry: </string>
+    <string name="errorUpdateMoneyCategory">Error updating the money category record</string>
+    <string name="errorUpdateMoneyCategoryPosition">Error updating the position of the money category entry: </string>
+
+    <string name="errorDeletedMoneyPortfolioNotFound">The portfolio record to be deleted was not found in the database</string>
+    <string name="errorDeleteMoneyPortfolio">Error deleting a portfolio: </string>
+    <string name="errorUpdateMoneyPortfolio">Error updating the portfolio</string>
+    <string name="errorUpdateMoneyPortfolioPosition">Error updating the position of the portfolio: </string>
+
+    <string name="errorDeletedMoneyTypeAssetNotFound">The type asset record to be deleted was not found in the database</string>
+    <string name="errorDeleteMoneyTypeAsset">Error deleting a type asset: </string>
+    <string name="errorUpdateMoneyTypeAsset">Error updating the type asset</string>
+    <string name="errorUpdateMoneyTypeAssetPosition">Error updating the position of the type asset: </string>
+
+    <string name="errorDeletedMoneyAssetNotFound">The asset record to be deleted was not found in the database</string>
+    <string name="errorDeleteMoneyAsset">Error deleting a asset: </string>
+    <string name="errorUpdateMoneyAsset">Error updating the asset</string>
+    <string name="errorUpdateMoneyAssetPosition">Error updating the position of asset: </string>
+
+    <string name="errorDeletedMoneyLotAssetNotFound">The lot asset record to be deleted was not found in the database</string>
+    <string name="errorDeleteMoneyLotAsset">Error deleting a lot asset: </string>
+    <string name="errorUpdateMoneyLotAsset">Error updating the lot asset</string>
+    <string name="errorUpdateMoneyLotAssetPosition">Error updating the position of lot asset: </string>
+
+    <string name="errorDeletedMoneyLotAssetOperationNotFound">The lot asset operation record to be deleted was not found in the database</string>
+    <string name="errorDeleteMoneyLotAssetOperation">Error deleting a lot asset operation: </string>
+    <string name="errorUpdateMoneyLotAssetOperation">Error updating the lot asset operation</string>
+    <string name="errorUpdateMoneyLotAssetOperationPosition">Error updating the position of lot asset operation: </string>
+
+    <string name="errorDeletedTasksProjectNotFound">The project record to be deleted was not found in the database</string>
+    <string name="errorDeleteTasksProject">Error deleting a project: </string>
+    <string name="errorUpdateTasksProject">Error updating the project</string>
+    <string name="errorUpdateTasksProjectPosition">Error updating the position of the project: </string>
+
+    <string name="errorDeletedTasksTaskNotFound">The task record being deleted was not found in the database</string>
+    <string name="errorDeleteTasksTask">Error deleting a task: </string>
+    <string name="errorUpdateTasksTask">Error updating the project</string>
+
+    <string name="errorDeletedMoneyIncomingNotFound">The planned income record to be deleted was not found in the database</string>
+    <string name="errorDeleteMoneyIncoming">Error deleting a planned income record: </string>
+    <string name="errorUpdateMoneyIncoming">Error updating the planned income record</string>
+    <string name="errorUpdateMoneyCost">Error updating the planned expense record</string>
+    <string name="errorUpdateMoneyPlan">Error updating the money plan record</string>
+    <string name="errorUpdateMoneyIncomingPosition">Error updating the position of the planned income record: </string>
+
+    <string name="errorDeletedMoneyPivotCreditNotFound">The pivot record being deleted was not found in the database</string>
+    <string name="errorDeleteMoneyPivotCredit">Pivot record deletion error: </string>
+
+    <string name="errorDeletedMoneyPNLNotFound">The cost record being deleted was not found in the database</string>
+    <string name="errorDeleteMoneyPNL">Cost record deletion error: </string>
+    <string name="errorDeleteMoneyPNLs">Error deleting cost records</string>
+    <string name="errorUpdateMoneyPNL">Error updating the expense record</string>
+    <string name="errorUpdateMoneyPNLPosition">Error updating the cost entry position: </string>
+
+    <string name="errorDeletedMoneyCreditNotFound">The credit record being deleted was not found in the database</string>
+    <string name="errorDeleteMoneyCredit">Credit record deletion error: </string>
+
+    <string name="errorUpdateMoneyFactIncoming">Error updating the income record</string>
+    <string name="errorUpdateMoneyFactCost">Error updating the expense record</string>
+    <string name="errorUpdateMoneyMoving">Error updating the move record</string>
+    <string name="errorUpdateMoneyInc4Cost">Error updating the revenue distribution</string>
+
+    <string name="errorUpdateMoneyCredit">Error updating the credit record</string>
+    <string name="errorUpdateMoneyCreditPivot">Error updating the credit pivot record</string>
+
+    <string name="errorUpdateParam">Param update error</string>
+    <string name="errorDeletedParamNotFound">The parameter to be deleted was not found in the database</string>
+    <string name="errorDeleteParam">Error deleting parameter: </string>
+
+    <string name="errorUpdateTag">Tag update error</string>
+    <string name="errorDeletedTagNotFound">The tag to be deleted was not found in the database</string>
+    <string name="errorDeleteTag">Error deleting tag: </string>
+
+    <string name="errorUpdateTagged">Tag update error</string>
+    <string name="errorDeletedTaggedNotFound">The tag to be deleted was not found in the database</string>
+    <string name="errorDeleteTagged">Error deleting tag: </string>
+
+    <string name="errorUpdatePlanValue">Error updating the plan value</string>
+
+    <!--    Действия для пользователя-->
+    <string name="specifyDate">Specify the date</string>
+    <string name="specifySumm">Specify the sum</string>
+    <string name="specifyCreditPercent">Specify the credit percent</string>
+    <string name="specifyExpensePercent">Specify the expense percent</string>
+    <string name="specifyWalletToUp">Specify the wallet to pop up</string>
+    <string name="specifyLoanTerm">Specify the loan term</string>
+    <string name="specifyName">Specify the name</string>
+    <string name="specifyPrice">Specify the cost</string>
+    <string name="specifyAccumulation">Specify the amount of savings</string>
+    <string name="specifyCredit">Specify the loan amount</string>
+    <string name="specifyImagePath">Specify the picture</string>
+    <string name="specifyParam">Specify the param</string>
+    <string name="specifyCoef">Specify the coefficient</string>
+    <string name="specifyValue">Specify the value</string>
+    <string name="specifyPlanValueSrc1">Specify the plan value source 1</string>
+    <string name="specifyPlanValueSrc2">Specify the plan value source 2</string>
+    <string name="specifyRepeatPeriod">Specify the repeat period</string>
+
+    <string name="specifyIncCategory">Specify the income category</string>
+    <string name="specifyCostCategory">Specify the expense category</string>
+    <string name="specifyIncWallet">Specify the income wallet</string>
+    <string name="specifyCostWallet">Specify the cost wallet</string>
+    <string name="specifySubCategory">Specify a subcategory</string>
+    <string name="specifyCostSubCategory">Specify a cost subcategory</string>
+    <string name="specifyIncreaseSubCategory">Specify a increase subcategory</string>
+
+    <string name="specifyCorrectDate">Specify the correct date</string>
+    <string name="specifyCorrectSumm">Specify the correct sum</string>
+    <string name="specifyCorrectCreditPercent">Specify the correct credit percent</string>
+    <string name="specifyCorrectExpensePercent">Specify the correct expense percent</string>
+    <string name="specifyCorrectLoanTerm">Specify the correct loan term</string>
+    <string name="specifyCorrectSumms">Specify the correct sums</string>
+    <string name="specifyCorrectName">Specify the correct name</string>
+    <string name="specifyCorrectAccumulation">Specify the correct amount from the savings</string>
+    <string name="specifyCorrectCredit">Specify the correct loan amount</string>
+    <string name="errorExistValueOnDate">The value has already been entered on the selected date</string>
+    <string name="specifyCorrectParam">Specify the correct parameter</string>
+    <string name="specifyCorrectCoef">Specify the correct coefficient</string>
+    <string name="specifyCorrectValue">Specify the correct value</string>
+    <string name="specifyCorrectPlanValueSrc1">Specify the correct plan value source 1</string>
+    <string name="specifyCorrectPlanValueSrc2">Specify the correct plan value source 2</string>
+    <string name="specifyCorrectRepeatPeriod">Specify the correct repeat period</string>
+
+    <string name="errorExistChildsMoneyCategory">The selected category has child elements. Deletion is not possible</string>
+    <string name="errorExistChildsTasksProject">The selected project has child elements. Deletion is not possible</string>
+    <string name="errorExistChildsMoneyPortfolio">The selected portfolio has child elements. Deletion is not possible</string>
+    <string name="errorExistChildsMoneyTypeAsset">The selected type asset has child elements. Deletion is not possible</string>
+
+    <!--    Надписи на формах-->
+    <string name="prevValueOn">Previous value on</string>
+    <string name="nextValueOn">The next value is on</string>
+    <string name="planIncreaseDate">Planned growth date</string>
+    <string name="planIncreaseValue">Planned growth to</string>
+
+    <string name="SelectPicture">Choose a picture</string>
+    <string name="Count">Count</string>
+    <string name="Price">Cost</string>
+    <string name="Comission">Comission</string>
+    <string name="AccumulatedPrice">Accumulated income</string>
+    <string name="TargetStatus">Target status</string>
+    <string name="Status">Status</string>
+    <string name="Asset">Asset</string>
+    <string name="CreationDate">Creation date</string>
+    <string name="FinishDate">Finish date</string>
+    <string name="Dates">Dates</string>
+    <string name="AssetOperation">Operation</string>
+    <string name="GroupPortfolio">GroupPortfolio</string>
+    <string name="Portfolio">Portfolio</string>
+    <string name="TypeAsset">Type asset</string>
+    <string name="ShowData">Show data</string>
+    <string name="KindAsset">Kind asset</string>
+    <string name="CurrencyAsset">Currency of asset</string>
+    <string name="ParentTask">Parent task</string>
+    <string name="TargetParent">Parent target</string>
+    <string name="Target">Target</string>
+    <string name="Project">Project</string>
+    <string name="Priority">Priority</string>
+    <string name="Dream">Dream</string>
+    <string name="Accumulation">From savings</string>
+    <string name="Credit">On credit</string>
+    <string name="FromCredit">From credit</string>
+    <string name="FreeAmount">Free amount</string>
+
+    <string name="buttonAddText">Add</string>
+    <string name="buttonUpdateText">Change</string>
+    <string name="buttonDeleteText">Delete</string>
+    <string name="buttonCancelText">Cancel</string>
+    <string name="button1IncomingCol">1</string>
+    <string name="button2IncomingCol">2</string>
+    <string name="button3IncomingCol">3</string>
+
+    <!--    Directories-->
+    <string name="picDirectoryDream">DreamPictures</string>
+    <string name="picDirectoryTarget">TargetPictures</string>
+
+    <!--    Arrays-->
+    <string-array name="counts5">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <!--    Тексты-->
+    <string name="Wallet">Wallet</string>
+    <string name="WalletToUp">Wallet to top up</string>
+    <string name="CostCategory">Cost category</string>
+    <string name="SubCategory">Subcategory</string>
+    <string name="Tag">Tag</string>
+    <string name="Tag4PNL">Tag</string>
+    <string name="Increase">Income</string>
+    <string name="Cost">Cost</string>
+    <string name="Category">Category</string>
+    <string name="Title">Title</string>
+    <string name="Sum">Amount</string>
+    <string name="AccumulatedSum">Accumulated amount</string>
+    <string name="Icon">Icon</string>
+    <string name="TotalSum">Total sum</string>
+    <string name="Percent">Percent</string>
+    <string name="ResidualSum">Residual amount</string>
+    <string name="LoanTerm">Loan term (in months)</string>
+    <string name="CreditPercent">Credit percent</string>
+    <string name="RepeatPeriod">Repeat period</string>
+    <string name="Name">Name</string>
+    <string name="Ticker">Ticker</string>
+    <string name="Measure">Measure</string>
+    <string name="TagTypeData">Tag type data</string>
+    <string name="Parent">Parent</string>
+    <string name="Comment">Comment</string>
+    <string name="Type">Type</string>
+
+    <!--    Custom strings-->
+    <string name="CustomShortDate">February 1999</string>
+    <string name="CustomDate">01 September 9999</string>
+    <string name="CustomTime">23:59</string>
+    <string name="CustomString2Lines">ASDFj2345\nsdgdfsdfggggggggg</string>
+    <string name="CustomString">ASDFj2345</string>
+    <string name="CustomShortString">ASD</string>
+    <string name="CustomNum">1234657890</string>
+    <string name="CustomShortNum">123</string>
+
+    <!--    Тексты подписки-->
+    <string name="ErrorSubscription">The subscription is inactive. Data actions are not available. To continue working with the program, pay for a subscription in your account</string>
+    <string name="SubscriptionNotSelected">Choose a subscription option</string>
+    <string name="SubscriptionNonActive">The subscription is not active</string>
+    <string name="SubscriptionActive">The full version is active</string>
+    <string name="UnpaidSubscriptionActive">The limited version is active</string>
+    <string name="TestSubscriptionActive">The test version is active</string>
+    <string name="GoToSubscript">Connect a subscription</string>
+    <string name="PurchaseSuccess">The subscription has been issued successfully</string>
+    <string name="PurchaseCancelled">Purchase cancelled</string>
+    <string name="OrderStateFailed">Order state failed</string>
+    <string name="OrderStateDefaultCode">Order state default code</string>
+    <string name="OrderProductOwned">Order product owned</string>
+    <string name="PurchaseFailure">The purchase was interrupted due to an error</string>
+    <string name="PurchaseInvalidPaymentState">Incorrect payment details</string>
+
+    <string name="ErrorTooManyMeasure">The subscription is inactive. You have already added the maximum number of unit of measures. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyParam">The subscription is inactive. You have already added the maximum number of param. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyTag">The subscription is inactive. You have already added the maximum number of tag. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyPlanValue">The subscription is inactive. You have already added the maximum number of plan value. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyValue">The subscription is inactive. You have already added the maximum number of fact value. To continue your full-fledged work, pay for a subscription</string>
+
+    <string name="ErrorTooManyDream">The subscription is inactive. You have already added the maximum number of dreams. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyTarget">The subscription is inactive. You have already added the maximum number of targets. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyCategory">The subscription is inactive. You have already added the maximum number of income/cost categories. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyIncrease">The subscription is inactive. You have already added the maximum number of revenue growth stages. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyIncomingAndCost">The subscription is inactive. You have already added the maximum number of lines of the income/expense plan. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyMoneyPlan">The subscription is inactive. You have already added the maximum number of lines of the money plan. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyPNL">The subscription is inactive. You have already added the maximum number of cash flow lines. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyInc4Cost">The subscription is inactive. You have already added the maximum number of revenue to expense links. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyInc4CostSum">The subscription is inactive. You have already added the maximum number of inc4costSum. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyCredit">The subscription is inactive. You have already added the maximum number of credit. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyPortfolio">The subscription is inactive. You have already added the maximum number of portfolio. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyTypeAsset">The subscription is inactive. You have already added the maximum number of type asset. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyAsset">The subscription is inactive. You have already added the maximum number of asset. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyLotAsset">The subscription is inactive. You have already added the maximum number of lot asset. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyLotAssetOperation">The subscription is inactive. You have already added the maximum number of lot asset operation. To continue your full-fledged work, pay for a subscription</string>
+
+    <string name="ErrorTooManyTimeProject">The subscription is inactive. You have already added the maximum number of project. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyTimePriority">The subscription is inactive. You have already added the maximum number of priority. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyTimeTask">The subscription is inactive. You have already added the maximum number of tasks. To continue your full-fledged work, pay for a subscription</string>
+
+    <string name="ErrorTooManyPersonAssistant">The subscription is inactive. You have already added the maximum number of assistant. To continue your full-fledged work, pay for a subscription</string>
+    <string name="ErrorTooManyPersonComm">The subscription is inactive. You have already added the maximum number of communications. To continue your full-fledged work, pay for a subscription</string>
+
+    <!--    Cabinet strings-->
+    <string name="WeAreInSocial">We are in social networks</string>
+    <string name="Telegram">Telegram</string>
+    <string name="Vkontakte">Vkontakte</string>
+
+    <!--    Надписи всплывающих окон-->
+    <string name="JobStart">Getting started</string>
+    <string name="NeedSubscription">Subscription required</string>
+    <string name="JobWithDream">How to work with dreams</string>
+    <string name="JobWithDreamChange">How to change dream</string>
+    <string name="JobWithTarget">How to work with targets</string>
+    <string name="JobWithIncrease">How to work with income growth</string>
+    <string name="JobWithCategory">How to work with categories</string>
+    <string name="JobWithCategorySelect">How to work with categorie select</string>
+    <string name="JobWithIncoming">How to work with income/expense details</string>
+    <string name="JobWithPNL">How to work with cash accounting</string>
+    <string name="JobWithCredit">How to work with credits</string>
+    <string name="JobWithParam">How to work with params</string>
+    <string name="JobWithTag">How to work with tags</string>
+    <string name="JobWithTagChange">How to change tag</string>
+    <string name="JobWithTagged">How to work with operation tags</string>
+    <string name="JobWithInc4Cost">How to work with inc4cost</string>
+    <string name="JobWithInc4CostSum">How to work with free money</string>
+    <string name="JobWithPlanFact">How to work with plan/fact</string>
+    <string name="JobWithSettings">How to work with settings</string>
+    <string name="JobWithBoard">How to work with board</string>
+
+    <string name="SettingsTag">Tag form settings</string>
+    <string name="SettingsMoneyIncoming">Incoming/cost form settings</string>
+    <string name="SettingsMoneyCapital">Capital form settings</string>
+    <string name="SettingsMoneyPlanFact">Plan/fact form settings</string>
+    <string name="SettingsMoneyDream">Dream form settings</string>
+    <string name="SettingsMoneyCategory">Category form settings</string>
+    <string name="SettingsMoneyIncrease">Increase form settings</string>
+    <string name="SettingsMoneyTransaction">Operations form settings</string>
+    <string name="SettingsMoneyAccounting">Accounting form settings</string>
+    <string name="SettingsTasksTask">Tasks form settings</string>
+    <string name="SettingsMoneyBoard">Money board form settings</string>
+
+    <string name="JobWithTasksProject">How to work with projects</string>
+    <string name="JobWithTasksTask">How to work with tasks</string>
+
+    <!--    Тексты всплывающих окон-->
+    <string name="ButtonDelete">Delete</string>
+    <string name="ButtonDeleteDream">Delete a dream</string>
+    <string name="ButtonDeleteTarget">Delete a target</string>
+    <string name="ButtonDeleteIncrease">Delete the income growth stage</string>
+    <string name="ButtonDeleteCategory">Delete a category</string>
+    <string name="ButtonDeleteIncoming">Delete income/expense details</string>
+    <string name="ButtonDeletePNL">Delete a cash transaction</string>
+    <string name="ButtonDeleteParam">Delete a param</string>
+    <string name="ButtonDeletePlan">Delete a plan</string>
+    <string name="ButtonCloseWindow">Close the window</string>
+    <string name="ButtonAdd">Add</string>
+    <string name="ButtonSelectPicture">Choose a picture</string>
+
+    <string name="ButtonDeleteTasksProject">Delete a project</string>
+    <string name="ButtonDeleteTasksTask">Delete a task</string>
+    <string name="ButtonDeleteMoneyTarget">Delete a target</string>
+
+    <string name="PNLDateTypeToday">Today</string>
+    <string name="PNLDateTypeTomorrow">Tomorrow</string>
+    <string name="PNLDateTypeAfterTomorrow">After Tomorrow</string>
+    <string name="PNLDateTypeYesterday">Yesterday</string>
+    <string name="PNLDateTypeTwoDaysAgo">Two days ago</string>
+    <string name="PNLDateTypeData">Date</string>
+
+    <string name="CategorySettingsShowArchive">Show archive categories</string>
+    <string name="TagSettingsShowArchive">Show archive tags</string>
+    <string name="DreamSettingsShowArchive">Show archive dreams</string>
+    <string name="IncreaseSettingsShowArchive">Show archive increase</string>
+    <string name="AccountingSettingsShowBudget">Show budget for accounting</string>
+
+    <string name="IncomingSettingsShowIncreasePercent">Show percentages of growth by category</string>
+    <string name="IncomingSettingsShowPercent">Show the percentage of the amount by category in the total amount</string>
+    <string name="IncomingSettingsShowBlankData">Show empty categories</string>
+    <string name="IncomingSettingsShowData">Show data</string>
+    <string name="IncomingSettingsTypeCategory">Type category</string>
+    <string name="IncomingSettingsOpertaionIsPlan">Operation is plan</string>
+    <string name="IncomingSettingsPeriodData">Data period</string>
+    <string name="IncomingSettingsCategoryType">Category Type</string>
+
+    <string name="Tasks.Task.Settings.ShowData">Show tasks</string>
+    <string name="Tasks.Task.Settings.GroupOfProject">Group of project</string>
+    <string name="Tasks.Task.Settings.Project">Project</string>
+    <string name="Tasks.Task.Settings.Priority">Priority</string>
+    <string name="Tasks.Task.Settings.Sorting">Sorting by</string>
+
+    <string name="Tasks.Task.Popup.Today">Today</string>
+    <string name="Tasks.Task.Popup.Tomorrow">Tomorrow</string>
+    <string name="Tasks.Task.Popup.ThisWeek">This week</string>
+    <string name="Tasks.Task.Popup.OnTheWeekend">On the weekend</string>
+    <string name="Tasks.Task.Popup.NextWeek">Next week</string>
+    <string name="Tasks.Task.Popup.PostponeUntil">Postpone until</string>
+    <string name="Tasks.Task.Popup.WithoutTime">Without time</string>
+    <string name="WithoutTime">Without time</string>
+
+    <!--    Надписи всплывающих окон-->
+    <string name="PopupDreamAdd">Dream adding</string>
+    <string name="PopupDreamUpdate">Dream changing</string>
+    <string name="PopupTargetAdd">Adding a target</string>
+    <string name="PopupTargetUpdate">Changing the target</string>
+    <string name="PopupIncreaseAdd">Adding growth</string>
+    <string name="PopupIncreaseUpdate">Changing growth</string>
+    <string name="PopupIncreaseSelect">Select a growth</string>
+    <string name="PopupCategoryAdd">Adding a category</string>
+    <string name="PopupCategoryUpdate">Changing the category</string>
+    <string name="PopupPlanValueAdd">Adding a plan value</string>
+    <string name="PopupPlanValueUpdate">Changing plan value</string>
+    <string name="PopupCreditAdd">Adding a credit</string>
+    <string name="PopupCreditPivotAdd">Adding a credit pivot</string>
+    <string name="PopupCreditUpdate">Changing the credit</string>
+    <string name="PopupPortfolioAdd">Adding a portfolio</string>
+    <string name="PopupPortfolioUpdate">Changing the portfolio</string>
+    <string name="PopupTypeAssetAdd">Adding a type asset</string>
+    <string name="PopupTypeAssetUpdate">Changing the type asset</string>
+    <string name="PopupAssetAdd">Adding a asset</string>
+    <string name="PopupAssetUpdate">Changing the asset</string>
+    <string name="PopupLotAssetAdd">Adding a lot asset</string>
+    <string name="PopupLotAssetUpdate">Changing the lot asset</string>
+    <string name="PopupLotAssetOperationAdd">Adding a lot asset operation</string>
+    <string name="PopupLotAssetOperationUpdate">Changing the lot asset operation</string>
+
+    <string name="PopupParamAdd">Adding a param</string>
+    <string name="PopupParamUpdate">Adding a param</string>
+
+    <string name="PopupTagAdd">Adding a tag</string>
+    <string name="PopupTagUpdate">Update a tag</string>
+
+    <string name="PopupTaggedAdd">Adding a tag</string>
+    <string name="PopupTaggedUpdate">Update a tag</string>
+
+    <string name="PopupTasksProjectAdd">Adding a project</string>
+    <string name="PopupTasksProjectUpdate">Changing the project</string>
+
+    <string name="PopupTasksTaskAdd">Adding a task</string>
+    <string name="PopupTasksTaskUpdate">Changing the task</string>
+    <string name="PopupTasksTaskUpdateTime">Changing the task time</string>
+
+    <!--    Хинты-->
+    <string name="HintDreamName">Enter the name of the dream</string>
+    <string name="HintCategoryName">Enter the name of the category</string>
+    <string name="HintTargetName">Enter the name of the target</string>
+    <string name="HintTargetPrice">Enter the cost of the goal</string>
+    <string name="HintTargetAccumulation">Enter the amount of savings</string>
+    <string name="HintTargetCredit">Enter the amount on credit</string>
+    <string name="HintTagName">Enter the name of the tag</string>
+    <string name="HintTagComment">Enter the comment of the tag</string>
+    <string name="HintAccountingSum">Enter the amount</string>
+
+    <!--    Кнопки-->
+    <string name="OK">Apply</string>
+    <string name="Save">Save</string>
+    <string name="Prev" translatable="false">&lt;&lt;</string>
+    <string name="Next" translatable="false">&gt;&gt;</string>
+    <string name="Subscript">Subscribe</string>
+
+    <!--    Тексты адаптеров спиннеров-->
+    <string name="TargetCreated">Created</string>
+    <string name="TargetAtWork">At work</string>
+    <string name="TargetAchieved">Achieved</string>
+    <string name="TargetIrrelevant">Irrelevant</string>
+
+    <string name="AccumulationTypeLinear">Linear</string>
+    <string name="AccumulationTypeAlgorithmicProgression">Algorithmic Progression</string>
+    <string name="AccumulationTypeGeometricProgression">GeometricProgression</string>
+    <string name="AccumulationTypeIrrelevant">Irrelevant</string>
+
+    <string name="Project.Status.Created">Created</string>
+    <string name="Project.Status.AtWork">At work</string>
+    <string name="Project.Status.Achieved">Achieved</string>
+    <string name="Project.Status.Irrelevant">Irrelevant</string>
+    <string name="Project.Status.Unidentified">Unidentified</string>
+
+    <string name="Money.Currency.USD">Dollar</string>
+    <string name="Money.Currency.RUB">Ruble</string>
+    <string name="Money.Currency.CNY">Yuan</string>
+    <string name="Money.Currency.Unidentified">Unidentified</string>
+
+    <string name="Money.KindAsset.Blank">All</string>
+    <string name="Money.KindAsset.Conservative">Conservative</string>
+    <string name="Money.KindAsset.Moderate">Moderate</string>
+    <string name="Money.KindAsset.Agressive">Agressive</string>
+    <string name="Money.KindAsset.Unidentified">Unidentified</string>
+
+    <string name="Money.TypeCapitalData.Sum">Sum</string>
+    <string name="Money.TypeCapitalData.Percent">Percent</string>
+    <string name="Money.TypeCapitalData.Unidentified">Unidentified</string>
+
+    <string name="PeriodDataDay">Day</string>
+    <string name="PeriodDataWeek">Week</string>
+    <string name="PeriodDataMonth">Month</string>
+    <string name="PeriodDataQuarter">Quarter</string>
+    <string name="PeriodDataYear">Year</string>
+
+    <string name="TagTypeDataPNL">PNL</string>
+    <string name="TagTypeDataUnidentified">Unidentified</string>
+
+    <string name="TypeDataPlanned">Planned</string>
+    <string name="TypeDataActual">Actual</string>
+    <string name="TypeDataUnidentified">Unidentified</string>
+
+    <string name="DatabaseWork">Work database</string>
+    <string name="DatabaseLearn">Training database</string>
+    <string name="DatabaseUnidentified">Unidentified</string>
+
+    <string name="Tasks.Task.Sorting.Date.Priority.Name">Date, priority, name</string>
+    <string name="Tasks.Task.Sorting.Priority.Date.Name">Priority, date, name</string>
+    <string name="Tasks.Task.Sorting.Name">Name</string>
+
+    <string name="ConfirmedType.True">Confirmed</string>
+    <string name="ConfirmedType.False">Unconfirmed</string>
+    <string name="ConfirmedType.Any">All</string>
+
+    <string name="Priority.All">All</string>
+    <string name="Priority.None">None</string>
+    <string name="Priority.High">High</string>
+    <string name="Priority.Middle">Middle</string>
+    <string name="Priority.Low">Low</string>
+
+    <string name="TypeCredit">Payment type</string>
+    <string name="TypeCreditAnnuitent">Annuity payments</string>
+    <string name="TypeCreditDifferent">Differential payments</string>
+    <string name="TypeCreditUnidentified">Unidentified</string>
+
+    <string name="TypeIncomingSum">Sum</string>
+    <string name="TypeIncomingPercent">Percent</string>
+    <string name="TypeIncomingAccumulation">Accumulation</string>
+    <string name="TypeIncomingCredit">Credit</string>
+    <string name="TypeIncomingUnidentified">Unidentified</string>
+
+    <string name="RepeatType">Repeat type</string>
+    <string name="Repeat">Repeat</string>
+
+    <string name="RepeatTypeDay">Every X days</string>
+    <string name="RepeatTypeWeek">Every X weeks</string>
+    <string name="RepeatTypeMonth">Every X months</string>
+    <string name="RepeatTypeMonthEnd">Every X months (to end)</string>
+    <string name="RepeatTypeYear">Every X years</string>
+    <string name="RepeatTypeYearEnd">Every X years (to end)</string>
+    <string name="RepeatTypeUnidentified">Unidentified</string>
+    <string name="RepeatTypeDayShort">D</string>
+    <string name="RepeatTypeWeekShort">W</string>
+    <string name="RepeatTypeMonthShort">M</string>
+    <string name="RepeatTypeYearShort">Y</string>
+
+    <string name="RepeatSubTasksAll">All subtasks</string>
+    <string name="RepeatSubTasksOnlyNotConfirmed">Not confirmed subtasks</string>
+    <string name="RepeatSubTasksUnidentified">Unidentified</string>
+
+    <string name="CreditStatus">Credit status</string>
+    <string name="CreditStatusActive">Active</string>
+    <string name="CreditStatusInactive">Inactive</string>
+    <string name="CreditStatusUnidentified">Unidentified</string>
+
+    <string name="Money.LotAssetOperation.Create">Create</string>
+    <string name="Money.LotAssetOperation.Buy">Buy</string>
+    <string name="Money.LotAssetOperation.Revaluation">Revaluation</string>
+    <string name="Money.LotAssetOperation.Coupon">Coupon</string>
+    <string name="Money.LotAssetOperation.Dividend">Dividend</string>
+    <string name="Money.LotAssetOperation.Sell">Sell</string>
+    <string name="Money.LotAssetOperation.Finish">Finish</string>
+    <string name="Money.LotAssetOperation.PNLPlus">Wallet money adding</string>
+    <string name="Money.LotAssetOperation.PNLMinus">Wallet money withdrawal</string>
+    <string name="Money.LotAssetOperation.CreditPlus">Loan issuance</string>
+    <string name="Money.LotAssetOperation.CreditMinus">Loan repayment</string>
+    <string name="Money.LotAssetOperation.Comission">Comission</string>
+    <string name="Money.LotAssetOperation.Income">Income</string>
+    <string name="Money.LotAssetOperation.Undentified">Undentified</string>
+
+    <string name="OperationnIsPlan">Operation is plan</string>
+    <string name="OperationnIsPlanTrue">Plan operations</string>
+    <string name="OperationnIsPlanFalse">Fact operations</string>
+    <string name="OperationnIsPlanAll">All operations</string>
+    <string name="OperationnIsPlanUnidentified">Unidentified</string>
+
+    <string name="TypeCategory">Type category</string>
+    <string name="TypeCategoryAll"></string>
+    <string name="TypeCategoryIncrease">Increase</string>
+    <string name="TypeCategoryCost">Cost</string>
+    <string name="TypeCategoryWallet">Wallet</string>
+    <string name="TypeCategoryUnidentified">Unidentified</string>
+
+    <string name="CategoryType">Category type</string>
+    <string name="CategoryTypeBase">Base</string>
+    <string name="CategoryTypeAdvanced">Advanced</string>
+    <string name="CategoryTypeAdvancedPlus">Advanced+</string>
+    <string name="CategoryTypeProject">Project</string>
+    <string name="CategoryTypeProjectPlus">Project+</string>
+    <string name="CategoryTypeAll">All</string>
+    <string name="CategoryTypeWallet">Wallet</string>
+    <string name="CategoryTypeAccumulation">Accumulation</string>
+    <string name="CategoryTypeAccumulationPlus">Accumulation+</string>
+    <string name="CategoryTypeUnidentified">Unidentified</string>
+
+    <!--    EnumPlanValue-->
+    <string name="Value">Value</string>
+    <string name="Koef">Coefficient</string>
+    <string name="InverseKoef">Inverse coef</string>
+    <string name="EPVSum">Sum</string>
+    <string name="Diff">Difference</string>
+    <string name="Multiplication">Multiplication</string>
+    <string name="Dividing">Dividing</string>
+
+    <!-- EnumBoard -->
+    <string name="EnumBoard.TransactionBoard">TransactionBoard</string>
+    <string name="EnumBoard.WalletBoard">WalletBoard</string>
+    <string name="EnumBoard.GoalsAllBoard">GoalsAllBoard</string>
+    <string name="EnumBoard.GoalsForYearBoard">GoalsForYearBoard</string>
+    <string name="EnumBoard.WalletOperBoard">WalletOperBoard</string>
+
+    <!-- Меню -->
+    <string name="ExpenseCategories">Expense categories</string>
+    <string name="IncomeCategories">Income categories</string>
+    <string name="WalletCategories">Wallets</string>
+    <string name="TransactionList">Operations list</string>
+    <string name="TargetList">Target list</string>
+    <string name="TargetListForYear">Target list for year</string>
+    <string name="Credits">Credits</string>
+    <string name="GraphView">Graph view</string>
+    <string name="TableView">Table view</string>
+    <string name="Params">Params</string>
+    <string name="Tags">Tags</string>
+    <string name="Increase_">Increase</string>
+    <string name="Cabinet">Cabinet</string>
+    <string name="Legend">Legend</string>
+    <string name="Toolbar">Toolbar</string>
+    <string name="HideToolbar">Hide toolbar</string>
+    <string name="FormSettings">Form settings</string>
+    <string name="MainSettings">Settings</string>
+    <string name="AchievedTargets">Achieved Targets</string>
+
+    <!--    -->
+    <string name="Popup.SetupSavings">Set up savings</string>
+    <string name="Popup.StartSum">Start sum</string>
+    <string name="Popup.AccumulationType">Type</string>
+    <string name="Popup.AccumulationCoef">Coefficent</string>
+    <string name="Popup.StartDate">From</string>
+    <string name="Popup.EndDate">To</string>
+
+    <!-- Subscription Popup-->
+    <string name="Popup.Subscription.Value0">Create an unlimited number of goals: dream and plan their implementation without any limits</string>
+    <string name="Popup.Subscription.Value1">Create an unlimited number of income growth stages, income and expense budgets (plan without restrictions)</string>
+    <string name="Popup.Subscription.Value2">Create an unlimited number of individual income and expense categories to organize accounting in the most convenient and detailed way</string>
+    <string name="Popup.Subscription.Value3">Generate any number of savings and track their progress</string>
+    <string name="Popup.Subscription.Value4">Study reports for any period: This is the key to informed planning</string>
+    <string name="Popup.Subscription.Value5">Keep an unlimited history of your financial transactions</string>
+    <string name="Popup.Subscription.Value6">Use the operational budget without restrictions</string>
+    <string name="Popup.Subscription.Value7">Keep records of debts and loans without restrictions (in beta version)</string>
+    <string name="Popup.Subscription.Value8">Get reminders about important financial tasks (in beta)</string>
+
+    <string name="Popup.Subscription.Value_1">Coming soon in the Premium version: Profiles for separating personal and work finances</string>
+    <string name="Popup.Subscription.Value_2">Coming soon in the Premium version: Password protection of data for additional security</string>
+    <string name="Popup.Subscription.Value_3">Coming soon in the Premium version: Sync between devices – keep records from your phone and analyze from your tablet</string>
+    <string name="Popup.Subscription.Value_4">Coming soon in the Premium version: Support for accounting in multiple currencies</string>
+    <string name="Popup.Subscription.Value_5">Coming soon in the Premium version: Income and expense analysis adjusted for inflation</string>
+    <string name="Popup.Subscription.Value_6">Coming soon in the Premium version: Accounting for available capital</string>
+    <string name="Popup.Subscription.Value_7">Coming soon in the Premium version: Shopping Lists</string>
+
+    <string name="UnitOfMeasurementPieces">pc</string>
+</resources>

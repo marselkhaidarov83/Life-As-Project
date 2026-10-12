@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DescriptionDDDDD">Тексты используются в стаарых версиях popupView</string>
+
+    <string name="fragmentMoneyIncreasePopupAddTitle">Revenue Growth - adding</string>
+    <string name="fragmentMoneyIncreasePopupUpdateTitle">Revenue Growth - changing</string>
+
+    <string name="fragmentMoneyDreamPopupAddTitle">The dream - adding</string>
+    <string name="fragmentMoneyDreamPopupUpdateTitle">The dream -  changing</string>
+
+    <string name="fragmentMoneyTargetPopupAddTitle">The target - adding</string>
+    <string name="fragmentMoneyTargetPopupUpdateTitle">The target - changing</string>
+
+    <string name="fragmentMoneyCategoryPopupAddTitle">Money category - adding</string>
+    <string name="fragmentMoneyCategoryPopupUpdateTitle">Money category - changing</string>
+
+    <string name="fragmentMoneyIncomingPopupAddTitle">Plan. income - adding</string>
+    <string name="fragmentMoneyIncomingPopupUpdateTitle">Plan. income - changing</string>
+
+    <string name="fragmentMoneyCostPopupAddTitle">Plan. expense - adding</string>
+    <string name="fragmentMoneyCostPopupUpdateTitle">Plan. expense - changing</string>
+
+    <string name="fragmentMoneyPlanPopupAddTitle">Money plan - adding</string>
+    <string name="fragmentMoneyPlanPopupUpdateTitle">Money plan - changing</string>
+
+    <string name="fragmentIncreaseSelectPopupAddTitle">Increase - select</string>
+    <string name="fragmentIncreaseSelectUpdateTitle">Increase - select</string>
+
+    <string name="fragmentMoneyFactIncomingPopupAddTitle">Income - adding</string>
+    <string name="fragmentMoneyFactIncomingPopupUpdateTitle">Income - changing</string>
+
+    <string name="fragmentMoneyFactCostPopupAddTitle">Expense - adding</string>
+    <string name="fragmentMoneyFactCostPopupUpdateTitle">Expense - changing</string>
+
+    <string name="fragmentMoneyPNLPopupAddTitle">Expense - adding</string>
+    <string name="fragmentMoneyPNLPopupUpdateTitle">Expense - changing</string>
+
+    <string name="fragmentMoneyInc4CostPopupAddTitle">Revenue distribution - adding</string>
+    <string name="fragmentMoneyInc4CostPopupUpdateTitle">Revenue distribution - changing</string>
+
+    <string name="fragmentMoneyMovingPopupAddTitle">Moving - adding</string>
+    <string name="fragmentMoneyMovingPopupUpdateTitle">Moving - changing</string>
+
+    <string name="fragmentMoneyCreditPopupAddTitle">Credit - adding</string>
+    <string name="fragmentMoneyCreditPopupUpdateTitle">Credit - changing</string>
+
+    <string name="fragmentMoneyCreditPivotPopupAddTitle">Credit pivot - adding</string>
+    <string name="fragmentMoneyCreditPivotPopupUpdateTitle">Credit pivot - changing</string>
+
+    <string name="fragmentMoneyCategoryPopupSelectTitle">Choosing a category</string>
+
+    <string name="fragmentSubscriptionPopupSelectTitle">Subscription - choice</string>
+</resources>

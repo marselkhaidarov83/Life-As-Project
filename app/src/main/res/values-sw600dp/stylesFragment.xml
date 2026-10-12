@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="RView.Item.ImageView.Status.Width">35dp</dimen>
+    <dimen name="Date.ImageView.Width">45dp</dimen>
+    <dimen name="Date.ImageView.Height">45dp</dimen>
+    <dimen name="Date.Spinner.Width">400dp</dimen>
+    <dimen name="Fragment.Divider.Layout.Main.Height">40dp</dimen>
+    <dimen name="Fragment.MainActivity.Toolbar.Height">50dp</dimen>
+    <dimen name="Fragment.MainActivity.CustomRingTextView.Width">42dp</dimen>
+    <dimen name="Fragment.MainActivity.CustomRingTextView.Height">42dp</dimen>
+    <dimen name="Fragment.MainActivity.BottomMenu.Height">60dp</dimen>
+</resources>

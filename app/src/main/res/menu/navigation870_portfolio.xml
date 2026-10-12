@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navig_portfolio"
+        android:orderInCategory="870"
+        android:icon="@drawable/icons_tree_100_white"
+        android:title="@string/money_portfolio"
+        android:onClick="onPortfolioClick"
+        app:showAsAction="never" />
+
+</menu>

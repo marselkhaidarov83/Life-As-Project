@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Date">Дата</string>
+    <string name="Time">Время</string>
+    <string name="Day">День</string>
+    <string name="Week">Неделя</string>
+    <string name="Month">Месяц</string>
+    <string name="Quarter">Квартал</string>
+    <string name="Year">Год</string>
+    <string name="AllTime">Все время</string>
+
+    <string name="Monday">Понедельник</string>
+    <string name="Tuesday">Вторник</string>
+    <string name="Wednesday">Среда</string>
+    <string name="Thursday">Четверг</string>
+    <string name="Friday">Пятница</string>
+    <string name="Saturday">Суббота</string>
+    <string name="Sunday">Воскресенье</string>
+
+    <string name="DayBeforeYesterday">Позавчера</string>
+    <string name="Yesterday">Вчера</string>
+    <string name="Today">Сегодня</string>
+    <string name="Tomorrow">Завтра</string>
+    <string name="DayAfterTomorrow">Послезавтра</string>
+    <string name="PrevWeek">На прошлой неделе</string>
+    <string name="ThisWeek">На этой неделе</string>
+    <string name="NextWeek">На следующей неделе</string>
+    <string name="PrevMonth">В прошлом месяце</string>
+    <string name="ThisMonth">В этом месяце</string>
+    <string name="NextMonth">В следующем месяце</string>
+    <string name="PrevYear">В прошлом году</string>
+    <string name="NextYear">В следующем году</string>
+    <string name="ThisYear">В этом году</string>
+    <string name="LongTimeAgo">Давным давно</string>
+    <string name="NearFuture">В ближайшем будущем</string>
+
+    <string name="January">Январь</string>
+    <string name="February">Февраль</string>
+    <string name="March">Март</string>
+    <string name="April">Апрель</string>
+    <string name="May">Май</string>
+    <string name="June">Июнь</string>
+    <string name="July">Июль</string>
+    <string name="August">Август</string>
+    <string name="September">Сентябрь</string>
+    <string name="October">Октябрь</string>
+    <string name="November">Ноябрь</string>
+    <string name="December">Декабрь</string>
+
+    <string name="JanuaryR">января</string>
+    <string name="FebruaryR">февраля</string>
+    <string name="MarchR">марта</string>
+    <string name="AprilR">апреля</string>
+    <string name="MayR">мая</string>
+    <string name="JuneR">июня</string>
+    <string name="JulyR">июля</string>
+    <string name="AugustR">августа</string>
+    <string name="SeptemberR">сентября</string>
+    <string name="OctoberR">октября</string>
+    <string name="NovemberR">ноября</string>
+    <string name="DecemberR">декабря</string>
+</resources>

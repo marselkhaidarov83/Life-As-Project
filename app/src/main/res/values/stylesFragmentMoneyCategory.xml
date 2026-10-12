@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimens -->
+    <dimen name="Category.RView.Item.Layout.Main.Height">35dp</dimen>
+    <dimen name="Category.RView.Item.ImageView.Icon.Width">35dp</dimen>
+    <dimen name="Category.RView.Item.ImageView.TransferBudget.Width">35dp</dimen>
+    <!-- Dimens -->
+
+    <style name="Category.RView.Item.LinearLayout.Main" parent="RView.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Category.RView.Item.Layout.Main.Height</item>
+<!--        <item name="android:layout_marginStart">@dimen/BasePadding</item>-->
+<!--        <item name="android:layout_marginEnd">@dimen/BasePadding</item>-->
+        <item name="android:layout_marginTop">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Category.RView.Item.TextView" parent="RView.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:text">@string/CustomString</item>
+    </style>
+
+    <style name="Category.RView.Item.TextView.Name" parent="Category.RView.Item.TextView">
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:layout_marginStart">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Category.RView.Item.TextView.Sum" parent="Category.RView.Item.TextView">
+        <item name="android:gravity">center_vertical|end</item>
+<!--        <item name="android:layout_marginEnd">@dimen/BasePadding</item>-->
+        <item name="android:paddingEnd">@dimen/BasePadding</item>
+    </style>
+
+    <style name="Category.RView.Item.ImageView.Icon" parent="RView.Item">
+        <item name="android:layout_width">@dimen/Category.RView.Item.ImageView.Icon.Width</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Category.RView.Item.ImageView.TransferBudget" parent="RView.Item">
+        <item name="android:layout_width">@dimen/Category.RView.Item.ImageView.TransferBudget.Width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:src">@drawable/icons_plus_data_100</item>
+    </style>
+
+</resources>

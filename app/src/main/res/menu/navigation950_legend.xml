@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/groupLegend">
+
+    <item
+        android:id="@+id/navig_legend"
+        android:orderInCategory="950"
+        android:icon="@drawable/icons_legend_100_2"
+        android:title="@string/Legend"
+        android:onClick="onFormLegendClick"
+        app:showAsAction="never" />
+
+    </group>
+
+</menu>

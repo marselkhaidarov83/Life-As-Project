@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainLayout">
+
+    <com.MH83.LifeAsProject.custom.treeview.TreeView
+        android:id="@+id/treeViewCategory"
+        style="@style/RView"
+        tools:listitem="@layout/item_tree_money_category" />
+
+</LinearLayout>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Param" parent="Custom"></style>
+
+    <style name="ParamPopup" parent="Popup">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ParamTable" parent="Money"></style>
+
+    <style name="ParamRViewItem">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="ParamPopup.TextView" parent="ParamPopup"></style>
+
+    <style name="ParamPopup.EditText" parent="ParamPopup"></style>
+</resources>

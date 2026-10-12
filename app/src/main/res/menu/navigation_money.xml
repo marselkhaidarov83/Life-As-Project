@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_money_dream"
+        android:icon="@drawable/icons_money_target_100"
+        android:title="@string/money_target" />
+
+    <item
+        android:id="@+id/navigation_money_costs"
+        android:icon="@drawable/icons_money_plan_fact"
+        android:title="@string/money_costs"/>
+
+    <item
+        android:id="@+id/navigation_money_accounting"
+        android:icon="@drawable/icons_money_acc_100"
+        android:title="@string/money_accounting"/>
+
+    <item
+        android:id="@+id/navigation_money_capital"
+        android:icon="@drawable/icons_capital_100"
+        android:title="@string/money_capital"/>
+
+    <item
+        android:id="@+id/navigation_money_board"
+        android:icon="@drawable/icons_board_100_white"
+        android:title="@string/money_board_short"/>
+
+</menu>
